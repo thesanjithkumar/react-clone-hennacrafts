@@ -6,7 +6,7 @@ function NavbarComponent() {
     <Navbar bg="" expand="lg md" fixed="top" classname={classes.navbar}>
       {/* <Container> */}
       <div className="container-fluid">
-        <Navbar.Brand href="/" className="ms-4 mt-1">
+        <Navbar.Brand href="/" className="ms-3 mt-1">
           <img className="" src={cropped_nayab_henna_logo_208x70} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
