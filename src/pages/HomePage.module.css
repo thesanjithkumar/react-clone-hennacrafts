@@ -1,0 +1,125 @@
+/* .topdiv {
+    
+} */
+
+.card1 {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/HENNA_HAIR_DYE_750x450_crop_center1-p5idt4luf1jenkaqqqjs3582j3yx669g87ac4pxn5c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-flex;
+  color: white;
+  /* float: left; */
+  width: 30%;
+  max-width: 500px;
+  min-width: 320px;
+  max-height: 500px;
+  min-height: 375px;
+  /* padding: 1px; */
+  margin: 10px 10px 10px;
+  height: 600px;
+}
+.card2 {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/HENNA_BEARD_DYE_bd57655b-d2d9-4bfe-b923-a4dfcb82cd7c_750x960_crop_center-p5idgr2cfklhse9x0dym99nkygyxtn4oiy26nka92o.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-flex;
+  color: white;
+  /* float: left; */
+  width: 30%;
+  max-width: 500px;
+  min-width: 320px;
+  max-height: 500px;
+  min-height: 375px;
+  /* padding: 1px; */
+  margin: 10px 10px 10px;
+  height: 600px;
+}
+.card3 {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/Oder_Now_f102dbca-6520-4f7f-b1e2-3ca5b3598763_750x600_crop_center-p5icp3n9e0qu9cftgxopequfvf98e6cxq36zfja640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-flex;
+  color: white;
+  /* float: left; */
+  width: 30%;
+  max-width: 500px;
+  min-width: 320px;
+  max-height: 500px;
+  min-height: 375px;
+  /* padding: 1px; */
+  margin: 10px 10px 10px;
+  height: 600px;
+}
+.responsive {
+  width: 100%;
+  max-width: 500px;
+  min-width: 220px;
+  max-height: 600px;
+  min-height: 375px;
+}
+.card_p {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.cardbutton {
+  background-color: white;
+  /* border: 2px solid green; */
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  height: 45px;
+  width: 90%;
+  max-width: 121px;
+}
+
+.divbottom {
+  margin-left: 40px;
+  margin-top: 320px;
+  text-align: left;
+}
+
+.cardbutton:hover {
+  background-color: transparent;
+  color: white;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  /* transition-duration: 0.5s; */
+}
+
+.buttontext {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: normal;
+}
+
+.cardContainer {
+  text-align: center;
+}
+.cardContainer::after {
+  content: "";
+  clear: both;
+  /* backdrop-filter: brightness(54%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg); */
+}
+
+@media screen and (max-width: 600px) {
+  /* .card {
+    width: 250px;
+    height: auto;
+  } */
+}

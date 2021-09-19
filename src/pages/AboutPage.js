@@ -1,8 +1,12 @@
+import Card from "../components/ui/Card";
+
 function AboutPage() {
   return (
-    <div>
-      <h1>About Page</h1>
-    </div>
+    <Card>
+      <div>
+        <h1>About Page</h1>
+      </div>
+    </Card>
   );
 }
 
