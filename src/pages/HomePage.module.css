@@ -59,13 +59,13 @@
   margin: 10px 10px 10px;
   height: 600px;
 }
-.responsive {
+/* .responsive {
   width: 100%;
   max-width: 500px;
   min-width: 220px;
   max-height: 600px;
   min-height: 375px;
-}
+} */
 .card_p {
   font-size: 14px;
   font-weight: 800;
