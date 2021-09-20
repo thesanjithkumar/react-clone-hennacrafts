@@ -1,8 +1,12 @@
+import Card from "../components/ui/Card";
+
 function ShopPage() {
   return (
-    <div>
-      <h1>Shop Page</h1>
-    </div>
+    <Card>
+      <div>
+        <h1>Shop Page</h1>
+      </div>
+    </Card>
   );
 }
 

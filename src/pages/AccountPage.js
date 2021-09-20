@@ -1,8 +1,12 @@
+import Card from "../components/ui/Card";
+
 function AccountPage() {
   return (
-    <div>
-      <h1>Account Page</h1>
-    </div>
+    <Card>
+      <div>
+        <h1>Account Page</h1>
+      </div>
+    </Card>
   );
 }
 

@@ -1,60 +1,86 @@
 import cropped_nayab_henna_logo_208x70 from "../img/cropped_nayab_henna_logo_208x70.jpg";
 import classes from "./Layout.module.css";
+// import { FaBars } from "react-icons/fa";
+
 function NavbarComponent() {
+  function NavbarToggler() {}
   return (
-    // <Navbar bg="" expand="lg md" fixed="top" classname={classes.navbar}>
-    //   {/* <Container> */}
-    //   <div className="container-fluid">
-    //     <Navbar.Brand href="/" className="ms-3 mt-1">
-    //       <img className="" src={cropped_nayab_henna_logo_208x70} alt="" />
-    //     </Navbar.Brand>
-    //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    //     <Navbar.Collapse id="basic-navbar-nav">
-    //       <Nav className="ms-auto">
-    //         <Nav.Link className="mx-2" href="/">
-    //           Home
-    //         </Nav.Link>
-    //         <NavDropdown
-    //           title="Shop"
-    //           href="/"
-    //           className="mx-2"
-    //           id="basic-nav-dropdown"
-    //         >
-    //           <NavDropdown.Item href="#action/3.1">Henna</NavDropdown.Item>
-    //           <NavDropdown.Item href="#action/3.2">Indigo</NavDropdown.Item>
-    //           <NavDropdown.Item href="#action/3.3">Face Pack</NavDropdown.Item>
-    //           <NavDropdown.Item href="#action/3.4">Powder</NavDropdown.Item>
-    //           <NavDropdown.Item href="#action/3.4">
-    //             Essential oil
-    //           </NavDropdown.Item>
-    //           <NavDropdown.Item href="#action/3.4">Combo</NavDropdown.Item>
-    //         </NavDropdown>
-    //         <Nav.Link className="mx-2" href="/blog">
-    //           Blog
-    //         </Nav.Link>
-    //         <Nav.Link className="mx-2" href="/contact">
-    //           Contact
-    //         </Nav.Link>
-    //         <Nav.Link className="mx-2" href="/about">
-    //           About
-    //         </Nav.Link>
-    //         <NavDropdown
-    //           className="mx-2"
-    //           title="Account"
-    //           id="basic-nav-dropdown"
-    //         >
-    //           <NavDropdown.Item href="#action/3.1">My Account</NavDropdown.Item>
-    //           <NavDropdown.Item href="#action/3.2">Cart</NavDropdown.Item>
-    //         </NavDropdown>
-    //         <Nav.Link className="mx-2 me-4" href="/cart">
-    //           Cart
-    //         </Nav.Link>
-    //       </Nav>
-    //     </Navbar.Collapse>
-    //   </div>
-    //   {/* </Container> */}
-    // </Navbar>
-    <div></div>
+    <headers>
+      <div className={classes.navbar}>
+        <nav>
+          <label className={classes.logo}>
+            <a href="/">
+              <img src={cropped_nayab_henna_logo_208x70} alt="" />
+            </a>
+          </label>
+          <ul id="mynav" className={classes.mynav}>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <div className={classes.dropdown}>
+                <span>
+                  <a href="/shop">
+                    Shop <i className={classes.down}></i>
+                  </a>
+                </span>
+                <div className={classes.dropdown_content}>
+                  <p>
+                    <a href="">Henna</a>
+                  </p>
+                  <p>
+                    <a href="">Indigo</a>
+                  </p>
+                  <p>
+                    <a href="">Face Pack</a>
+                  </p>
+                  <p>
+                    <a href="">Powder</a>
+                  </p>
+                  <p>
+                    <a href="">Essential Oil</a>
+                  </p>
+                  <p>
+                    <a href="">Combo</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <div className={classes.dropdown}>
+                <span>
+                  <a href="/account">
+                    Account <i class={classes.down}></i>
+                  </a>
+                </span>
+                <div className={classes.dropdown_content}>
+                  <p>
+                    <a href="/account">My Account</a>
+                  </p>
+                  <p>
+                    <a href="/cart">Cart</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="/cart" className={classes.cart}>
+                Cart
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </headers>
   );
 }
 
