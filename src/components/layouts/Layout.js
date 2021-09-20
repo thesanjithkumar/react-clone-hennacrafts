@@ -1,6 +1,6 @@
 import Footer from "./Footer";
-import classes from "./Layout.module.css";
 import NavbarComponent from "./NavbarComponent";
+import classes from './Layout.module.css';
 
 function Layout(props) {
   return (
