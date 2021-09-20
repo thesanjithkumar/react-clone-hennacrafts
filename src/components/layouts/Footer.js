@@ -20,15 +20,15 @@ function Footer() {
         <span>HENNACRAFTS</span>
       </div>
       <div className={classes.nav}>
-        <h3>Quick links</h3>
         <ul>
+          <li><h3>Quick links</h3></li>
           <li><Link to='/' className={classes.link}>Home</Link></li>
           <li><Link to='/' className={classes.link}>Tester/Samples</Link></li>
           <li><Link to='/' className={classes.link}>Other Henna Products</Link></li>
           <li><Link to='/' className={classes.link}>Glitter Henna Products</Link></li>
         </ul>
-        <h3>Site links</h3>
         <ul>
+          <li><h3>Site links</h3></li>
           <li><Link to='/' className={classes.link}>About Us</Link></li>
           <li><Link to='/' className={classes.link}>Privacy Policy</Link></li>
           <li><Link to='/' className={classes.link}>Terms & Conditions</Link></li>
