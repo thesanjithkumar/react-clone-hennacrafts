@@ -1,6 +1,6 @@
 import cropped_nayab_henna_logo_208x70 from "../img/cropped_nayab_henna_logo_208x70.jpg";
 import classes from "./Layout.module.css";
-import { FaBars } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
 
 function NavbarComponent() {
   function NavbarToggler() {}
@@ -8,7 +8,7 @@ function NavbarComponent() {
     <headers>
       <div className={classes.navbar}>
         <nav>
-          <label>
+          <label className={classes.logo}>
             <a href="/">
               <img src={cropped_nayab_henna_logo_208x70} alt="" />
             </a>
@@ -73,7 +73,9 @@ function NavbarComponent() {
               </div>
             </li>
             <li>
-              <a href="/cart">Cart</a>
+              <a href="/cart" className={classes.cart}>
+                Cart
+              </a>
             </li>
           </ul>
         </nav>

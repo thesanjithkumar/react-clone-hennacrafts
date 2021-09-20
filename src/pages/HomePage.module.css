@@ -2,6 +2,10 @@
     
 } */
 
+/* nav {
+  z-index: 4;
+} */
+/* 2nd div */
 .card1 {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 1);
@@ -17,9 +21,13 @@
   min-width: 320px;
   max-height: 500px;
   min-height: 375px;
-  /* padding: 1px; */
   margin: 10px 10px 10px;
   height: 600px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  z-index: -1;
+  /* backdrop-filter: brightness(54%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg); */
 }
 .card2 {
   background-color: rgb(0, 0, 0);
@@ -39,6 +47,8 @@
   /* padding: 1px; */
   margin: 10px 10px 10px;
   height: 600px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .card3 {
   background-color: rgb(0, 0, 0);
@@ -58,6 +68,26 @@
   /* padding: 1px; */
   margin: 10px 10px 10px;
   height: 600px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.card1:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  /* transition-timing-function: ease-in-out; */
+}
+
+.card2:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  /* transition-timing-function: ease-in-out; */
+}
+
+.card3:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  /* transition-timing-function: ease-in-out; */
 }
 /* .responsive {
   width: 100%;
@@ -66,9 +96,21 @@
   max-height: 600px;
   min-height: 375px;
 } */
+
+.card_heading {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.card_a {
+  text-decoration: none;
+  color: black;
+}
+
 .card_p {
   font-size: 14px;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .cardbutton {
@@ -86,10 +128,11 @@
   max-width: 121px;
 }
 
-.divbottom {
+.cardbottom {
   margin-left: 40px;
-  margin-top: 320px;
+  margin-top: 300px;
   text-align: left;
+  text-decoration: none;
 }
 
 .cardbutton:hover {
@@ -110,12 +153,79 @@
 .cardContainer {
   text-align: center;
 }
-.cardContainer::after {
+.cardContainer::afthennaer {
   content: "";
   clear: both;
-  /* backdrop-filter: brightness(54%) contrast(100%) saturate(100%) blur(0px)
-    hue-rotate(0deg); */
 }
+/* 2nd div */
+
+/* products div */
+
+.products {
+  /* display: inline-flex; */
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+
+.product_heading {
+  display: inline-block;
+  color: black;
+  margin: 0 25px 0 25px;
+  text-decoration: none;
+}
+
+.product_heading:hover {
+  color: #719d0f;
+}
+
+.product_card {
+  padding-top: 20px;
+  text-align: left;
+  color: black;
+  display: inline-block;
+  width: 22%;
+  min-width: 230px;
+  max-width: 400px;
+  height: 100%;
+  margin: 15px;
+  min-height: 260px;
+  max-height: 480px;
+}
+.product_image {
+  height: 80%;
+  width: 100%;
+  transition: opacity 0.5s ease-out;
+}
+
+.products::after {
+  content: "";
+  clear: both;
+}
+
+.product_price {
+  line-height: 0.7em;
+}
+
+.product_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #719d0f;
+  color: white;
+  text-decoration: none;
+  margin: auto;
+  transition: all 700ms ease-in-out;
+  height: 42px;
+  width: 90%;
+  max-width: 180px;
+}
+
+.product_button:hover {
+  background-color: transparent;
+  color: #719d0f;
+}
+
+/* products div */
 
 @media screen and (max-width: 600px) {
   /* .card {
