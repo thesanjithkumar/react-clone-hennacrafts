@@ -1,5 +1,5 @@
 import cropped_nayab_henna_logo_208x70 from "../img/cropped_nayab_henna_logo_208x70.jpg";
-import classes from "./Layout.module.css";
+import classes from "./Navbar.module.css";
 // import { FaBars } from "react-icons/fa";
 
 function NavbarComponent() {
