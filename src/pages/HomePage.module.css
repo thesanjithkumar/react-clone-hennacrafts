@@ -217,7 +217,7 @@ main {
   color: white;
   text-decoration: none;
   margin: auto;
-  transition: all 700ms ease-in-out;
+  transition: all 500ms ease-in-out;
   height: 42px;
   width: 90%;
   max-width: 180px;
