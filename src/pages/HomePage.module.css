@@ -21,9 +21,9 @@ main {
   /* float: left; */
   width: 30%;
   max-width: 500px;
-  min-width: 320px;
+  min-width: 270px;
   max-height: 500px;
-  min-height: 375px;
+  min-height: 325px;
   margin: 10px 10px 10px;
   height: 600px;
   -webkit-transition: all 1s ease-in-out;
@@ -44,9 +44,9 @@ main {
   /* float: left; */
   width: 30%;
   max-width: 500px;
-  min-width: 320px;
+  min-width: 270px;
   max-height: 500px;
-  min-height: 375px;
+  min-height: 325px;
   /* padding: 1px; */
   margin: 10px 10px 10px;
   height: 600px;
@@ -65,9 +65,9 @@ main {
   /* float: left; */
   width: 30%;
   max-width: 500px;
-  min-width: 320px;
+  min-width: 270px;
   max-height: 500px;
-  min-height: 375px;
+  min-height: 325px;
   /* padding: 1px; */
   margin: 10px 10px 10px;
   height: 600px;
@@ -230,9 +230,17 @@ main {
 
 /* products div */
 
-@media screen and (max-width: 600px) {
-  /* .card {
-    width: 250px;
-    height: auto;
-  } */
+@media screen and (max-width: 920px) {
+  .cardContainer {
+    display: block;
+  }
+  .card1 {
+    width: 55%;
+  }
+  .card2 {
+    width: 55%;
+  }
+  .card3 {
+    width: 55%;
+  }
 }
