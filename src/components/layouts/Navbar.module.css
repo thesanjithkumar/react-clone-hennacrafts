@@ -55,13 +55,13 @@ nav ul li a:hover {
   display: block;
 }
 
-.footer {
+/* .footer {
   background-color: #001524;
   color: white;
   padding-top: 30px;
   padding-bottom: 20px;
   overflow-x: hidden;
-}
+} */
 
 .left {
   text-align: left;
