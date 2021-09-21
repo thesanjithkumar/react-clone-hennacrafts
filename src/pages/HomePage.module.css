@@ -6,6 +6,9 @@
   z-index: 4;
 } */
 /* 2nd div */
+main {
+  margin-top: 100px;
+}
 .card1 {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 1);

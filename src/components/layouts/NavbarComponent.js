@@ -7,7 +7,7 @@ function NavbarComponent() {
   return (
     <headers>
       <div className={classes.navbar}>
-        <nav>
+        <nav className={classes.nav}>
           <label className={classes.logo}>
             <a href="/">
               <img src={cropped_nayab_henna_logo_208x70} alt="" />

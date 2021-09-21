@@ -1,107 +1,100 @@
-.footer
-{
-  margin:0px 0px;
+.footer {
+  margin-top: 150px;
+  margin-left: -33px;
   background-color: #001a33;
   color: white;
-  padding:2rem 2rem;
+  padding: 2rem 2rem;
+  overflow: hidden;
+  width: 100%;
 }
 
-.about,.logo,ul
-{
-  margin-bottom:10%;
+.about,
+.logo,
+ul {
+  margin-bottom: 10%;
 }
 
-.about p
-{
+.about p {
   line-height: 2rem;
 }
 
-.img
-{
-  width:40%;
+.img {
+  width: 40%;
   margin-bottom: 1em;
   display: block;
 }
 
-.about h2{
-  font-size:2rem;
+.about h2 {
+  font-size: 2rem;
   font-weight: 700;
 }
 
-.nav ul{
+.nav ul {
   padding: 0em;
 }
 
-.nav ul li
-{
+.nav ul li {
   list-style: none;
   margin-bottom: 1em;
 }
 
-.link
-{
+.link {
   text-decoration: none;
   padding-left: 0px;
   color: white;
 }
 
-.media
-{
+.media {
   display: flex;
   justify-content: space-between;
 }
 
-.logo span
-{
+.logo span {
   font-size: 1rem;
 }
 
-.facebook,.instagram
-{
-  margin-right:2em;
+.facebook,
+.instagram {
+  margin-right: 2em;
   text-decoration: none;
   color: white;
 }
 
-.facebook:hover,.instagram:hover,.copyright:hover,.link:hover
-{
+.facebook:hover,
+.instagram:hover,
+.copyright:hover,
+.link:hover {
   color: red;
 }
 
-@media (min-width:768px)
-{
-  .main
-  {
+@media (min-width: 768px) {
+  .main {
     display: flex;
     justify-content: space-between;
   }
 
-  .about
-  {
-   width:30%;
+  .about {
+    width: 30%;
   }
 
-  .logo
-  {
-  width:30%;
-  text-align:center;
-  margin:auto 0;
+  .logo {
+    width: 30%;
+    text-align: center;
+    margin: auto 0;
   }
 
-  .nav 
-  {
-  width:30%;
-  display: flex;
-  justify-content: space-between;
+  .nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .img
-  {
-  width:80%;
-  margin:1em auto;
+  .img {
+    width: 80%;
+    margin: 1em auto;
   }
 
-  .nav ul{
+  .nav ul {
     padding: 1em;
   }
 }
