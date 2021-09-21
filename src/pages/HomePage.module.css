@@ -162,6 +162,13 @@ main {
 }
 /* 2nd div */
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.product_name {
+  font-size: 1em;
+}
 /* products div */
 
 .products {
@@ -186,6 +193,7 @@ main {
   text-align: left;
   color: black;
   display: inline-block;
+  padding-bottom: 50px;
   width: 22%;
   min-width: 230px;
   max-width: 400px;
@@ -194,6 +202,7 @@ main {
   min-height: 260px;
   max-height: 480px;
 }
+
 .product_image {
   height: 80%;
   width: 100%;
@@ -206,7 +215,7 @@ main {
 }
 
 .product_price {
-  line-height: 0.7em;
+  line-height: 4.1em;
 }
 
 .product_button {
@@ -228,8 +237,50 @@ main {
   color: #719d0f;
 }
 
+.products_essentials {
+  /* display: inline-flex; */
+  margin: 100px 0 -50px 0;
+  text-align: left;
+}
+
+.product_heading_div1 {
+  text-align: center;
+}
+
+.product_heading_div {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: -100px;
+}
+
+.tablist {
+  list-style: none;
+}
+
+.tab_title {
+  display: inline;
+}
+
 /* products div */
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* text code */
 @media screen and (max-width: 920px) {
   .cardContainer {
     display: block;
