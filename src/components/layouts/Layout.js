@@ -1,10 +1,9 @@
 import Footer from "./Footer";
-import NavbarComponent from "./NavbarComponent";
-
+import NavbarResize from "./NavbarResize";
 function Layout(props) {
   return (
-    <div>
-      <NavbarComponent />
+    <div> 
+      <NavbarResize/>
       <main>{props.children}</main>
 
       <Footer />
