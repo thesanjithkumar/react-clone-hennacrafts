@@ -86,6 +86,11 @@
   {
     display: flex;
     justify-content: space-between;
+    height: 100px;
+    border-bottom: 1px solid lightgrey;
+    position: sticky;
+    top:0px;
+    background-color: white;
   }
 
   .nav{
