@@ -1,13 +1,10 @@
 import Footer from "./Footer";
-import NavbarComponent from "./NavbarComponent";
-import classes from './Layout.module.css';
-
+import NavbarResize from "./NavbarResize";
 function Layout(props) {
   return (
-    <div>
-      <NavbarComponent />
+    <div> 
+      <NavbarResize/>
       <main className={classes.main}>{props.children}</main>
-
       <Footer />
     </div>
   );

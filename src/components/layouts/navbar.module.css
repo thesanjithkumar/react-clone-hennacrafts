@@ -1,0 +1,143 @@
+
+.header
+{
+  padding: 0em 1em;
+}
+
+
+.shop_dropdown ul{
+  margin-bottom: 0;
+}
+
+.account_dropdown ul
+{
+  margin-bottom: 0;
+}
+
+
+.nav ul 
+{
+  list-style-type: none;
+  padding: 0em;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid lightgrey;
+  display: block;
+  width: 95%;
+  padding: 1em;
+}
+
+.bar
+{
+  position: absolute;
+  color: #239023;
+  padding:1.6em 2em;
+  right:0%;
+}
+
+.bag
+{
+  position: absolute;
+  color: #239023;
+  padding:1.5em 2.2em;
+  right: 15%;
+}
+
+.link:hover
+{
+  color:#239023;
+}
+
+.shoparrowdown,.accountarrowdown {
+  position: absolute;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  right:3%;
+}
+
+.shoparrowup,.accountarrowup
+{
+  position: absolute;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  right:3%;
+
+}
+
+.shop_dropdown ul .link,.account_dropdown ul .link
+{
+  padding-left: 1.5em;
+}
+
+@media (min-width:768px)
+{
+  .header
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav{
+    width:70%;
+  }
+  
+  .navlink
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link 
+  {
+    border-bottom:none;
+  }
+
+  .shoparrowdown,.shoparrowup
+  {
+    right:51%;
+    margin-top:0.4em;
+  }
+
+  .accountarrowdown,.accountarrowup
+  {
+    right:8%;
+    margin-top:0.4em;
+  }
+
+  .bag
+  {
+    position: inherit;
+    padding: 0;
+  }
+
+  .shop_dropdown
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shop_dropdown,.account_dropdown
+  {
+    position:absolute;
+    z-index: 1;
+    background-color:#ffffff;
+    box-shadow: -0.5px -0.5px lightgrey;
+  }
+
+  .shop_dropdown ul li,.account_dropdown ul li 
+  {
+    border: 0.5px solid lightgrey;
+    border-top: 1px solid lightgrey;
+  }
+}
