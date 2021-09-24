@@ -1,5 +1,4 @@
-// import Card from "../components/ui/Card";
-import classes from "./HomePage.module.css";
+import CardDiv from "../components/ui/homepage/CardDiv.";
 import EssentailsCombo from "../components/ui/homepage/EssentailsCombo";
 import FacepackPowder from "../components/ui/homepage/FacepackPowder";
 import HennaIndigo from "../components/ui/homepage/HennaIndigo";
@@ -24,41 +23,7 @@ function HomePage() {
   return (
     <main>
       {/* top div section */}
-      <div className={classes.cardContainer}>
-        <a href="/shop" className={classes.card_a}>
-          <div className={classes.card1}>
-            <div className={classes.cardbottom}>
-              <p className={classes.card_p}>100% BEAUTIFUL</p>
-              <h2 className={classes.card_heading}>Henna</h2>
-              <a href="/shop" className={classes.cardbutton}>
-                <span className={classes.buttontext}>View More</span>
-              </a>
-            </div>
-          </div>
-        </a>
-        <a href="/shop" className={classes.card_a}>
-          <div className={classes.card2}>
-            <div className={classes.cardbottom}>
-              <p className={classes.card_p}>100% NATURAL</p>
-              <h2 className={classes.card_heading}>Essential Oil</h2>
-              <a href="/shop" className={classes.cardbutton}>
-                <span className={classes.buttontext}>View More</span>
-              </a>
-            </div>
-          </div>
-        </a>
-        <a href="/shop" className={classes.card_a}>
-          <div className={classes.card3}>
-            <div className={classes.cardbottom}>
-              <p className={classes.card_p}>INGREDIENTS THAT MAKE SENSE</p>
-              <h2 className={classes.card_heading}>Face Pack</h2>
-              <a href="/shop" className={classes.cardbutton}>
-                <span className={classes.buttontext}>View More</span>
-              </a>
-            </div>
-          </div>
-        </a>
-      </div>
+      <CardDiv />
       {/* top div section */}
       {/* Henna And indigo section */}
       <HennaIndigo />
