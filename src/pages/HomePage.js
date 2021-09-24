@@ -1,8 +1,8 @@
 // import Card from "../components/ui/Card";
 import classes from "./HomePage.module.css";
-import EssentailsCombo from "../components/ui/EssentailsCombo";
-import FacepackPowder from "../components/ui/FacepackPowder";
-import HennaIndigo from "../components/ui/HennaIndigo";
+import EssentailsCombo from "../components/ui/homepage/EssentailsCombo";
+import FacepackPowder from "../components/ui/homepage/FacepackPowder";
+import HennaIndigo from "../components/ui/homepage/HennaIndigo";
 
 function HomePage() {
   // function hover_henna() {
