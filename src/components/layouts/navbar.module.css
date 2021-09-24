@@ -1,5 +1,6 @@
 .header {
   padding: 0em 1em;
+  z-index: 1;
 }
 
 .shop_dropdown ul {
