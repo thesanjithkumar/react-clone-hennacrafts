@@ -2,6 +2,7 @@ import CardDiv from "../components/ui/homepage/CardDiv.";
 import EssentailsCombo from "../components/ui/homepage/EssentailsCombo";
 import FacepackPowder from "../components/ui/homepage/FacepackPowder";
 import HennaIndigo from "../components/ui/homepage/HennaIndigo";
+import WelcomeDiv from "../components/ui/homepage/WelcomeDiv";
 
 function HomePage() {
   // function hover_henna() {
@@ -30,11 +31,13 @@ function HomePage() {
       {/* Henna And Indigo section */}
       {/* face pack powder section */}
       <FacepackPowder />
-
       {/* face pack powder section */}
       {/* Essentail oil and combo section */}
       <EssentailsCombo />
       {/* Essentail oil and combo section */}
+      {/* welcom div */}
+      <WelcomeDiv />
+      {/* welcom div */}
     </main>
   );
 }

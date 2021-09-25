@@ -17,9 +17,9 @@
   display: inline-block;
   background-color: transparent;
   border: none;
-  font-size: 30px;
+  font-size: 31px;
   font-weight: 800;
-  color: black;
+  /* color: black; */
   margin: 0 25px 0 25px;
   text-decoration: none;
 }
@@ -180,6 +180,7 @@
 
 .tablist {
   list-style: none;
+  margin-bottom: 50px;
 }
 
 .tab_title {
@@ -211,13 +212,13 @@
     display: block;
   }
   .card1 {
-    width: 55%;
+    width: 33%;
   }
   .card2 {
-    width: 55%;
+    width: 33%;
   }
   .card3 {
-    width: 55%;
+    width: 33%;
   }
 }
 
@@ -225,8 +226,6 @@ main {
   margin-bottom: 100px;
 }
 .card1 {
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 1);
   background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/HENNA_HAIR_DYE_750x450_crop_center1-p5idt4luf1jenkaqqqjs3582j3yx669g87ac4pxn5c.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,8 +247,6 @@ main {
     hue-rotate(0deg); */
 }
 .card2 {
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 1);
   background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/HENNA_BEARD_DYE_bd57655b-d2d9-4bfe-b923-a4dfcb82cd7c_750x960_crop_center-p5idgr2cfklhse9x0dym99nkygyxtn4oiy26nka92o.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,8 +266,6 @@ main {
   transition: all 1s ease-in-out;
 }
 .card3 {
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 1);
   background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/Oder_Now_f102dbca-6520-4f7f-b1e2-3ca5b3598763_750x600_crop_center-p5icp3n9e0qu9cftgxopequfvf98e6cxq36zfja640.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -376,3 +371,64 @@ main {
   clear: both;
 }
 /* 2nd div */
+
+/* Welcome div */
+
+.welcomediv {
+  background-color: #e0e3d2;
+  width: 97%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+}
+
+.welcometextdiv {
+  width: 100%;
+  margin-left: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.welcometo {
+  color: red;
+  font-size: 30px;
+}
+
+.welcometotext {
+  width: 70%;
+  margin-bottom: 10%;
+  font-size: 16px;
+}
+
+.welcomeheading {
+  font-size: 36px;
+}
+
+.learnmore {
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #719d0f;
+  border-radius: 25px;
+  width: 35%;
+  height: 55px;
+  border: 1px solid #719d0f;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 12%;
+}
+
+.learnmore:hover {
+  background-color: #719d0f;
+  color: white;
+}
+
+/* Welcome div */

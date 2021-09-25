@@ -1,7 +1,19 @@
 import classes from "./Products.module.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { useState } from "react";
 
 export default function HennaIndigo() {
+  // const [color, setColor] = useState({ color: "#000000" });
+
+  // const setStyle = (color) => {
+  //   setColor(color);
+  // };
+
+  // function tab() {
+  //   if (color == "#000000") setColor({ color: "#719d0f" });
+  //   else setColor({ color: "#000000" });
+  // }
+
   function hover_henna() {
     var ele = document.getElementById("product_henna");
     ele.setAttribute(
@@ -65,7 +77,7 @@ export default function HennaIndigo() {
                   // data-ekit-toggle="tab"
                   className={classes.product_heading}
                 >
-                  FACE PACK
+                  HENNA
                 </button>
               </h1>
             </Tab>
@@ -79,7 +91,7 @@ export default function HennaIndigo() {
                   // data-ekit-toggle="tab"
                   className={classes.product_heading}
                 >
-                  POWDER
+                  INDIGO
                 </button>
               </h1>
             </Tab>

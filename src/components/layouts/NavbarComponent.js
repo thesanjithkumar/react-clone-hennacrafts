@@ -105,7 +105,7 @@ function NavbarComponent(props) {
             </li>
             <li onClick={AccountDropdown}>
               <Link to="/account" className={classes.link}>
-                Account{" "}
+                Account
                 <span
                   className={
                     account_dropdown
