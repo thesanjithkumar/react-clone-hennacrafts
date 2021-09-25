@@ -86,7 +86,7 @@ export default function Card() {
     <main>
       <Tabs>
         <div className={classes.products_essentials}>
-          <TabList className={classes.tabList}>
+          <TabList className={classes.tablist}>
             <div className={classes.product_heading_div}>
               <Tab className={classes.tab_title}>
                 <h1 id="henna" className={classes.product_heading}>
