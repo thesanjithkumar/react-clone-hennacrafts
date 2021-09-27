@@ -1,6 +1,7 @@
 import CardDiv from "../components/ui/homepage/CardDiv.";
 import EssentailsCombo from "../components/ui/homepage/EssentailsCombo";
 import FacepackPowder from "../components/ui/homepage/FacepackPowder";
+import HennaBlog from "../components/ui/homepage/HennaBlog";
 import HennaIndigo from "../components/ui/homepage/HennaIndigo";
 import TopDiv from "../components/ui/homepage/TopDiv";
 import WelcomeDiv from "../components/ui/homepage/WelcomeDiv";
@@ -42,6 +43,9 @@ function HomePage() {
       {/* welcom div */}
       <WelcomeDiv />
       {/* welcom div */}
+      {/* Henna Blog */}
+      <HennaBlog />
+      {/* Henna Blog */}
     </main>
   );
 }

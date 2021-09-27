@@ -256,7 +256,7 @@ main {
   margin-bottom: 100px;
 }
 .card1 {
-  background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/HENNA_HAIR_DYE_750x450_crop_center1-p5idt4luf1jenkaqqqjs3582j3yx669g87ac4pxn5c.jpg");
+  background-image: url("./img/top_div1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -277,7 +277,7 @@ main {
     hue-rotate(0deg); */
 }
 .card2 {
-  background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/HENNA_BEARD_DYE_bd57655b-d2d9-4bfe-b923-a4dfcb82cd7c_750x960_crop_center-p5idgr2cfklhse9x0dym99nkygyxtn4oiy26nka92o.jpg");
+  background-image: url("./img/top_div2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -296,7 +296,7 @@ main {
   transition: all 1s ease-in-out;
 }
 .card3 {
-  background-image: url("https://hennacrafts.com/wp-content/uploads/elementor/thumbs/Oder_Now_f102dbca-6520-4f7f-b1e2-3ca5b3598763_750x600_crop_center-p5icp3n9e0qu9cftgxopequfvf98e6cxq36zfja640.jpg");
+  background-image: url("./img/top_div3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
