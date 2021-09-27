@@ -206,51 +206,6 @@
   border: 1px solid #ccc;
   border-top: none;
 }
-/* text code */
-@media (max-width: 760px) {
-  .cardContainer {
-    display: block;
-  }
-  .card1 {
-    width: 100%;
-  }
-  .card2 {
-    width: 100%;
-  }
-  .card3 {
-    width: 100%;
-  }
-  .tablist {
-    margin-bottom: 160px;
-    display: block;
-  }
-  .product_heading {
-    margin-top: 25px;
-  }
-  .products_essentials {
-    text-align: center;
-  }
-  .toptextdiv {
-    top: 20%;
-    left: 50%;
-  }
-  .learnmore {
-    font-size: 14px;
-  }
-  .welcomeimgdiv {
-    display: none;
-  }
-}
-
-@media (min-width: 761px) {
-  .toptextdiv {
-    top: 60%;
-    left: 50%;
-  }
-  .learnmore {
-    font-size: 20px;
-  }
-}
 
 main {
   margin-bottom: 100px;
@@ -406,6 +361,7 @@ main {
 
 .welcomediv {
   background-color: #e0e3d2;
+  position: relative;
   width: 97%;
   margin: auto;
   display: grid;
@@ -533,3 +489,151 @@ main {
 }
 
 /* Top div */
+
+/* Heena Blog */
+
+.hennablog_main {
+  /* border: 2px solid green; */
+  margin: auto;
+  margin-top: 100px;
+  height: 150px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  height: auto;
+}
+
+.hennablogchild {
+  /* border: 2px solid blue; */
+  /* display: inline-block; */
+  /* float: left; */
+  /* width: 30%; */
+  height: auto;
+  box-shadow: 8px 8px 8px #f1f1f1;
+  text-align: center;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.hennablog_img {
+  width: 90%;
+  margin-top: 3px;
+  text-align: center;
+  left: 50;
+  height: auto;
+  transition: all 0.4s ease;
+}
+
+.hennablog_img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+#blog:hover .hennablog_img {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.hennablogchild_heading {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.bloginnerdiv {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+}
+
+.blogbutton {
+  display: flex;
+  width: 35%;
+  text-decoration: none;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px 0 20px 0;
+  border-radius: 5px;
+  line-height: 1;
+  font-size: 15px;
+  background-color: #719d0f;
+}
+
+.blogbuttondiv {
+  width: 90%;
+  margin: auto;
+}
+
+/* Henna Blog */
+
+/* Media Quereis */
+@media (max-width: 760px) {
+  .cardContainer {
+    display: block;
+  }
+  .card1 {
+    width: 100%;
+  }
+  .card2 {
+    width: 100%;
+  }
+  .card3 {
+    width: 100%;
+  }
+  .tablist {
+    margin-bottom: 160px;
+    display: block;
+  }
+  .product_heading {
+    margin-top: 25px;
+  }
+  .products_essentials {
+    text-align: center;
+  }
+  .toptextdiv {
+    top: 20%;
+    left: 50%;
+  }
+  .learnmore {
+    font-size: 14px;
+  }
+  .welcomeimgdiv {
+    display: none;
+  }
+  .welcomediv {
+    margin: auto;
+  }
+}
+
+@media (min-width: 761px) {
+  .toptextdiv {
+    top: 60%;
+    left: 50%;
+  }
+  .learnmore {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hennablog_main {
+    display: block;
+    width: 95%;
+  }
+  .hennablogchild {
+    margin: 50px 0 50px 0;
+  }
+  .hennablog_img {
+    width: 95%;
+  }
+  .blogbuttondiv {
+    padding: 30px 0 30px 0;
+  }
+}
+/* Media Quereis */
