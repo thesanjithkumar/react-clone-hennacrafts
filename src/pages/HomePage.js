@@ -44,7 +44,7 @@ function HomePage() {
       <WelcomeDiv />
       {/* welcom div */}
       {/* Henna Blog */}
-      {/* <HennaBlog /> */}
+      <HennaBlog />
       {/* Henna Blog */}
     </main>
   );
