@@ -5,6 +5,7 @@ import HennaBlog from "../components/ui/homepage/HennaBlog";
 import HennaIndigo from "../components/ui/homepage/HennaIndigo";
 import TopDiv from "../components/ui/homepage/TopDiv";
 import WelcomeDiv from "../components/ui/homepage/WelcomeDiv";
+import classes from "./HomePage.module.css";
 
 function HomePage() {
   // function hover_henna() {
@@ -44,6 +45,9 @@ function HomePage() {
       <WelcomeDiv />
       {/* welcom div */}
       {/* Henna Blog */}
+      <div className={classes.blog_headingdiv}>
+        <p className={classes.blog_heading}>Henna Blogs</p>
+      </div>
       <HennaBlog />
       {/* Henna Blog */}
     </main>
