@@ -8,7 +8,7 @@ const useStyles=makeStyles(
   {
     wrapper:
     {
-      width:'100%'
+      /*margin:'2em',*/
     },
 
     slider:
@@ -23,6 +23,11 @@ const useStyles=makeStyles(
       slider:
       {
       width:'100%'
+      },
+
+      wrapper:
+      {
+        margin:'2em',
       }
     }
 });
