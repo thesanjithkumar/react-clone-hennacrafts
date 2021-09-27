@@ -1,0 +1,95 @@
+.border{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.137);
+}
+
+.whiteborder{
+    margin: 0 auto;
+    background-color: white;
+    border:2px solid white;
+    width: 82%;
+    height: 650px;
+}
+
+.LoginPage{
+    border: 2px solid rgba(128, 128, 128, 0.199);
+    width: 85%;
+    height: 400px;
+    margin-top:1em;
+    margin-left: 5em;
+    border-radius:10px
+}
+
+@media (max-width:1000px){
+    .LoginPage{
+        margin-left: 1.2em;
+    }
+}
+
+.control{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left:2em ;
+}
+.control label{
+    display: block;
+    font-weight: bold;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+}
+.control input,
+.control textarea{
+    display: block;
+    font: inherit;
+    border-radius: 0px;
+    border: 1px solid black;
+    width:95%;
+    height: 35px;
+    margin-top: 0.5em;
+}
+
+.rememberme{
+    font-size: 0.9em;
+    margin-left: 1.9em;
+    color: black;
+    font-weight: bold;
+}
+
+.textfield{
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-left: 3.5em;
+    margin-top: 1.5em;
+}
+
+.actions {
+ margin-top: 0.7em;
+ text-align: left;
+ margin-left: 1.9em;
+}
+
+.actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #6ead4e;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 42px;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+
+}
+
+.lostpassword{
+     margin-top: 1rem;
+     margin-left: 1.9em;
+     color: rgba(0, 128, 0, 0.603);
+     cursor: pointer;
+     font-size: 1em;
+}
+
+
+
