@@ -1,7 +1,7 @@
-import ProductItem from "./product_item";
+import ProductItem from "./ProductItem";
 import classes from './products.module.css';
-import ProductHeader from "./product_header";
-import ProductPages from './product_pages';
+import ProductHeader from "./ProductHeader";
+import ProductPages from './ProductPages';
 
 function ProductMenu(props)
 {
@@ -9,7 +9,7 @@ function ProductMenu(props)
   <div className={classes.product_container}>
     <ProductHeader/>
     <ProductItem products={props.products}/>
-    <ProductPages/>
+    <ProductPages setCurrentPage={props.setCurrentPage}/>
   </div>);
 }
 

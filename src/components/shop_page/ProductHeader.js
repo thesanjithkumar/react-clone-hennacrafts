@@ -5,6 +5,7 @@ function ProductHeader()
   <div className={classes.header}>
     <h2>Shop</h2>
     <p>Showing 1–9 of 38 results</p>
+    <div className={classes.sortdropdown}>
     <select>
     <option value="1">Default sorting</option>
     <option value="2">Sort by popularity</option>
@@ -13,6 +14,7 @@ function ProductHeader()
     <option value="5">Sort by price:low to high</option>
     <option value="6">Sort by price:high to low</option>
     </select>
+    </div>
   </div>
   );
 }
