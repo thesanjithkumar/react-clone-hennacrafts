@@ -1,4 +1,3 @@
-import ProductItem from './ProductItem';
 import classes from './products.module.css';
 
 function ProductCategory() {

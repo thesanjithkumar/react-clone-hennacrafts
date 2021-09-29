@@ -10,12 +10,14 @@ const useStyles=makeStyles(
   {
     wrapper:
     {
-      /*margin:'2em',*/
+      marginBottom:'4em',
+      marginTop:'4em',
+      marginLeft:'0.5em',
     },
 
     slider:
     {
-      width:'40%',
+      width:'100%',
       color:'grey',
       opacity:1,
       size:'medium'
@@ -26,11 +28,6 @@ const useStyles=makeStyles(
       {
       width:'100%'
       },
-
-     /* wrapper:
-      {
-        margin:'2em',
-      }*/
     }
 });
   const gfg = [
