@@ -89,26 +89,36 @@
 .rating_dropdown
 {
   border: 1px solid black;
-  width: 50%;
+  width: 55%;
   font-size: 1rem;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  background-color: white;
 }
 
 .fbr_btn
 {
   width: 100%;
   font-size: 1rem;
-  position: relative;
+  outline: none;
 }
 
 .fbr_search
 {
-  width:91%;
-  margin: 0.4em;
+  width:95%;
+  margin: 2.5%;
   font-size: 1rem;
-  background: url('../img/search.png');
+  background: url('../img/search.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center right;
+  outline: none;
+}
+
+.fbr_search:focus
+{
+  background:transparent;
 }
 
 .rating_dropdown div
@@ -119,7 +129,7 @@
 
 .rating_dropdown div:hover
 {
-  background-color: rgba(0, 0, 255, 0.863);
+  background-color: rgb(36, 138, 201);
   color: white;
 }
 .ratingarrowup {
@@ -128,6 +138,7 @@
   display: inline-block;
   padding: 3px;
   margin-top: 3px;
+  margin-left: 1px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
   position: absolute;
@@ -140,8 +151,25 @@
   display: inline-block;
   padding: 3px;
   margin-top: 3px;
+  margin-left: 1px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   position: absolute;
   right:1%;
+}
+
+
+/* Product category*/
+
+.product_category label{
+  font-size: 1rem;
+  margin-left: 0.5em;
+}
+
+/* Select Currency */
+
+.currency select 
+{
+  font-size: 1rem;
+  padding: 0.3em;
 }

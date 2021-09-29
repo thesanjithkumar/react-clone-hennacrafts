@@ -1,8 +1,11 @@
 import { colors, Slider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 import React, { useState } from "react";
+import {useContext} from 'react';
+import ProductFilterContext from './ProductFilterContext';
 
 function RangeSlider(){
+const filterctx=useContext(ProductFilterContext);
 const useStyles=makeStyles(
   {
     wrapper:
@@ -24,10 +27,10 @@ const useStyles=makeStyles(
       width:'100%'
       },
 
-      wrapper:
+     /* wrapper:
       {
         margin:'2em',
-      }
+      }*/
     }
 });
   const gfg = [
@@ -52,9 +55,10 @@ const useStyles=makeStyles(
       label: "$299",
     },
   ];
-  const [val, setVal] = useState([0,20]);
+  const [val, setVal] = useState([0,299]);
   const updateRange = (e, data) => {
     setVal(data);
+    filterctx.filterProductByPriceRange(val);
   };
   const classes=useStyles()
   return <div className={classes.wrapper}>

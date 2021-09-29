@@ -1,9 +1,12 @@
-import { Button } from '@material-ui/core';
 import classes from './products.module.css';
+import {useContext} from 'react';
+import ProductFilterContext from './ProductFilterContext';
+
 function ProductPages(props)
 {
+  const filterctx=useContext(ProductFilterContext);
   var pgs=[];
-  for(let i=1;i<=Math.ceil(16/9);i++)
+  for(let i=1;i<=Math.ceil(filterctx.totalProducts/9);i++)
   {
     pgs.push(i);
   }

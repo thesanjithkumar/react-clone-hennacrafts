@@ -1,2 +1,17 @@
+.search 
+{
+  background-color: aqua;
+  font-size: 1rem;
+  background: url('../components/img/search.jpg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  margin-top: 3em;
+  width:55%;
+  outline: none;
+}
 
-
+.search:focus
+{
+  background:transparent;
+}
