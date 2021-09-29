@@ -3,11 +3,12 @@ import classes from "./Products.module.css";
 export default function TopDiv() {
   return (
     <div className={classes.topdiv}>
+      <div className={classes.overlay}></div>
       <a href="/shop" className={classes.link}>
-        <img
+        {/* <img
           className={classes.topdivimg}
           src="https://hennacrafts.com/wp-content/uploads/2021/03/3-1.jpg"
-        />
+        /> */}
         <div className={classes.toptextdiv}>
           <h3 className={classes.topdivtitle}>
             RAW, VEGAN, CRUELTYFREE & NON GMO HAIR DYE

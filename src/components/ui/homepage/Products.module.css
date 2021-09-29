@@ -1,3 +1,7 @@
+/* * {
+  box-sizing: border-box;
+} */
+
 .strikethrough {
   text-decoration: line-through;
 }
@@ -362,16 +366,13 @@ main {
 .welcomediv {
   background-color: #e0e3d2;
   position: relative;
-  width: 97%;
+  width: 95%;
   margin: auto;
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 0px;
-  box-shadow: 5px 10px 18px #d1d1d1;
-}
-
-.welcomeimgdiv {
   margin: auto;
+  box-shadow: 5px 10px 18px #d1d1d1;
 }
 
 .welcometextdiv {
@@ -426,28 +427,107 @@ main {
 
 /* Top div */
 
-.topdiv {
-  width: 100%;
-  height: 83vh;
-  margin-top: -20px;
-  margin-bottom: 20px;
+@-webkit-keyframes zoomin {
+  0% {
+    background-size: 140%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes zoomin {
+  0% {
+    background-size: 140%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
-.topdivimg {
+.topdiv {
   width: 100%;
-  height: 83vh;
+  height: 75vh;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #833ca3;
+  background-image: url(https://hennacrafts.com/wp-content/uploads/2021/03/3-1.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+  min-width: 100%;
+  min-height: 100%;
+  transform: scale(1);
+  background-size: 120%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  -webkit-animation: zoomin 7.5s linear;
+  animation: zoomin 7.5s linear;
+  animation-fill-mode: forwards;
+  background-origin: center;
+  /* transition-duration: 7s;
+  transition-timing-function: linear; */
+  background-color: #000000ad;
+
+  align-items: flex-end;
+}
+
+.overlay {
+  background-color: #000000ad;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   position: absolute;
+  vertical-align: baseline;
+}
+
+/* .topdivimg {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  transform: scale(0.8);
   display: flex;
   filter: brightness(30%) contrast(100%) saturate(95%) blur(0px)
     hue-rotate(0deg);
   transition: all 0.2s linear;
+} */
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .toptextdiv {
   position: relative;
-  transform: translateX(-50%);
+  right: 50%;
+  color: white;
+  /* transform: translateX(-50%); */
+  /* margin: auto; */
   text-align: center;
+  /* width: auto; */
+  animation-name: fadeInUp;
+  animation-duration: 1.25s;
   max-width: 90%;
+  /* top: 70%; */
 }
 
 .topdivtitle {
@@ -565,12 +645,146 @@ main {
   background-color: #719d0f;
 }
 
+.viewblog {
+  display: flex;
+  width: 25%;
+  text-decoration: none;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px 0 20px 0;
+  border-radius: 5px;
+  line-height: 1;
+  font-size: 15px;
+  margin: auto;
+  margin-top: 80px;
+  background-color: #719d0f;
+  transition: all 0.3s ease-in-out;
+}
+
+.viewblog:hover {
+  background-color: transparent;
+  color: #719d0f;
+}
+
+.viewblog_div {
+  margin: auto;
+  width: 80%;
+}
+
 .blogbuttondiv {
+  text-align: center;
   width: 90%;
   margin: auto;
 }
 
 /* Henna Blog */
+
+/* Testimonials */
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials_heading {
+  display: inline-block;
+}
+
+.clientsay {
+  margin: auto;
+  width: auto;
+  /* display: inline-block; */
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #719d0f;
+  /* vertical-align: middle; */
+}
+
+.hr {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  margin: 0 9px 0 10px;
+  height: 1px;
+  border: 1px solid #719d0f;
+  background-color: #719d0f;
+}
+
+.br {
+  /* background-color: #719d0f; */
+  border: 1px solid #719d0f;
+  margin-top: 25px;
+  /* height: 1px; */
+  width: 30%;
+  border-radius: 5px;
+}
+
+.testimonial_name {
+  font-size: 18px;
+}
+
+.testimonials_h1 {
+  font-size: 36px;
+  margin: 0 0 25px 0;
+}
+
+.testimonial_main {
+  width: 150%;
+  height: auto;
+  /* border: 2px solid blue; */
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 140px;
+  /* transition: all 0.6s cubic-bezier(0.36, 0.245, 0.155, 0.99); */
+
+  justify-content: space-evenly;
+}
+
+.testimonial_child {
+  /* width: calc(100% / 4 - 10px); */
+  width: 30%;
+  /* height: 100%; */
+  /* transition: all 0.6s cubic-bezier(); */
+
+  height: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: ease-in-out;
+  /* border: 2px solid green; */
+  /* box-shadow: 5px 10px 18px #d1d1d1; */
+  /* display: inline-block; */
+}
+
+.testimonialscontent {
+  width: 85%;
+  font-size: 12px;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial_img {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 2px;
+}
+
+.testimonial_child:hover {
+  border-bottom: 3px solid #719d0f;
+}
+/* Testimonials */
+
+/* Test code */
 
 /* Media Quereis */
 @media (max-width: 760px) {
@@ -598,7 +812,7 @@ main {
   }
   .toptextdiv {
     top: 20%;
-    left: 50%;
+    /* left: 50%; */
   }
   .learnmore {
     font-size: 14px;
@@ -611,13 +825,39 @@ main {
   }
 }
 
+/* @media (min-width: 1010px) {
+  .toptextdiv {
+    top: 0%;
+  }
+} */
+
+/* @media (max-width: 1040px) {
+    .toptextdiv {
+      top: 50%;
+    }
+  } */
+
 @media (min-width: 761px) {
   .toptextdiv {
-    top: 60%;
-    left: 50%;
+    top: 55%;
+    left: 7%;
   }
   .learnmore {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .toptextdiv {
+    transform: translateX(60%);
+    animation: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .topdiv {
+    animation: none;
+    background-size: cover;
   }
 }
 
