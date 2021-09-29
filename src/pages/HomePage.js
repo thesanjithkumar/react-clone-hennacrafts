@@ -3,6 +3,7 @@ import EssentailsCombo from "../components/ui/homepage/EssentailsCombo";
 import FacepackPowder from "../components/ui/homepage/FacepackPowder";
 import HennaBlog from "../components/ui/homepage/HennaBlog";
 import HennaIndigo from "../components/ui/homepage/HennaIndigo";
+import Testimonials from "../components/ui/homepage/Testimonials";
 import TopDiv from "../components/ui/homepage/TopDiv";
 import WelcomeDiv from "../components/ui/homepage/WelcomeDiv";
 import classes from "./HomePage.module.css";
@@ -50,6 +51,9 @@ function HomePage() {
       </div>
       <HennaBlog />
       {/* Henna Blog */}
+      {/* Testimonials */}
+      <Testimonials />
+      {/* Testimonials */}
     </main>
   );
 }
