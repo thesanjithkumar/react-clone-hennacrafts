@@ -4,17 +4,6 @@ import { useState } from "react";
 import "./ProductsSection.css";
 
 export default function HennaIndigo() {
-  // const [color, setColor] = useState({ color: "#000000" });
-
-  // const setStyle = (color) => {
-  //   setColor(color);
-  // };
-
-  // function tab() {
-  //   if (color == "#000000") setColor({ color: "#719d0f" });
-  //   else setColor({ color: "#000000" });
-  // }
-
   function hover_henna() {
     var ele = document.getElementById("product_henna");
     ele.setAttribute(
@@ -67,13 +56,13 @@ export default function HennaIndigo() {
   const [isActive2, setActive2] = useState(false);
 
   const handleToggle1 = () => {
-    setActive1(!isActive1);
+    setActive1(true);
     setActive2(false);
   };
 
   const handleToggle2 = () => {
     setActive1(false);
-    setActive2(!isActive2);
+    setActive2(true);
   };
   return (
     <Tabs>
