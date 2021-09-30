@@ -5,7 +5,8 @@ var prod_info=[
       hoverimg:'none',
       category:'Uncategorized',
       title:'HENNA HAIR DYE - RED BUNDLE WITH SHAMPOO & CONDITIONER',
-      price:53.00
+      price:53.00,
+      rating:4
     },
 
     {
@@ -13,7 +14,8 @@ var prod_info=[
       hoverimg:'none',
       category:'Uncategorized',
       title:'USDA ORGANIC ESSENTIAL OILS COMBO',
-      price:29.00
+      price:29.00,
+      rating:3
     },
 
     //Combo
@@ -22,7 +24,8 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2020/12/henna-back-600x600.jpg',
       category:'Combo',
       title:'NAYAB NATURAL ORGANIC HAIR CARE HENNA POWDER PACK OF 3 WITH KIT (GLOVES+SHOWER CAP+SPOON+BRUSH+VACUUM PACK)',
-      price:100.00
+      price:100.00,
+      rating:5
     },
 
     {
@@ -30,7 +33,8 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2020/12/h1.jpg',
       category:'Combo',
       title:'Nayab Organic Hair Care Henna 100gms + Essential Oil Combo (Eucalyptus + Henna Mix)',
-      price:249.00
+      price:249.00,
+      rating:2
     },
 
     //Essential oil
@@ -39,7 +43,8 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2020/12/t4.jpg',
       category:'Essential oil',
       title:'Eucalyptus Essential Oil',
-      price:119.00
+      price:119.00,
+      rating:1
     },
 
     {
@@ -47,7 +52,8 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2020/12/h4.jpg',
       category:'Essential oil',
       title:'NAYAB Tea Tree Essential Oil, 100% Natural & Pure, for Acne, Pimples, Scars, Skin, Face, Hair care & Dandruff – 10ml.',
-      price:119.00
+      price:119.00,
+      rating:4
     },
 
     //Face pack
@@ -56,7 +62,8 @@ var prod_info=[
   hoverimg:'https://hennacrafts.com/wp-content/uploads/2021/02/arabica_coffee_2.jpg',
   category:'Face pack',
   title:'Aloe vera face pack',
-  price:0.00
+  price:0.00,
+  rating:4
     },
 
     {
@@ -64,7 +71,8 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2021/02/front_view_open_led_400x_2.jpg',
       category:'Face pack',
       title:'Amba Haldi face pack',
-      price:0.00
+      price:0.00,
+      rating:3
     },
 
 
@@ -74,7 +82,8 @@ var prod_info=[
       hoverimg:'none',
       category:'Henna',
       title:'7 TIME FILTER ORGANIC HENNA FOR BODY ART',
-      price:0.00
+      price:0.00,
+      rating:2
     },
 
     {
@@ -82,7 +91,8 @@ var prod_info=[
       hoverimg:'none',
       category:'Henna',
       title:'AMBA HALDI FACE PACK',
-      price:50.00
+      price:50.00,
+      rating:4
     },
 
     //Indigo
@@ -91,7 +101,9 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2020/12/indigo-benefits.jpg',
       category:'Indigo',
       title:'NAYAB Natural Organic Hair Care Henna Powder and Indigo Powder Pack of 2 100 grams',
-      price:179.00
+      price:179.00,
+      rating:4
+
     },
 
     {
@@ -99,7 +111,8 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2020/12/indigo-back-600x600.jpg',
       category:'Indigo',
       title:'NAYAB Natural Organic Hair Care Indigo Powder Pack of 3 with Kit (Gloves+Shower Cap+Spoon+Brush+Vacuum Pack)',
-      price:249.00
+      price:249.00,
+      rating:4
     },
 
     //Powder
@@ -109,7 +122,8 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2021/02/bhringraj-back-600x600.jpg',
       category:'Powder',
       title:'Bhringraj Powder',
-      price:0.00
+      price:0.00,
+      rating:4
     },
 
     {
@@ -117,7 +131,8 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2021/02/blackish-brown-back-600x600.jpg',
       category:'Powder',
       title:'Blackish brown henna',
-      price:0.00
+      price:0.00,
+      rating:4
     },
     
 ]

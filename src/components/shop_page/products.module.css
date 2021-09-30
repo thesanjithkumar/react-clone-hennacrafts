@@ -125,6 +125,9 @@
   background-color: rgb(36, 138, 201);
   color: white;
 }
+
+
+
 .ratingarrowup {
   border: solid black;
   border-width: 0 2px 2px 0;
@@ -174,6 +177,18 @@
 .currency
 {
   margin-bottom: 3em;
+}
+
+
+
+.cross
+{
+  color: red;
+}
+
+.cross_ctn
+{
+  cursor: pointer;
 }
 
 
