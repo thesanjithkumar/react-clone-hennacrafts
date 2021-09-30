@@ -327,7 +327,7 @@ main {
 
 .toptextdiv {
   position: relative;
-  right: 50%;
+  /* right: 55%; */
   color: white;
   /* transform: translateX(-50%); */
   /* margin: auto; */
@@ -621,7 +621,10 @@ main {
   }
   .toptextdiv {
     top: 20%;
-    /* left: 50%; */
+    right: 47%;
+  }
+  .topdiv {
+    height: 55vh;
   }
   .learnmore {
     font-size: 14px;
@@ -634,11 +637,11 @@ main {
   }
 }
 
-/* @media (min-width: 1010px) {
-  .toptextdiv {
-    top: 0%;
+@media (max-width: 850px) {
+  .topdiv {
+    animation: none;
   }
-} */
+}
 
 /* @media (max-width: 1040px) {
     .toptextdiv {
@@ -649,7 +652,7 @@ main {
 @media (min-width: 761px) {
   .toptextdiv {
     top: 55%;
-    left: 7%;
+    left: 5.6%;
   }
   .learnmore {
     font-size: 20px;

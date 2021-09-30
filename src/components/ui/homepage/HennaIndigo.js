@@ -56,13 +56,13 @@ export default function HennaIndigo() {
   const [isActive2, setActive2] = useState(false);
 
   const handleToggle1 = () => {
-    setActive1(!isActive1);
+    setActive1(true);
     setActive2(false);
   };
 
   const handleToggle2 = () => {
     setActive1(false);
-    setActive2(!isActive2);
+    setActive2(true);
   };
   return (
     <Tabs>

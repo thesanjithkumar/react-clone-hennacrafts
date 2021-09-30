@@ -88,16 +88,16 @@ export default function Card() {
   const [isActive2, setActive2] = useState(false);
 
   const handleToggle1 = () => {
-    setActive1(!isActive1);
+    setActive1(true);
     setActive2(false);
   };
 
   const handleToggle2 = () => {
     setActive1(false);
-    setActive2(!isActive2);
+    setActive2(true);
   };
 
-  console.log(isActive1, isActive2);
+  // console.log(isActive1, isActive2);
   return (
     <main>
       <Tabs>
