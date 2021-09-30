@@ -1,5 +1,7 @@
-import classes from "./Products.module.css";
+// import classes from "./Products.module.css";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { useState } from "react";
+import "./ProductsSection.css";
 
 export default function FacepackPowder() {
   function hover_facepack1() {
@@ -112,34 +114,49 @@ export default function FacepackPowder() {
     );
   }
 
+  const [isActive1, setActive1] = useState(true);
+  const [isActive2, setActive2] = useState(false);
+
+  const handleToggle1 = () => {
+    setActive1(!isActive1);
+    setActive2(false);
+  };
+
+  const handleToggle2 = () => {
+    setActive1(false);
+    setActive2(!isActive2);
+  };
+
   return (
     <Tabs>
-      <div className={classes.products}>
-        <TabList className={classes.tablist}>
-          <div className={classes.product_heading_div}>
-            <Tab className={classes.tab_title}>
-              <h1 id="henna" className={classes.product_heading}>
+      <div className="products">
+        <TabList className="tablist">
+          <div className="product_heading_div">
+            <Tab className="tab_title">
+              <h1 id="henna" className="product_heading">
                 <button
                   // href="#content-1-tab"
                   // data-ekit-toggle="tab"
                   // aria-controls="content-1"
                   // role="tab"
                   // data-ekit-toggle="tab"
-                  className={classes.product_heading}
+                  className={`product_heading ${isActive1 ? "green" : ""}`}
+                  onClick={handleToggle1}
                 >
                   FACE PACK
                 </button>
               </h1>
             </Tab>
-            <Tab className={classes.tab_title}>
-              <h1 id="indigo" className={classes.product_heading}>
+            <Tab className="tab_title">
+              <h1 id="indigo" className="product_heading">
                 <button
                   // href="#content-1-tab"
                   // data-ekit-toggle="tab"
                   // aria-controls="content-1"
                   // role="tab"
                   // data-ekit-toggle="tab"
-                  className={classes.product_heading}
+                  className={`product_heading ${isActive2 ? "green" : ""}`}
+                  onClick={handleToggle2}
                 >
                   POWDER
                 </button>
@@ -149,118 +166,118 @@ export default function FacepackPowder() {
         </TabList>
         <TabPanel>
           <a href="">
-            <div className={classes.product_card}>
+            <div className="product_card">
               <img
                 id="product_facepack1"
                 onMouseEnter={hover_facepack1}
                 onMouseLeave={unhover_facepack1}
-                className={classes.product_image}
+                className="product_image"
                 src="https://hennacrafts.com/wp-content/uploads/2021/02/minty_walnut_400x.jpg"
               />
               <p>Face Pack</p>
-              <h3 className={classes.product_name}>Aloe vera face pack</h3>
+              <h3 className="product_anme">Aloe vera face pack</h3>
               <p>$0.00</p>
             </div>
           </a>
           <a href="">
-            <div className={classes.product_card}>
+            <div className="product_card">
               <img
                 id="product_facepack2"
                 onMouseEnter={hover_facepack2}
                 onMouseLeave={unhover_facepack2}
-                className={classes.product_image}
+                className="product_image"
                 src="https://hennacrafts.com/wp-content/uploads/2021/02/front_view_open_led_400x.jpg"
               />
               <p>Face pack</p>
-              <h3 className={classes.product_name}>Ambba Haldi face pack</h3>
+              <h3 className="product_anme">Ambba Haldi face pack</h3>
               <p>$0.00</p>
             </div>
           </a>
           <a href="">
-            <div className={classes.product_card}>
+            <div className="product_card">
               <img
                 id="product_facepack3"
                 onMouseEnter={hover_facepack3}
                 onMouseLeave={unhover_facepack3}
-                className={classes.product_image}
+                className="product_image"
                 src="https://hennacrafts.com/wp-content/uploads/2021/02/arabica_coffee_400x.jpg"
               />
               <p>Face Pack</p>
-              <h3 className={classes.product_name}>Chandan face pack</h3>
+              <h3 className="product_anme">Chandan face pack</h3>
               <p>$0.00</p>
             </div>
           </a>
           <a href="">
-            <div className={classes.product_card}>
+            <div className="product_card">
               <img
-                className={classes.product_image}
+                className="product_image"
                 src="https://hennacrafts.com/wp-content/uploads/2021/02/red-henna-600x600.jpg"
               />
               <p>Face Pack</p>
-              <h3 className={classes.product_name}>Hibiscus face pack</h3>
+              <h3 className="product_anme">Hibiscus face pack</h3>
               <p>0.00</p>
             </div>
           </a>
         </TabPanel>
         <TabPanel>
           <a href="">
-            <div className={classes.product_card}>
+            <div className="product_card">
               <img
                 id="product_powder1"
                 onMouseEnter={hover_powder1}
                 onMouseLeave={unhover_powder1}
-                className={classes.product_image}
+                className="product_image"
                 src="https://hennacrafts.com/wp-content/uploads/2021/02/bhringraj-600x600.jpg"
               />
               <p>Face Pack</p>
-              <h3 className={classes.product_name}>Aloe vera face pack</h3>
+              <h3 className="product_anme">Aloe vera face pack</h3>
               <p>$0.00</p>
             </div>
           </a>
           <a href="">
-            <div className={classes.product_card}>
+            <div className="product_card">
               <img
                 id="product_powder2"
                 onMouseEnter={hover_powder2}
                 onMouseLeave={unhover_powder2}
-                className={classes.product_image}
+                className="product_image"
                 src="https://hennacrafts.com/wp-content/uploads/2021/02/blackish-brown-with-kit-600x600.jpg"
               />
               <p>Face pack</p>
-              <h3 className={classes.product_name}>Ambba Haldi face pack</h3>
+              <h3 className="product_anme">Ambba Haldi face pack</h3>
               <p>$0.00</p>
             </div>
           </a>
           <a href="">
-            <div className={classes.product_card}>
+            <div className="product_card">
               <img
                 id="product_powder3"
                 onMouseEnter={hover_powder3}
                 onMouseLeave={unhover_powder3}
-                className={classes.product_image}
+                className="product_image"
                 src="https://hennacrafts.com/wp-content/uploads/2021/02/brahmi-powder-with-kit.jpg"
               />
               <p>Face Pack</p>
-              <h3 className={classes.product_name}>Chandan face pack</h3>
+              <h3 className="product_anme">Chandan face pack</h3>
               <p>$0.00</p>
             </div>
           </a>
           <a href="">
-            <div className={classes.product_card}>
+            <div className="product_card">
               <img
                 id="product_powder4"
                 onMouseEnter={hover_powder4}
                 onMouseLeave={unhover_powder4}
-                className={classes.product_image}
+                className="product_image"
                 src="https://hennacrafts.com/wp-content/uploads/2021/02/dark-brown.jpg"
               />
               <p>Face Pack</p>
-              <h3 className={classes.product_name}>Chandan face pack</h3>
+              <h3 className="product_anme">Chandan face pack</h3>
               <p>$0.00</p>
             </div>
           </a>
         </TabPanel>
-        <a href="/shop" className={classes.product_button}>
+        <a href="/shop" className="product_button">
           View All Products
         </a>
       </div>
