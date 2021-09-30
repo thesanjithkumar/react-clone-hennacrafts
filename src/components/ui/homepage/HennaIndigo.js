@@ -4,17 +4,6 @@ import { useState } from "react";
 import "./ProductsSection.css";
 
 export default function HennaIndigo() {
-  // const [color, setColor] = useState({ color: "#000000" });
-
-  // const setStyle = (color) => {
-  //   setColor(color);
-  // };
-
-  // function tab() {
-  //   if (color == "#000000") setColor({ color: "#719d0f" });
-  //   else setColor({ color: "#000000" });
-  // }
-
   function hover_henna() {
     var ele = document.getElementById("product_henna");
     ele.setAttribute(
