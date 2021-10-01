@@ -10,23 +10,49 @@ const ProductFilterContext = createContext({
   filterByCategoryApplied:'',
   resetFilter:()=>{},
   sortProducts:()=>{},
-  UStoCanadianDollar:false,
-  UStoCanadianDollarHandler:()=>{}
+  sliderRange:[]
 });
 
 export function ProductFilterContextProvider(props) {
   const [filteredProducts, setFilteredProducts] = useState(prod_info);
   const [ftrbycategory,setFilterByCategory]=useState('none');
   const [UStoCanadian,setUStoCanadian]=useState(false);
+  const [sliderval,setSliderVal]=useState([0,299]);
+
+  function findMin()
+  {
+    //console.log("prod:")
+    console.log(filteredProducts)
+    var min=filteredProducts[0].price;
+    for(let i=1;i<filteredProducts.length;i++)
+    {
+      if(filteredProducts[i].price<min)
+         min=filteredProducts[i].price;
+    }
+    return min;
+  }
+
+  function findMax()
+  {
+    var max=filteredProducts[0].price;
+    for(let i=1;i<filteredProducts.length;i++)
+    {
+      if(filteredProducts[i].price>max)
+         max=filteredProducts[i].price;
+    }
+    return max;
+  }
 
   function filterByProductCategoryHandler(category_val) {
-    setFilterByCategory(category_val)
-    setFilteredProducts(() => {
-      return prod_info.filter((item)=>{
-        return item.category==category_val}
-        )
-    });
-  }
+      setFilterByCategory(category_val)
+      setFilteredProducts(() => {
+        return prod_info.filter((item) => {
+          return item.category == category_val;
+        }
+        );
+      });
+    }
+    setSliderVal([findMin(),findMax()]);
 
   function filterByPriceRangeHandler(price_range) {
     setFilteredProducts(() => {
@@ -40,6 +66,7 @@ export function ProductFilterContextProvider(props) {
       return prod_info.filter((item)=>{
         return item.rating>=rating_range[0] && item.rating<=rating_range[1]})
     }); 
+   // setSliderVal([findMin(),findMax()]);
   }
 
   function sortProductsHandler()
@@ -91,9 +118,11 @@ export function ProductFilterContextProvider(props) {
     setFilteredProducts(prod_info);
     document.getElementById(ftrbycategory).checked=false;
     setFilterByCategory('none');
+    setSliderVal([0,299])
   }
 
-  
+  //console.log("fil ",filteredProducts)
+
   const context = {
     products:filteredProducts,
     totalProducts: filteredProducts.length,
@@ -104,7 +133,8 @@ export function ProductFilterContextProvider(props) {
     resetFilter:resetFilters,
     sortProducts:sortProductsHandler,
     UStoCanadianDollar:UStoCanadian,
-    UStoCanadianDollarHandler:dollarConversion
+    UStoCanadianDollarHandler:dollarConversion,
+    sliderRange:sliderval
   };
 
   return (

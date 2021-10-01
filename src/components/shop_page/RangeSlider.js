@@ -6,6 +6,9 @@ import ProductFilterContext from './ProductFilterContext';
 
 function RangeSlider() {
   const filterctx = useContext(ProductFilterContext);
+  //console.log(filterctx.sliderRange)
+  var rangestep = Math.round((filterctx.sliderRange[1] - filterctx.sliderRange[0]) / 4);
+  //console.log(rangestep)
   const useStyles = makeStyles(
     {
       wrapper:
@@ -32,27 +35,27 @@ function RangeSlider() {
     });
   const gfg = [
     {
-      value: 0,
-      label: "$0",
+      value: filterctx.sliderRange[0] + (0 * rangestep),
+      label: `$${filterctx.sliderRange[0] + (0 * rangestep)}`,
     },
     {
-      value: 75,
-      label: "$75",
+      value: filterctx.sliderRange[0] + (1 * rangestep),
+      label: `$${filterctx.sliderRange[0] + (1 * rangestep)}`,
     },
     {
-      value: 150,
-      label: "$150",
+      value: filterctx.sliderRange[0] + (2 * rangestep),
+      label: `$${filterctx.sliderRange[0] + (2 * rangestep)}`,
     },
     {
-      value: 224,
-      label: "$224",
+      value: filterctx.sliderRange[0] + (3 * rangestep),
+      label: `$${filterctx.sliderRange[0] + (3 * rangestep)}`,
     },
     {
-      value: 299,
-      label: "$299",
+      value: filterctx.sliderRange[0] + (4 * rangestep),
+      label: `$${filterctx.sliderRange[0] + (4 * rangestep)}`,
     },
   ];
-  const [val, setVal] = useState([0, 299]);
+  const [val, setVal] = useState(filterctx.sliderRange);
   const updateRange = (e, data) => {
     setVal(data);
   };
@@ -60,7 +63,7 @@ function RangeSlider() {
   const classes = useStyles()
   return <div className={classes.wrapper}>
     <Slider value={val} onChange={updateRange} onMouseUp={() => { filterctx.filterProductByPriceRange(val) }} marks={gfg}
-      step={15} max={300} valueLabelDisplay="on" className={classes.slider} />
+      step={15} max={filterctx.sliderRange[1]} valueLabelDisplay="on" className={classes.slider} k />
   </div>
 }
 
