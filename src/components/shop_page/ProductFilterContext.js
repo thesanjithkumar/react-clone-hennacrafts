@@ -139,10 +139,20 @@ export function ProductFilterContextProvider(props) {
       setUStoCanadian(false);
   }
 
-  /*function allFiltersHandler({category_val,rating_range}={})
+  /*function allFiltersHandler()
   {
     if(appliedFilter['category']!='none')
     {
+      var category_val;
+      if(document.getElementById("Uncategorized").checked)
+            category_val="Uncategorized"
+      else if(document.getElementById("Uncategorized").checked)
+             category_val="Uncategorized"
+      else if(document.getElementById("Uncategorized").checked)
+             category_val="Uncategorized"
+      else if(document.getElementById("Uncategorized").checked)
+             category_val="Uncategorized"
+      
       filterByProductCategoryHandler(category_val)
     }
     else if(appliedFilter['rating']!='none')
