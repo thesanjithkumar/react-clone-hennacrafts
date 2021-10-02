@@ -25,6 +25,7 @@ function RangeSlider() {
         opacity: 1,
         size: 'medium'
       },
+
       ['@media (max-width:768px)']:
       {
         slider:
@@ -35,26 +36,34 @@ function RangeSlider() {
     });
   const gfg = [
     {
-      value: filterctx.sliderRange[0] + (0 * rangestep),
-      label: `$${filterctx.sliderRange[0] + (0 * rangestep)}`,
+      value:filterctx.UStoCanadianDollar?Math.ceil((filterctx.sliderRange[0] + (0 * rangestep))*1.27):filterctx.sliderRange[0] + (0 * rangestep),
+      label: filterctx.UStoCanadianDollar?`C${Math.ceil((filterctx.sliderRange[0] + (0 * rangestep))*1.27)}`:`$${filterctx.sliderRange[0] + (0 * rangestep)}`,
     },
     {
-      value: filterctx.sliderRange[0] + (1 * rangestep),
-      label: `$${filterctx.sliderRange[0] + (1 * rangestep)}`,
+      value: filterctx.UStoCanadianDollar?Math.ceil((filterctx.sliderRange[0] + (1 * rangestep))*1.27):filterctx.sliderRange[0] + (1 * rangestep),
+      label: filterctx.UStoCanadianDollar?`C${Math.ceil((filterctx.sliderRange[0] + (1 * rangestep))*1.27)}`:`$${filterctx.sliderRange[0] + (1 * rangestep)}`,
     },
     {
-      value: filterctx.sliderRange[0] + (2 * rangestep),
-      label: `$${filterctx.sliderRange[0] + (2 * rangestep)}`,
+      value: filterctx.UStoCanadianDollar?Math.ceil((filterctx.sliderRange[0] + (2 * rangestep))*1.27):filterctx.sliderRange[0] + (2 * rangestep),
+      label: filterctx.UStoCanadianDollar?`C${Math.ceil((filterctx.sliderRange[0] + (2 * rangestep))*1.27)}`:`$${filterctx.sliderRange[0] + (2 * rangestep)}`,
     },
     {
-      value: filterctx.sliderRange[0] + (3 * rangestep),
-      label: `$${filterctx.sliderRange[0] + (3 * rangestep)}`,
+      value: filterctx.UStoCanadianDollar?Math.ceil((filterctx.sliderRange[0] + (3 * rangestep))*1.27):filterctx.sliderRange[0] + (3 * rangestep),
+      label: filterctx.UStoCanadianDollar?`C${(Math.ceil(filterctx.sliderRange[0] + (3 * rangestep))*1.27)}`:`$${filterctx.sliderRange[0] + (3 * rangestep)}`,
     },
+   /* {
+      value: filterctx.UStoCanadianDollar?(filterctx.sliderRange[0] + (4 * rangestep))*1.27:filterctx.sliderRange[0] + (4 * rangestep),
+      label: filterctx.UStoCanadianDollar?`C$${(filterctx.sliderRange[0] + (4 * rangestep))*1.27}`:`$${filterctx.sliderRange[0] + (4 * rangestep)}`,
+    },*/
     {
-      value: filterctx.sliderRange[0] + (4 * rangestep),
-      label: `$${filterctx.sliderRange[0] + (4 * rangestep)}`,
-    },
+      value:filterctx.UStoCanadianDollar?Math.ceil((filterctx.sliderRange[1]*1.27)):(filterctx.sliderRange[1]),
+      label:filterctx.UStoCanadianDollar?`C${Math.ceil((filterctx.sliderRange[1]*1.27))}`:`$${filterctx.sliderRange[1]}`
+    }
   ];
+
+  
+
+
   const [val, setVal] = useState(filterctx.sliderRange);
   const updateRange = (e, data) => {
     setVal(data);
@@ -63,7 +72,7 @@ function RangeSlider() {
   const classes = useStyles()
   return <div className={classes.wrapper}>
     <Slider value={val} onChange={updateRange} onMouseUp={() => { filterctx.filterProductByPriceRange(val) }} marks={gfg}
-      step={15} max={filterctx.sliderRange[1]} valueLabelDisplay="on" className={classes.slider} k />
+      step={15} min={filterctx.UStoCanadianDollar?(Math.ceil(filterctx.sliderRange[0]*1.27)):(filterctx.sliderRange[0])} max={filterctx.UStoCanadianDollar?(Math.ceil(filterctx.sliderRange[1]*1.27)):(filterctx.sliderRange[1])} valueLabelDisplay="on" className={classes.slider} />
   </div>
 }
 

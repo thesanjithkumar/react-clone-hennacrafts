@@ -3,13 +3,20 @@ import {useContext} from 'react';
 import ProductFilterContext from './ProductFilterContext';
 import {FaRegTimesCircle} from 'react-icons/fa';
 
+//{filterctx.filterByCategoryApplied!='none' && <p><span>{filterctx.filterByCategoryApplied}</span> <span className={classes.cross_ctn}><FaRegTimesCircle onClick={filterctx.resetFilter} className={classes.cross}/></span></p>}
+/*
+
+*/
 function ProductHeader()
 {
   const filterctx=useContext(ProductFilterContext);
-  return (     
+  return (
   <div className={classes.header}>
     <h2>Shop</h2>
-    {filterctx.filterByCategoryApplied!='none' && <p><span>{filterctx.filterByCategoryApplied}</span> <span className={classes.cross_ctn}><FaRegTimesCircle onClick={filterctx.resetFilter} className={classes.cross}/></span></p>}
+    {Object.keys(filterctx.filterApplied).map((filter_name)=>{
+      return filterctx.filterApplied[filter_name]!='none'?<span>{filterctx.filterApplied[filter_name]}<span className={classes.cross_ctn}><FaRegTimesCircle onClick={()=>{filterctx.resetFilter(filter_name)}} className={classes.cross}/></span></span>:<span></span>
+    }
+    )}
     <p>Showing all {filterctx.products.length} results</p>
     <div className={classes.sortdropdown}>
     <select id="sortingdropdown" onChange={filterctx.sortProducts}>

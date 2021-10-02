@@ -24,7 +24,7 @@ function FilterByRating()
   }
   return (
     <div className={classes.rating_dropdown}>
-    <button type='button' onClick={ratingDropdown} className={classes.fbr_btn}>{filterval}<span className={rating_dropdown?classes.ratingarrowup:classes.ratingarrowdown}></span></button>
+    <button type='button'  onClick={ratingDropdown} className={classes.fbr_btn}><span id="rating_btn_val">{filterval}</span><span className={rating_dropdown?classes.ratingarrowup:classes.ratingarrowdown}></span></button>
     {rating_dropdown && <input type='search' placeholder='Search products...' className={classes.fbr_search}/>}
     {rating_dropdown && <div  onClick={()=>{FilterVal("Filter by rating",[1,5])}}>Filter by rating</div> }
     {rating_dropdown && <div  onClick={()=>{FilterVal("average rating between 4 and 5",[4,5])}}>average rating between 4 and 5</div>}

@@ -52,7 +52,7 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2020/12/h4.jpg',
       category:'Essential oil',
       title:'NAYAB Tea Tree Essential Oil, 100% Natural & Pure, for Acne, Pimples, Scars, Skin, Face, Hair care & Dandruff – 10ml.',
-      price:119.00,
+      price:219.00,
       rating:4
     },
 
@@ -71,7 +71,7 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2021/02/front_view_open_led_400x_2.jpg',
       category:'Face pack',
       title:'Amba Haldi face pack',
-      price:0.00,
+      price:30.00,
       rating:3
     },
 
@@ -111,7 +111,7 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2020/12/indigo-back-600x600.jpg',
       category:'Indigo',
       title:'NAYAB Natural Organic Hair Care Indigo Powder Pack of 3 with Kit (Gloves+Shower Cap+Spoon+Brush+Vacuum Pack)',
-      price:249.00,
+      price:270.00,
       rating:4
     },
 
@@ -131,7 +131,7 @@ var prod_info=[
       hoverimg:'https://hennacrafts.com/wp-content/uploads/2021/02/blackish-brown-back-600x600.jpg',
       category:'Powder',
       title:'Blackish brown henna',
-      price:0.00,
+      price:100.00,
       rating:4
     },
     
