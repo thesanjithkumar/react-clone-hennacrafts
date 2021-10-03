@@ -2,26 +2,9 @@
   box-sizing: border-box;
 } */
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
 main {
   margin-bottom: 100px;
+  z-index: -1;
 }
 .card1 {
   background-image: url("./img/top_div1.jpg");
@@ -257,6 +240,7 @@ main {
   width: 100%;
   height: 75vh;
   margin-top: -20px;
+  object-fit: cover;
   margin-bottom: 20px;
   overflow: hidden;
   background-color: #833ca3;
@@ -286,6 +270,7 @@ main {
   background-color: #000000ad;
   height: 100%;
   width: 100%;
+  object-fit: cover;
   top: 0;
   left: 0;
   position: absolute;
@@ -545,7 +530,7 @@ main {
   /* border: 2px solid blue; */
   overflow: hidden;
   display: flex;
-  margin-bottom: 140px;
+  margin-bottom: 170px;
   /* transition: all 0.6s cubic-bezier(0.36, 0.245, 0.155, 0.99); */
 
   justify-content: space-evenly;
@@ -589,8 +574,18 @@ main {
 }
 
 .testimonial_child:hover {
-  border-bottom: 3px solid #719d0f;
+  border-bottom: 3.5px solid #719d0f;
 }
+
+.quotes {
+  background-color: transparent;
+  width: 60px;
+  margin-left: -20px;
+  margin-top: -20px;
+  height: auto;
+  position: absolute;
+}
+
 /* Testimonials */
 
 /* Test code */
@@ -663,6 +658,9 @@ main {
   .toptextdiv {
     transform: translateX(60%);
     animation: none;
+  }
+  .viewblog {
+    font-size: 1px;
   }
 }
 

@@ -1,6 +1,8 @@
 import classes from "./Products.module.css";
 import $ from "jquery";
 import { Carousel } from "@trendyol-js/react-carousel";
+import { GoQuote } from "react-icons/go";
+import quote_icon from "./img/quotes_icon.png";
 
 export default function Testimonials() {
   $("#slideshow > div:gt(0)").hide();
@@ -33,9 +35,10 @@ export default function Testimonials() {
       <div
         className={classes.testimonial_main}
         id="slideshow"
-        onMouseEnter={stopSlide}
+        // onMouseEnter={stopSlide}
       >
         <div className={classes.testimonial_child}>
+          <img src={quote_icon} className={classes.quotes} />
           <img
             className={classes.testimonial_img}
             src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.11.33-AM.jpeg"
@@ -51,6 +54,7 @@ export default function Testimonials() {
           <p className={classes.testimonial_name}>Testimonial #3</p>
         </div>
         <div className={classes.testimonial_child}>
+          <img src={quote_icon} className={classes.quotes} />
           <img
             className={classes.testimonial_img}
             src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.12.20-AM.jpeg"
@@ -66,6 +70,7 @@ export default function Testimonials() {
           <p className={classes.testimonial_name}>Testimonial #3</p>
         </div>
         <div className={classes.testimonial_child}>
+          <img src={quote_icon} className={classes.quotes} />
           <img
             className={classes.testimonial_img}
             src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.11.59-AM.jpeg"
@@ -81,6 +86,7 @@ export default function Testimonials() {
           <p className={classes.testimonial_name}>Testimonial #3</p>
         </div>
         <div className={classes.testimonial_child}>
+          <img src={quote_icon} className={classes.quotes} />
           <img
             className={classes.testimonial_img}
             src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.12.32-AM.jpeg"
@@ -96,6 +102,7 @@ export default function Testimonials() {
           <p className={classes.testimonial_name}>Testimonial #3</p>
         </div>
         <div className={classes.testimonial_child}>
+          <img src={quote_icon} className={classes.quotes} />
           <img
             className={classes.testimonial_img}
             src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.01.38-AM.jpeg"
@@ -111,6 +118,7 @@ export default function Testimonials() {
           <p className={classes.testimonial_name}>Christine P</p>
         </div>
         <div className={classes.testimonial_child}>
+          <img src={quote_icon} className={classes.quotes} />
           <img
             className={classes.testimonial_img}
             src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.12.45-AM.jpeg"
