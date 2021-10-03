@@ -1,4 +1,5 @@
 import CardDiv from "../components/ui/homepage/CardDiv.";
+import "../components/ui/homepage/ChatModal/ChatModal.css";
 import EssentailsCombo from "../components/ui/homepage/EssentailsCombo";
 import FacepackPowder from "../components/ui/homepage/FacepackPowder";
 import HennaBlog from "../components/ui/homepage/HennaBlog";
@@ -26,7 +27,7 @@ function HomePage() {
   // }
 
   return (
-    <main>
+    <main className={classes.main}>
       {/* topdiv */}
       <TopDiv />
       {/* topdiv */}

@@ -1,7 +1,11 @@
-
 .blog_headingdiv {
   text-align: center;
   font-size: 34px;
   margin-top: 80px;
   color: #719d0f;
+}
+
+.main {
+  z-index: 1;
+  width: 100%;
 }
