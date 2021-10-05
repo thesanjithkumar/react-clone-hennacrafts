@@ -24,12 +24,13 @@ function ShopPageContainer() {
   
   var last_item=currentpage*9;
   var first_item=last_item-9;
-  var product_info=filterctx.products.slice(first_item,last_item);
-
+  var prod_items=filterctx.products[filterctx.products.length-1]
+  //var product_info=filterctx.products[filterctx.products.length-1].slice(first_item,last_item);
+  var product_info=prod_items.slice(first_item,last_item);
   return (
   <div className={classes.wrapper}>
     <div className={classes.product}>
-      <ProductMenu products={product_info} setCurrentPage={CurrentPage} />
+      <ProductMenu products={product_info} setCurrentPage={CurrentPage} curpage={currentpage}/>
     </div>
     <div className={classes.filter}>
       <h2>Products Filter</h2>

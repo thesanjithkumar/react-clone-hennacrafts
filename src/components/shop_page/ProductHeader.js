@@ -17,7 +17,7 @@ function ProductHeader()
       return filterctx.filterApplied[filter_name]!='none'?<span>{filterctx.filterApplied[filter_name]}<span className={classes.cross_ctn}><FaRegTimesCircle onClick={()=>{filterctx.resetFilter(filter_name)}} className={classes.cross}/></span></span>:<span></span>
     }
     )}
-    <p>Showing all {filterctx.products.length} results</p>
+    <p>Showing all {filterctx.products[filterctx.products.length-1].length} results</p>
     <div className={classes.sortdropdown}>
     <select id="sortingdropdown" onChange={filterctx.sortProducts}>
     <option id="defaultsort" value="1">Default sorting</option>

@@ -71,6 +71,12 @@
   cursor: pointer;
 }
 
+#curpage
+{
+  background-color: #239023;
+  color: white;
+}
+
 /* Filter by rating */
 
 .fbr_btn,.fbr_search

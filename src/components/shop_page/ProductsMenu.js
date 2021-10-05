@@ -21,7 +21,7 @@ function ProductMenu(props) {
     <div className={classes.product_container} id={styles[id]}>
       <ProductHeader />
       <ProductItem products={props.products} />
-      <ProductPages setCurrentPage={props.setCurrentPage} />
+      <ProductPages setCurrentPage={props.setCurrentPage} curpage={props.curpage}/>
     </div>
   );
 }
