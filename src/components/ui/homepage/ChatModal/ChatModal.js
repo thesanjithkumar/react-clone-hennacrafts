@@ -8,7 +8,9 @@ import horizontal_dots from "../img/horizontal_dots.png";
 import hyphen from "../img/hyphen.png";
 import { IoIosCloseCircle } from "react-icons/io";
 import close_icon from "../img/close_icon.png";
+import clip_icon from "../img/paper_clip_3.png";
 import caution_icon from "../img/caution.png";
+import send_icon from "../img/send.png";
 
 export default function ChatModal() {
   var modal = document.getElementById("myModal");
@@ -174,7 +176,22 @@ export default function ChatModal() {
               </div>
             </div>
             <div className="guest_chat_section">
-              <p>Test code</p>
+              <div className="chat_screen">
+                <div className="chatting"></div>
+              </div>
+              <div className="chat_input_section">
+                <div className="paper_clip_icon">
+                  <img src={clip_icon} className="clip_icon" />
+                </div>
+                <div className="chat_input">
+                  <label>
+                    <input typeof="text" placeholder="Ask a question..." />
+                  </label>
+                </div>
+                <div className="chat_send">
+                  <img className="send_icon" src={send_icon} />
+                </div>
+              </div>
             </div>
           </div>
         </div>

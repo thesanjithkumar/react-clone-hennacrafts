@@ -98,4 +98,8 @@ ul {
   .nav ul {
     padding: 1em;
   }
+
+  .socialmedia {
+    margin-right: 10%;
+  }
 }
