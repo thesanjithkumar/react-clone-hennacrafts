@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import AccountPage from "./pages/AccountPage";
 import CartPage from "./pages/CartPage";
+import ProductDescription from "./components/shop_page/Product_Description/ProductDescription";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/cart">
             <CartPage />
+          </Route>
+          <Route path='/product_description'>
+            <ProductDescription/>
           </Route>
         </Switch>
       </Layout>

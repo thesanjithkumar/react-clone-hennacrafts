@@ -1,15 +1,14 @@
 import classes from './product_description.module.css'
+import ProdDescImage from './ProdDescImage';
 
 function ProductDescription()
 {
   return <div className={classes.wrapper}>
     <div className={classes.container}>
       <div className={classes.header}>
-        <div className={classes.image}>
-        </div>
+        <ProdDescImage/>
         <div className={classes.basicinfo}>
-
-        </div>
+      </div>
       </div>
       <div className={classes.prodbody}>
       </div>
