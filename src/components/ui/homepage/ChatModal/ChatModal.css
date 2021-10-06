@@ -148,9 +148,9 @@
   display: flex;
 }
 
-.relative {
+/* .relative {
   position: relative;
-}
+} */
 
 .terms_div {
   width: 90%;
@@ -173,6 +173,7 @@
 
 .guest_chat {
   position: absolute;
+  display: flexbox;
   text-align: center;
   background-color: #fefefe;
   width: 100%;
@@ -198,6 +199,7 @@
   display: flex;
   vertical-align: middle;
   margin: auto;
+  margin-top: 10px;
   margin-bottom: 5px;
   padding-bottom: 15px;
   height: 60px;
@@ -280,10 +282,6 @@
   text-decoration: none;
 }
 
-.guest_chat_section {
-  position: relative;
-}
-
 .dropdown_icon {
   margin: 0 10px 0 20px;
 }
@@ -316,4 +314,58 @@
   color: black;
   line-height: 40px;
   margin-bottom: 20px;
+}
+
+.guest_chat_section {
+  height: 90%;
+}
+
+.chat_screen {
+  /* background-color: black; */
+  width: auto;
+  height: 80%;
+}
+
+.chat_input_section {
+  /* display: block; */
+  vertical-align: middle;
+  /* text-align: left; */
+  width: 100%;
+  margin: auto;
+  border-top: 1px solid rgb(219, 219, 219);
+  margin-top: 6.5vh;
+}
+
+.clip_icon {
+  float: left;
+  margin: 0 0 1px 10px;
+  width: 5%;
+  padding-top: 5px;
+  height: auto;
+}
+
+.chat_input {
+  height: 100%;
+  width: 70%;
+  float: left;
+}
+
+.chat_input input {
+  width: 80%;
+  margin: 10px;
+  /* vertical-align: middle; */
+  font-size: 1.1em;
+  line-height: 14px;
+  outline: none;
+  border: none;
+}
+
+.chat_send {
+  float: right;
+  width: 13%;
+}
+
+.send_icon {
+  width: 100%;
+  height: auto;
 }
