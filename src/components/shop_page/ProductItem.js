@@ -10,11 +10,13 @@ function ProductItem(props){
   return props.products.map((item)=>{
     return (
       <div className={classes.item}>
-        <Link to='/product_description' className={classes.link}>
           <ProductImage item={item}/>
+          <Link to='/product_description' className={classes.link}>
+        <div onClick={()=>{filterctx.descProduct={...item}}}>
          <h5>{item.category}</h5>
          <h3>{item.title}</h3>
          <p>{filterctx.UStoCanadianDollar?`C$${(item.price*1.27).toFixed(2)}`:`$${item.price.toFixed(2)}`}</p>
+         </div>
          </Link>
     </div>
    

@@ -7,7 +7,7 @@ function ProductDescription()
     <div className={classes.container}>
       <div className={classes.header}>
         <ProdDescImage/>
-        <div className={classes.basicinfo}>
+      <div className={classes.basicinfo}>
       </div>
       </div>
       <div className={classes.prodbody}>

@@ -33,7 +33,6 @@ function NavbarComponent(props) {
     setBarDropdown(true);
   }
   
-  console.log(props.appwidth);
 
   return <header className={classes.header}>
     <div className={classes.logo}>

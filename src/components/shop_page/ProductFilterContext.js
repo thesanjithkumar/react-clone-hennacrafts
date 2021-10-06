@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+import ContactPage from '../../pages/ContactPage';
 import prod_info from './ProductInfo';
 
 const ProductFilterContext = createContext({
@@ -14,7 +15,16 @@ const ProductFilterContext = createContext({
   UStoCanadianDollarHandler: () => { },
   filterApplied: {},
   //allFilters:()=>{},
-  categoryFiltername:''
+  categoryFiltername:'',
+  descProduct:{image:'',
+  hoverimg:'none',
+  descimg:[],
+  category:'',
+  title:'',
+  price:0,
+  rating:0},
+  descriptionProduct:(item)=>{},
+  descPage:false
 });
 
 export function ProductFilterContextProvider(props) {
@@ -24,6 +34,7 @@ export function ProductFilterContextProvider(props) {
   const [appliedFilter, setAppliedFilter] = useState({ category: 'none', rating: 'none',sorting:'none'});
   const [catfilter_name,setCatFilterName]=useState('none');
   const [appliedFilterOrder,setAppliedFilterOrder]=useState(['default']);
+  const [descProd,setDescProd]=useState(prod_info[0]);
 
 
   function findMin() {
@@ -213,6 +224,12 @@ export function ProductFilterContextProvider(props) {
 
   //console.log("filteredProducts ",filteredProducts)
 
+  function DescProductHandler(item){
+    console.log('item',item);
+    setDescProd({...item});
+  }
+  console.log(descProd)
+
   const context = {
     products: filteredProducts,
     totalProducts: filteredProducts[filteredProducts.length-1].length,
@@ -226,6 +243,8 @@ export function ProductFilterContextProvider(props) {
     sliderRange: sliderval,
     filterApplied: appliedFilter,
     categoryFiltername:catfilter_name,
+    descProduct:descProd,
+    descriptionProduct:DescProductHandler
   };
 
   return (
