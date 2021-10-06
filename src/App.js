@@ -11,11 +11,7 @@ import CartPage from "./pages/CartPage";
 import { useState } from "react";
 
 //imports img
-import { SiMessenger } from "react-icons/si";
-import messenger_icon from "../src/components/ui/homepage/img/messenger_icon.png";
-import horizontal_dots from "../src/components/ui/homepage/img/horizontal_dots.png";
-import hyphen from "../src/components/ui/homepage/img/hyphen.png";
-import ChatModal from "../src/components/ui/homepage/ChatModal/ChatModal";
+import ChatModal from "../src/components/ui/ChatModal/ChatModal";
 
 function App() {
   return (

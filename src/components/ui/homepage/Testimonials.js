@@ -2,7 +2,7 @@ import classes from "./Products.module.css";
 import $ from "jquery";
 import { Carousel } from "@trendyol-js/react-carousel";
 import { GoQuote } from "react-icons/go";
-import quote_icon from "./img/quotes_icon.png";
+import quote_icon from "../img/quotes_icon.png";
 
 export default function Testimonials() {
   $("#slideshow > div:gt(0)").hide();

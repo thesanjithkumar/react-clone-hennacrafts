@@ -7,7 +7,7 @@ main {
   z-index: -1;
 }
 .card1 {
-  background-image: url("./img/top_div1.jpg");
+  background-image: url("../img/top_div1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -28,7 +28,7 @@ main {
     hue-rotate(0deg); */
 }
 .card2 {
-  background-image: url("./img/top_div2.jpg");
+  background-image: url("../img/top_div2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -47,7 +47,7 @@ main {
   transition: all 1s ease-in-out;
 }
 .card3 {
-  background-image: url("./img/top_div3.jpg");
+  background-image: url("../img/top_div3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
