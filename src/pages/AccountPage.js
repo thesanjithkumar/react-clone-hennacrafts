@@ -26,7 +26,7 @@ function AccountPage() {
         </button>
         </div>
         <div > 
-          <h5 className={classes.lostpassword} >
+          <h5 className={classes.lostpassword}>
             Lost your Password?
           </h5>
         </div>
