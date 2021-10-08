@@ -595,6 +595,9 @@ main {
   .cardContainer {
     display: block;
   }
+  .topdiv {
+    margin-top: 20px;
+  }
   .card1 {
     width: 100%;
   }
