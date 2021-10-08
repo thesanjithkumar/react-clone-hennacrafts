@@ -1,5 +1,5 @@
 import classes from "./Products.module.css";
-import welcome from "./img/welcome.png";
+import welcome from "../img/welcome.png";
 export default function WelcomeDiv() {
   return (
     <div className={classes.welcomediv}>

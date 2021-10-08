@@ -1,10 +1,13 @@
 import CardDiv from "../components/ui/homepage/CardDiv.";
+import "../components/ui/ChatModal/ChatModal.css";
 import EssentailsCombo from "../components/ui/homepage/EssentailsCombo";
 import FacepackPowder from "../components/ui/homepage/FacepackPowder";
 import HennaBlog from "../components/ui/homepage/HennaBlog";
 import HennaIndigo from "../components/ui/homepage/HennaIndigo";
+import Testimonials from "../components/ui/homepage/Testimonials";
 import TopDiv from "../components/ui/homepage/TopDiv";
 import WelcomeDiv from "../components/ui/homepage/WelcomeDiv";
+import classes from "./HomePage.module.css";
 
 function HomePage() {
   // function hover_henna() {
@@ -24,7 +27,7 @@ function HomePage() {
   // }
 
   return (
-    <main>
+    <main className={classes.main}>
       {/* topdiv */}
       <TopDiv />
       {/* topdiv */}
@@ -44,8 +47,14 @@ function HomePage() {
       <WelcomeDiv />
       {/* welcom div */}
       {/* Henna Blog */}
-      {/* <HennaBlog /> */}
+      <div className={classes.blog_headingdiv}>
+        <p className={classes.blog_heading}>Henna Blogs</p>
+      </div>
+      <HennaBlog />
       {/* Henna Blog */}
+      {/* Testimonials */}
+      <Testimonials />
+      {/* Testimonials */}
     </main>
   );
 }
