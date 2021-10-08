@@ -9,6 +9,7 @@
 
 .modal_parent {
   transition: 0.2s ease-in-out;
+  z-index: 3;
 }
 
 .modal {
@@ -18,7 +19,7 @@
   justify-content: center;
   vertical-align: middle; */
   border-radius: 25px;
-  z-index: 1;
+  z-index: 3;
   top: 39%;
   left: 68%;
   height: 50%;
