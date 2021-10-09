@@ -79,6 +79,7 @@
   font-size: 46px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+  line-height:1;
 }
 
 .parafirst::first-letter {
