@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&family=Merriweather:wght@700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&family=Poppins:wght@700&family=Roboto&display=swap");
+
+.about_us {
+  font-family: "Merriweather", serif;
+}
+
+.merri {
+  font-family: "Merriweather", serif;
+  text-align: left;
+}
+
+.boldtextfirstpara {
+  font-family: "Merriweather", serif;
+}
+
+.boldtextsecondpara {
+  font-family: "Merriweather", serif;
+}
+
+.products {
+  font-family: "Merriweather", serif;
+}
+
 .aboutusborder {
   width: 100%;
   height: 200px;

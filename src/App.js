@@ -8,10 +8,9 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import AccountPage from "./pages/AccountPage";
 import CartPage from "./pages/CartPage";
-import { useState } from "react";
 
-//imports img
 import ChatModal from "../src/components/ui/ChatModal/ChatModal";
+import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyConverter";
 
 function App() {
   return (
@@ -42,8 +41,8 @@ function App() {
         </Switch>
         {/* chat modal */}
         <ChatModal />
-
         {/* chat modal */}
+        <CurrencyConverter />
       </Layout>
     </div>
   );

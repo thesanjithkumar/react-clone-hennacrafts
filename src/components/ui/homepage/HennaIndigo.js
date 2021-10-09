@@ -110,7 +110,7 @@ export default function HennaIndigo() {
               />
               <p>Face Pack</p>
               <h3 className="product_name">Aloe vera face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -121,7 +121,7 @@ export default function HennaIndigo() {
               />
               <p>Face pack</p>
               <h3 className="product_name">Ambba Haldi face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -132,7 +132,7 @@ export default function HennaIndigo() {
               />
               <p>Face Pack</p>
               <h3 className="product_name">Aloe vera face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -146,7 +146,7 @@ export default function HennaIndigo() {
               />
               <p>Face pack</p>
               <h3 className="product_name">Ambba Haldi face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
         </TabPanel>
@@ -163,7 +163,7 @@ export default function HennaIndigo() {
                 />
                 <p>Face Pack</p>
                 <h3 className="product_name">Aloe vera face pack</h3>
-                <p>$0.00</p>
+                <p className="product_price">$0.00</p>
               </div>
             </a>
             <a href="">
@@ -177,7 +177,7 @@ export default function HennaIndigo() {
                 />
                 <p>Face pack</p>
                 <h3 className="product_name">Ambba Haldi face pack</h3>
-                <p>$0.00</p>
+                <p className="product_price">$0.00</p>
               </div>
             </a>
           </div>

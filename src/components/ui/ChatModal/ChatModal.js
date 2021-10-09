@@ -6,7 +6,7 @@ import { SiMessenger } from "react-icons/si";
 import messenger_icon from "../img/messenger_icon.png";
 import horizontal_dots from "../img/horizontal_dots.png";
 import hyphen from "../img/hyphen.png";
-import { IoIosCloseCircle } from "react-icons/io";
+// import { IoIosCloseCircle } from "react-icons/io";
 import close_icon from "../img/close_icon.png";
 import clip_icon from "../img/paper_clip_3.png";
 import caution_icon from "../img/caution.png";
