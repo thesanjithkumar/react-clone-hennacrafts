@@ -39,7 +39,7 @@ export default function CurrencyConverter() {
           onClick={ToggleCAD}
         >
           <a href="#" className="title">
-            CAD <span className="cad_span">CANADINA DOLLAR</span>
+            CAD <span className="cad_span">CANADIAN DOLLAR</span>
           </a>
         </div>
       </div>
