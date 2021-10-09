@@ -24,7 +24,6 @@ const ProductFilterContext = createContext({
   price:0,
   rating:0},
   descriptionProduct:(item)=>{},
-  descPage:false
 });
 
 export function ProductFilterContextProvider(props) {
@@ -34,7 +33,13 @@ export function ProductFilterContextProvider(props) {
   const [appliedFilter, setAppliedFilter] = useState({ category: 'none', rating: 'none',sorting:'none'});
   const [catfilter_name,setCatFilterName]=useState('none');
   const [appliedFilterOrder,setAppliedFilterOrder]=useState(['default']);
-  const [descProd,setDescProd]=useState(prod_info[0]);
+  const [descPageProd,setDescPageProd]=useState({image:'',
+  hoverimg:'none',
+  descimg:[],
+  category:'',
+  title:'',
+  price:0,
+  rating:0})
 
 
   function findMin() {
@@ -222,13 +227,13 @@ export function ProductFilterContextProvider(props) {
     })
   }
 
-  //console.log("filteredProducts ",filteredProducts)
-
-  function DescProductHandler(item){
-    console.log('item',item);
-    setDescProd({...item});
+  
+  function DescPageProductHandler(item){
+    //console.log('item',item);
+    setDescPageProd(item);
   }
-  console.log(descProd)
+  //console.log(descProd)
+  //console.log("filteredProducts ",filteredProducts)
 
   const context = {
     products: filteredProducts,
@@ -243,8 +248,8 @@ export function ProductFilterContextProvider(props) {
     sliderRange: sliderval,
     filterApplied: appliedFilter,
     categoryFiltername:catfilter_name,
-    descProduct:descProd,
-    descriptionProduct:DescProductHandler
+    descProduct:descPageProd,
+    descriptionProduct:DescPageProductHandler,
   };
 
   return (

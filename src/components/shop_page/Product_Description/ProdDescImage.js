@@ -1,26 +1,35 @@
 import classes from './product_description.module.css'
-import {
-  Magnifier,
-} from "react-image-magnifiers";
-import ProductFilterContext from '../ProductFilterContext';
-import {useContext} from 'react';
+import { Magnifier} from "react-image-magnifiers";
+import {useState} from 'react';
+import search from "../../img/search.jpg";
+import Modal from './Modal';
+import FullScreenImage from './FullScreenImage';
 
-function ProductDescriptionImage()
+function ProductDescriptionImage(props)
 {
-  const filterctx=useContext(ProductFilterContext);
+  const [curzoomimg,setCurZoomImg]=useState(props.item.descimg.length>0 ?props.item.descimg[0]:props.item.image)
+  const [isModalOpen,setIsModalOpen]=useState(false);
+
+  function changeImage(imgaddress){
+    setCurZoomImg(imgaddress)
+  }
   return<div className={classes.img_container}>
     <Magnifier
-  imageSrc="https://hennacrafts.com/wp-content/uploads/2021/05/daeb6568-bf37-474d-90a8-41905a87d7a0_600x-300x300.jpg"
-  imageAlt="Example"
-  largeImageSrc="https://hennacrafts.com/wp-content/uploads/2021/05/daeb6568-bf37-474d-90a8-41905a87d7a0_600x.jpg"
+  imageSrc={curzoomimg}
+  imageAlt="product_img"
+  //largeImageSrc="https://hennacrafts.com/wp-content/uploads/2020/12/indigo-3-pack-with-kit.jpg"
     />
-    {console.log(filterctx.descProduct)}
-    <ul>
-      {filterctx.descProduct.descimg.map((imgaddress)=>{
-        return (<li><img src={imgaddress} alt={filterctx.descProduct.title}/></li>);
+    <img src={search} alt="search" className={classes.imgMagSearch} onClick={()=>{setIsModalOpen(true)}}/>
+    {props.item.descimg.length>0 &&
+    <ul className={classes.prodimagelist}>
+      {props.item.descimg.map((imgaddress)=>{
+        return (<li><img src={imgaddress} alt={"product_img"} onClick={()=>{changeImage(imgaddress)}}/></li>);
       })}
     </ul>
-    
+    }
+    <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} >
+      <FullScreenImage item={props.item}/>
+    </Modal>
   </div>
 }
 

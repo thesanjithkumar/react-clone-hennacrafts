@@ -45,12 +45,16 @@
   width: 100%;
 }
 
-.link
+/*.link
 {
   color: black;
   text-decoration-line: none;
-}
+}*/
 
+.link
+{
+  cursor: pointer;
+}
 
 /* Product pages */
 .btn

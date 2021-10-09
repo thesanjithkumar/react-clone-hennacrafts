@@ -21,7 +21,6 @@ function ShopPageContainer() {
     setCurrentPage(curpage);
   }
 
-  
   var last_item=currentpage*9;
   var first_item=last_item-9;
   var prod_items=filterctx.products[filterctx.products.length-1]
