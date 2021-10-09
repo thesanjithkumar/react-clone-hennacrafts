@@ -78,7 +78,9 @@
 .number_count {
   font-size: 46px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
 }
 
 .parafirst::first-letter {
