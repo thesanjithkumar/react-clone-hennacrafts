@@ -565,7 +565,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 10px;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   padding: 30px;
   font-family: "Helvetica", sans-serif;
   line-height: 20px;
