@@ -66,6 +66,10 @@
   height: 45px;
 }
 
+.usd:hover {
+  background-color: #719d0f;
+}
+
 .cad {
   margin-left: 15%;
   text-align: left;
@@ -75,6 +79,10 @@
   color: white;
   width: 80%;
   height: 45px;
+}
+
+.cad:hover {
+  background-color: #719d0f;
 }
 
 .us_span {
