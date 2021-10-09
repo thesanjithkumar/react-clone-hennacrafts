@@ -18,7 +18,7 @@ function AboutPage() {
       </div>
       <div className={classes.border}>
         <div className={classes.contents}>
-          <h1 className={classes.merri}>We Are Your Favorite Store.</h1>
+          <h1 className={classes.heading}>We Are Your Favorite Store.</h1>
           <div className={classes.parafirst}>
             <p>
               Tuas quisquam quo gravida proident harum, aptent ligula anim
@@ -50,16 +50,34 @@ function AboutPage() {
           <section className={classes.counters}>
             <p className={classes.merri}>Numbers Speak For Themselves!</p>
             <div className={classes.counter}>
-              <CountUp start={4800} end={5000} suffix="+" duration={3} />
-              <h3>Curated Products</h3>
+              <CountUp
+                className={classes.number_count}
+                start={4800}
+                end={5000}
+                suffix="+"
+                duration={3}
+              />
+              <h3 className={classes.open_sans}>Curated Products</h3>
             </div>
             <div className={classes.counter} data-target="800+">
-              <CountUp start={0} end={800} suffix="+" duration={3} />
-              <h3>Curated Products</h3>
+              <CountUp
+                className={classes.number_count}
+                start={0}
+                end={800}
+                suffix="+"
+                duration={3}
+              />
+              <h3 className={classes.open_sans}>Curated Products</h3>
             </div>
             <div className={classes.counter} data-target="40+">
-              <CountUp start={0} end={40} suffix="+" duration={3} />
-              <h3>Product Categories</h3>
+              <CountUp
+                className={classes.number_count}
+                start={0}
+                end={40}
+                suffix="+"
+                duration={3}
+              />
+              <h3 className={classes.open_sans}>Product Categories</h3>
             </div>
           </section>
         </div>
