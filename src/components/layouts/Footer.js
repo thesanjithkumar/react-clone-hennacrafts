@@ -9,7 +9,7 @@ function Footer() {
     <footer className={classes.footer}>
       <div className={classes.main}>
         <div className={classes.about}>
-          <h2>About us</h2>
+          <h2 class={classes.helvetica}>About us</h2>
           <p>
             Mr. Suraj Mal Parihar started our business in 1980 as a Mehandi
             Powder Udyog at Sojat City, the only wholesale marketof henna in
@@ -23,7 +23,7 @@ function Footer() {
         <div className={classes.nav}>
           <ul>
             <li>
-              <h3>Quick links</h3>
+              <h3 class={classes.helvetica}>Quick links</h3>
             </li>
             <li>
               <Link to="/" className={classes.link}>
@@ -48,7 +48,7 @@ function Footer() {
           </ul>
           <ul>
             <li>
-              <h3>Site links</h3>
+              <h3 class={classes.helvetica}>Site links</h3>
             </li>
             <li>
               <Link to="/" className={classes.link}>

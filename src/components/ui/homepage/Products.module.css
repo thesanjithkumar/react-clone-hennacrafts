@@ -532,11 +532,15 @@ main {
 
 .testimonial_name {
   font-size: 18px;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 800;
 }
 
 .testimonials_h1 {
   font-size: 36px;
   margin: 0 0 25px 0;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 700;
 }
 
 .testimonial_main {
@@ -563,6 +567,8 @@ main {
   margin: 10px;
   border-radius: 12px;
   padding: 30px;
+  font-family: "Helvetica", sans-serif;
+  line-height: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   transition: ease-in-out;
   /* border: 2px solid green; */

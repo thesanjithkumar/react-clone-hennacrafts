@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+.helvetica {
+  font-family: "Helvetica", sans-serif;
+}
+
 .about,
 .logo,
 ul {
