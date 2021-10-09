@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&family=Merriweather:wght@700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&family=Poppins:wght@700&family=Roboto&display=swap");
+
 .App {
   -webkit-font-smoothing: antialiased;
   transition: all 0.5s ease-in-out;
@@ -40,4 +42,5 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
 }

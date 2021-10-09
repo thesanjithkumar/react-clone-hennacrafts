@@ -1,6 +1,7 @@
 /* * {
   box-sizing: border-box;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&family=Merriweather:wght@700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&family=Poppins:wght@700&family=Roboto&display=swap");
 
 main {
   margin-bottom: 100px;
@@ -92,7 +93,8 @@ main {
 } */
 
 .card_heading {
-  font-size: 2em;
+  font-size: 28px;
+  font-family: "Merriweather", serif;
   text-decoration: none;
 }
 
@@ -102,7 +104,8 @@ main {
 }
 
 .card_p {
-  font-size: 14px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   text-decoration: none;
 }
@@ -112,13 +115,14 @@ main {
   /* border: 2px solid green; */
   color: black;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   height: 45px;
-  width: 90%;
+  width: 120%;
   max-width: 121px;
 }
 
@@ -169,7 +173,7 @@ main {
 
 .welcometextdiv {
   width: 100%;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -180,13 +184,16 @@ main {
 }
 
 .welcometo {
-  color: red;
+  color: #d11a1f;
+  font-family: "Great Vibes", cursive;
   font-size: 30px;
+  font-weight: 500;
 }
 
 .welcometotext {
   width: 70%;
   margin-bottom: 10%;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -208,6 +215,7 @@ main {
   border: 1px solid #719d0f;
   transition: all 0.4s ease-in-out;
   margin-bottom: 12%;
+  font-family: "Lato", sans-serif;
 }
 
 .learnmore:hover {
@@ -239,6 +247,7 @@ main {
 .topdiv {
   width: 100%;
   height: 75vh;
+  font-family: "Lato", sans-serif;
   margin-top: -20px;
   object-fit: cover;
   margin-bottom: 20px;
@@ -325,7 +334,7 @@ main {
 }
 
 .topdivtitle {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 4.7px;
 }
 
@@ -350,6 +359,7 @@ main {
   height: 50px;
   border-radius: 60px;
   font-size: 15px;
+  /* line-height: 15px; */
   align-items: center;
   justify-content: center;
   border: 2px solid white;
@@ -413,15 +423,18 @@ main {
 .hennablogchild_heading {
   font-size: 34px;
   font-weight: 500;
+  font-family: "Lato", sans-serif;
   line-height: 1.2;
   text-align: left;
 }
 
 .bloginnerdiv {
-  width: 90%;
+  width: 80%;
   margin: auto;
   text-align: left;
   font-size: 16px;
+  line-height: 25.6px;
+  font-family: "Roboto", sans-serif;
 }
 
 .blogbutton {
@@ -491,7 +504,9 @@ main {
   /* display: inline-block; */
   letter-spacing: 2px;
   font-size: 15px;
+  font-family: "Lato", sans-serif;
   margin-bottom: 25px;
+  font-weight: 700;
   color: #719d0f;
   /* vertical-align: middle; */
 }

@@ -8,6 +8,7 @@ import Testimonials from "../components/ui/homepage/Testimonials";
 import TopDiv from "../components/ui/homepage/TopDiv";
 import WelcomeDiv from "../components/ui/homepage/WelcomeDiv";
 import classes from "./HomePage.module.css";
+// import CurrencyConverter from "../components/ui/CurrencyConverter/CurrencyConverter";
 
 function HomePage() {
   // function hover_henna() {
@@ -55,6 +56,7 @@ function HomePage() {
       {/* Testimonials */}
       <Testimonials />
       {/* Testimonials */}
+      {/* <CurrencyConverter /> */}
     </main>
   );
 }

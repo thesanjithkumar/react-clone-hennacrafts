@@ -153,7 +153,7 @@ export default function Card() {
                 />
                 <p>Essential Oil</p>
                 <h3 className="product_name">Eucalyptus Essential Oil</h3>
-                <p>
+                <p className="product_price">
                   <span className="strikethrough">$299.00</span> $119.00
                 </p>
               </div>
@@ -169,7 +169,7 @@ export default function Card() {
                 />
                 <p>Essential Oil</p>
                 <h3 className="product_name">NAYAB Tea Tree Essential Oil</h3>
-                <p>
+                <p className="product_price">
                   <span className="strikethrough">$299.00</span> $119.00
                 </p>
               </div>
@@ -192,7 +192,7 @@ export default function Card() {
                 />
                 <p>Face Pack</p>
                 <h3 className="product_name">NAYAB Natural Hair Care Henna</h3>
-                <p>$0.00</p>
+                <p className="product_price">$0.00</p>
               </div>
             </a>
             <a href="">
@@ -206,7 +206,7 @@ export default function Card() {
                 />
                 <p>Face pack</p>
                 <h3 className="product_name">NAYAB Organic Hair Care Henna</h3>
-                <p>$0.00</p>
+                <p className="product_price">$0.00</p>
               </div>
             </a>
             <a href="">
@@ -220,7 +220,7 @@ export default function Card() {
                 />
                 <p>Face pack</p>
                 <h3 className="product_name">NAYAB Organic Hair Care Henna</h3>
-                <p>$0.00</p>
+                <p className="product_price">$0.00</p>
               </div>
             </a>
           </TabPanel>

@@ -176,7 +176,7 @@ export default function FacepackPowder() {
               />
               <p>Face Pack</p>
               <h3 className="product_anme">Aloe vera face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -190,7 +190,7 @@ export default function FacepackPowder() {
               />
               <p>Face pack</p>
               <h3 className="product_anme">Ambba Haldi face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -204,7 +204,7 @@ export default function FacepackPowder() {
               />
               <p>Face Pack</p>
               <h3 className="product_anme">Chandan face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -215,7 +215,7 @@ export default function FacepackPowder() {
               />
               <p>Face Pack</p>
               <h3 className="product_anme">Hibiscus face pack</h3>
-              <p>0.00</p>
+              <p className="product_price">0.00</p>
             </div>
           </a>
         </TabPanel>
@@ -231,7 +231,7 @@ export default function FacepackPowder() {
               />
               <p>Face Pack</p>
               <h3 className="product_anme">Aloe vera face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -245,7 +245,7 @@ export default function FacepackPowder() {
               />
               <p>Face pack</p>
               <h3 className="product_anme">Ambba Haldi face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -259,7 +259,7 @@ export default function FacepackPowder() {
               />
               <p>Face Pack</p>
               <h3 className="product_anme">Chandan face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
           <a href="">
@@ -273,7 +273,7 @@ export default function FacepackPowder() {
               />
               <p>Face Pack</p>
               <h3 className="product_anme">Chandan face pack</h3>
-              <p>$0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
         </TabPanel>
