@@ -215,7 +215,7 @@ export default function FacepackPowder() {
               />
               <p>Face Pack</p>
               <h3 className="product_anme">Hibiscus face pack</h3>
-              <p className="product_price">0.00</p>
+              <p className="product_price">$0.00</p>
             </div>
           </a>
         </TabPanel>
