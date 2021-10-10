@@ -290,22 +290,28 @@
 
 .modal
 {
-  position:absolute;
+  position:fixed;
   z-index: 1001;
-  top:0%;
-  left:0%;
-  width: 100%;
 }
 
 
 .modal img
 {
-  width:40%;
+  position:fixed;
+  width:30%;
+  top:20%;
+  left:35%;
+  transition: transform .2s; /* Animation */
 }
 
-.modal img
+.zoomin
 {
-  background-size: cover;
+  transform: scale(1.5);
+}
+
+.zoomout
+{
+  transform: scale(1);
 }
 
 .overlay
@@ -320,23 +326,70 @@
 }
 
 .moveright,.moveleft{
-  border: 1px solid black;
+  border: 1px solid white;
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 6px;
   z-index:1001;
+  position: fixed;
 }
 
 .moveright {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  position: absolute;
-  right:0%;
+  right:1%;
+  top:50%;
 }
 
 .moveleft {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  position: absolute;
-  left:0%;
+  position: fixed;
+  left:1%;
+  top:50%;
+}
+
+.closeModal
+{
+  position: fixed;
+  right:2%;
+  top:2%;
+  z-index: 1001;
+  color: white;
+  cursor: pointer;
+}
+
+.zoomicon
+{
+  position: fixed;
+  right:6%;
+  top:2%;
+  z-index: 1001;
+  color: white;
+  cursor: pointer;
+}
+
+.fullscreen
+{
+  position: fixed;
+  right:10%;
+  top:2%;
+  z-index: 1001;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width:1200px)
+{
+  .moveleft,.moveright
+  {
+    top:40%;
+  }
+
+  .modal img
+  {
+    width:40%;
+    left:30%;
+    top:30%;
+  }
 }

@@ -28,7 +28,7 @@ function ProductDescriptionImage(props)
     </ul>
     }
     <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} >
-      <FullScreenImage item={props.item}/>
+      <FullScreenImage item={props.item} setIsModalOpen={setIsModalOpen}/>
     </Modal>
   </div>
 }
