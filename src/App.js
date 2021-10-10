@@ -12,9 +12,6 @@ import ProductDescription from "./components/shop_page/Product_Description/Produ
 
 import ChatModal from "../src/components/ui/ChatModal/ChatModal";
 import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyConverter";
-import PrivacyandPolicy from "./pages/PrivacyandPolicy";
-import TermsAndCondition from "./pages/TermsAndConditions";
-import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -42,14 +39,6 @@ function App() {
           <Route path="/cart">
             <CartPage />
           </Route>
-          <Route path="/privacy_policy">
-            <PrivacyandPolicy />
-          </Route>
-          <Route path="/terms-and-conditions">
-            <TermsAndCondition />
-          </Route>
-          <Route path="/FAQ">
-            <FAQ />
           <Route path='/product_description'>
             <ProductDescription/>
           </Route>

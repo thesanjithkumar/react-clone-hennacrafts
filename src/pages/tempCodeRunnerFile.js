@@ -1,1 +1,0 @@
-Termsandcondition.module.css
