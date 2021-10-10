@@ -15,6 +15,9 @@ import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyCo
 import PrivacyandPolicy from "./pages/PrivacyandPolicy";
 import TermsAndCondition from "./pages/TermsAndConditions";
 import FAQ from "./pages/fAQ";
+import Blog1 from "./components/ui/blogpage/Blog1";
+import Blog2 from "./components/ui/blogpage/Blog2";
+import Blog3 from "./components/ui/blogpage/Blog3";
 
 function App() {
   return (
@@ -51,8 +54,17 @@ function App() {
           <Route path="/FAQ">
             <FAQ />
           </Route>
-          <Route path='/product_description'>
-            <ProductDescription/>
+          <Route path="/product_description">
+            <ProductDescription />
+          </Route>
+          <Route path="/Blog1">
+            <Blog1 />
+          </Route>
+          <Route path="/Blog2">
+            <Blog2 />
+          </Route>
+          <Route path="/Blog3">
+            <Blog3 />
           </Route>
         </Switch>
         {/* chat modal */}

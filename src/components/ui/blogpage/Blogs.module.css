@@ -1,0 +1,123 @@
+.container{
+    background-color: #f1f1f1;
+    width: 100%;
+    padding-bottom:9em;
+}
+.whitecontainer{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 6em;
+}
+.border{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.text1{
+    color: green;
+    cursor: pointer;
+}
+.text2{
+    margin-top: 3em;
+}
+.border p1{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.border p2{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.bullets1{
+    margin-left: 1em;
+}
+.rightsidebullet{
+    margin-bottom: 0.5em;
+}
+.img1{
+    width: 60%;
+}
+.img2{
+    width: 100%;
+}
+.img3{
+    width: 60%;
+}
+.img4{
+    width: 50%;
+}
+.img5{
+    width: 100%;
+}
+.img6{
+    width: 80%;
+}
+.img7{
+    width: 80%;
+}
+.img8{
+    width: 80%;
+}
+.img9{
+    width: 50%;
+}
+.img10{
+    width: 50%;
+}
+.img11{
+    width: 70%;
+}
+.img12{
+    width: 90%;
+}
+.img13{
+    width: 100%;
+    margin-top: 2.5em;
+}
+.img14{
+   width: 100%;
+   margin-top: 1em;
+}
+.img15{
+   width:65%;
+}
+.img16{
+    width: 60%;
+}
+.img17{
+    width: 100%;
+}
+.img18{
+    width: 40%;
+}
+.img19{
+    width: 50%;
+}
+.img20{
+    width: 90%;
+}
+.img21{
+    width: 80%;
+}
+.img22{
+    width: 80%;
+}
+.img23{
+    width: 80%;
+}
+.img24{
+    width: 50%;
+}
+.img25{
+    width: 50%;
+}
+.img26{
+    width: 70%;
+}
+.img27{
+    width: 90%;
+}
+.img28{
+    width: 60%;
+}
