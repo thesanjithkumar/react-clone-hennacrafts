@@ -15,11 +15,10 @@ import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyCo
 import Dashboard from "./pages/Dashboard";
 import PrivacyandPolicy from "./pages/PrivacyandPolicy";
 import TermsAndCondition from "./pages/TermsAndConditions";
-import FAQ from "./pages/fAQ";
+import FAQ from "./pages/FaqFooter";
 import Blog1 from "./components/ui/blogpage/Blog1";
 import Blog2 from "./components/ui/blogpage/Blog2";
 import Blog3 from "./components/ui/blogpage/Blog3";
-
 
 function App() {
   return (
