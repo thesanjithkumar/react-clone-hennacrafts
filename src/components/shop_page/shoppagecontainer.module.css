@@ -1,0 +1,41 @@
+.search 
+{
+  background-color: aqua;
+  font-size: 1rem;
+  background: url('../img/search.jpg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  width:70%;
+  outline: none;
+}
+
+.search:focus
+{
+  background:transparent;
+}
+
+.filter
+{
+  margin:2em;
+}
+
+
+
+
+@media (min-width:768px)
+{
+  .wrapper
+  {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .product
+  {
+    width:70%;
+    border-left: 0.5px solid lightgrey;
+  }
+}
