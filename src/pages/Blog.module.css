@@ -41,8 +41,8 @@
 
 .slip_button {
   display: flex;
-  background-color: #719d0f;
-  color: white;
+  background-color: transparent;
+  color: #719d0f;
   border: none;
   width: 15%;
   height: 40px;
