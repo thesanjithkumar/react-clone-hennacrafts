@@ -8,10 +8,18 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import AccountPage from "./pages/AccountPage";
 import CartPage from "./pages/CartPage";
+import ProductDescription from "./components/shop_page/Product_Description/ProductDescription";
 
 import ChatModal from "../src/components/ui/ChatModal/ChatModal";
 import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyConverter";
 import Dashboard from "./pages/Dashboard";
+import PrivacyandPolicy from "./pages/PrivacyandPolicy";
+import TermsAndCondition from "./pages/TermsAndConditions";
+import FAQ from "./pages/fAQ";
+import Blog1 from "./components/ui/blogpage/Blog1";
+import Blog2 from "./components/ui/blogpage/Blog2";
+import Blog3 from "./components/ui/blogpage/Blog3";
+
 
 function App() {
   return (
@@ -41,6 +49,27 @@ function App() {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/privacy_policy">
+            <PrivacyandPolicy />
+          </Route>
+          <Route path="/terms-and-conditions">
+            <TermsAndCondition />
+          </Route>
+          <Route path="/FAQ">
+            <FAQ />
+          </Route>
+          <Route path="/product_description">
+            <ProductDescription />
+          </Route>
+          <Route path="/Blog1">
+            <Blog1 />
+          </Route>
+          <Route path="/Blog2">
+            <Blog2 />
+          </Route>
+          <Route path="/Blog3">
+            <Blog3 />
           </Route>
         </Switch>
         {/* chat modal */}

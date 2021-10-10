@@ -1,29 +1,38 @@
 import cropped_nayab_henna_logo_208x70 from "../img/cropped_nayab_henna_logo_208x70.jpg";
 import classes from "./navbar.module.css";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { FaBars, FaShoppingBag } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import {useState} from 'react';
+import {FaBars,FaShoppingBag} from 'react-icons/fa';
 
 function NavbarComponent(props) {
-  const [shop_dropdown, setShopDropdown] = useState(false);
-  const [account_dropdown, setAccountDropdown] = useState(false);
-  const [bar_dropdown, setBarDropdown] = useState(false);
+  const [shop_dropdown,setShopDropdown]=useState(false);
+  const [account_dropdown,setAccountDropdown]=useState(false);
+  const [bar_dropdown,setBarDropdown]=useState(false);
 
-  function ShopDropdown() {
-    if (shop_dropdown == true) setShopDropdown(false);
-    else setShopDropdown(true);
+  function ShopDropdown()
+  {
+    if(shop_dropdown==true)
+    setShopDropdown(false);
+    else
+    setShopDropdown(true);
   }
 
-  function AccountDropdown() {
-    if (account_dropdown == true) setAccountDropdown(false);
-    else setAccountDropdown(true);
+  function AccountDropdown()
+  {
+    if(account_dropdown==true)
+    setAccountDropdown(false);
+    else
+    setAccountDropdown(true);
   }
 
-  function BarDropdown() {
-    if (bar_dropdown == true) setBarDropdown(false);
-    else setBarDropdown(true);
+  function BarDropdown()
+  {
+    if(bar_dropdown==true)
+    setBarDropdown(false);
+    else
+    setBarDropdown(true);
   }
-
+  
   console.log(props.appwidth);
 
   return (
@@ -148,6 +157,7 @@ function NavbarComponent(props) {
       )}
     </header>
   );
+
 }
 
 export default NavbarComponent;

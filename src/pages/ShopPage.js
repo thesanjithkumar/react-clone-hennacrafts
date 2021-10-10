@@ -1,8 +1,11 @@
+import {ProductFilterContextProvider} from '../components/shop_page/ProductFilterContext';
+import ShopPageContainer from '../components/shop_page/ShopPageContainer';
+
 function ShopPage() {
   return (
-    <div>
-      <h1>Shop Page</h1>
-    </div>
+    <ProductFilterContextProvider>
+      <ShopPageContainer/>
+  </ProductFilterContextProvider>
   );
 }
 
