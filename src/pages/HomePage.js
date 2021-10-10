@@ -1,44 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+import CardDiv from "../components/ui/homepage/CardDiv.";
+import "../components/ui/ChatModal/ChatModal.css";
+import EssentailsCombo from "../components/ui/homepage/EssentailsCombo";
+import FacepackPowder from "../components/ui/homepage/FacepackPowder";
+import HennaBlog from "../components/ui/homepage/HennaBlog";
+import HennaIndigo from "../components/ui/homepage/HennaIndigo";
+import Testimonials from "../components/ui/homepage/Testimonials";
+import TopDiv from "../components/ui/homepage/TopDiv";
+import WelcomeDiv from "../components/ui/homepage/WelcomeDiv";
+import classes from "./HomePage.module.css";
+// import CurrencyConverter from "../components/ui/CurrencyConverter/CurrencyConverter";
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+function HomePage() {
+  // function hover_henna() {
+  //   var ele = document.getElementById("product_henna");
+  //   ele.setAttribute(
+  //     "src",
+  //     "https://hennacrafts.com/wp-content/uploads/2021/02/red-henna-with-kit-300x300.jpg"
+  //   );
+  // }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>React App</title>
-</head>
+  // function unhover_henna() {
+  //   var ele = document.getElementById("product_henna");
+  //   ele.setAttribute(
+  //     "src",
+  //     "https://hennacrafts.com/wp-content/uploads/2021/02/red-henna-600x600.jpg"
+  //   );
+  // }
 
-<body class="pagebody">
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <div id="portal"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  return (
+    <main className={classes.main}>
+      {/* topdiv */}
+      <TopDiv />
+      {/* topdiv */}
+      {/* card div section */}
+      <CardDiv />
+      {/* card div section */}
+      {/* Henna And indigo section */}
+      <HennaIndigo />
+      {/* Henna And Indigo section */}
+      {/* face pack powder section */}
+      <FacepackPowder />
+      {/* face pack powder section */}
+      {/* Essentail oil and combo section */}
+      <EssentailsCombo />
+      {/* Essentail oil and combo section */}
+      {/* welcom div */}
+      <WelcomeDiv />
+      {/* welcom div */}
+      {/* Henna Blog */}
+      <div className={classes.blog_headingdiv}>
+        <p className={classes.blog_heading}>Henna Blogs</p>
+      </div>
+      <HennaBlog />
+      {/* Henna Blog */}
+      {/* Testimonials */}
+      <Testimonials />
+      {/* Testimonials */}
+      {/* <CurrencyConverter /> */}
+    </main>
+  );
+}
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-</body>
-
-</html>
+export default HomePage;
