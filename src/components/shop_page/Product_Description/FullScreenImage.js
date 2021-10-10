@@ -10,6 +10,10 @@ function FullScreenImage(props)
   const [fullscreen,setFullScreen]=useState(false);
   const handle = useFullScreenHandle();
 
+  useEffect(()=>{
+      props.changeImage(props.item.descimg[imageNo])
+  },[imageNo])
+
   function keyHandler({keyCode})
   {
     if(keyCode==39)

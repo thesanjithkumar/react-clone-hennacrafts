@@ -23,12 +23,12 @@ function ProductDescriptionImage(props)
     {props.item.descimg.length>0 &&
     <ul className={classes.prodimagelist}>
       {props.item.descimg.map((imgaddress)=>{
-        return (<li><img src={imgaddress} alt={"product_img"} onClick={()=>{changeImage(imgaddress)}}/></li>);
+        return (<li><img src={imgaddress} alt={"product_img"} onClick={()=>{changeImage(imgaddress)}} className={curzoomimg==imgaddress?classes.curzoomimg:classes.notcurzoomimg}/></li>);
       })}
     </ul>
     }
     <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} >
-      <FullScreenImage item={props.item} setIsModalOpen={setIsModalOpen}/>
+      <FullScreenImage item={props.item} setIsModalOpen={setIsModalOpen} changeImage={setCurZoomImg}/>
     </Modal>
   </div>
 }

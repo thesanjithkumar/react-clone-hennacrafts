@@ -40,8 +40,8 @@ function ProductBasicInfo(props) {
     <p>{filterctx.UStoCanadianDollar ? `C$${(props.item.price * 1.27).toFixed(2)}` : `$${props.item.price.toFixed(2)}`}</p>
       <ul className={classes.flag_dropdown} onClick={FlagDropdownIn}>
         <li><div><img src={curflagimg} /> <span className={flag_dropdown ? classes.flagarrowup : classes.flagarrowdown}></span></div></li>
-        {flag_dropdown && <li><div className={classes.option}><img src={CAD} /><span className={classes.flagtxt}>USD</span></div></li>}
-        {flag_dropdown && <li><div className={classes.option}><img src={USD} /><span className={classes.flagtxt}>CAD</span></div></li>}
+        {flag_dropdown && <li onClick={()=>{setCurFlagImg(CAD)}}><div className={classes.option}><img src={CAD} /><span className={classes.flagtxt}>USD</span></div></li>}
+        {flag_dropdown && <li onClick={()=>{setCurFlagImg(USD)}}><div className={classes.option}><img src={USD} /><span className={classes.flagtxt}>CAD</span></div></li>}
       </ul>
 
     <ul className={classes.quantity}>

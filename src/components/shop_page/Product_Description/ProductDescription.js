@@ -17,10 +17,9 @@ function ProductDescription() {
   {
     setIncludeStar((prevStarVal)=>{
       var a=[...prevStarVal]
-      a[val-1]=true;
+      a[val]=true;
       return a
     });
-    console.log(includeStar,val)
     val+=userRating;
     setUserRating(val);
   }
@@ -29,7 +28,7 @@ function ProductDescription() {
   {
     setIncludeStar((prevStarVal)=>{
       var a=[...prevStarVal]
-      a[val-1]=false;
+      a[val]=false;
       return a
     });
     val=userRating-val;
@@ -75,17 +74,17 @@ function ProductDescription() {
             <p>Your email address will not be published. Required fields are marked *</p>
             <label htmlFor='yourRating'>Your rating *</label>
             <p>
-              <span>{!includeStar[0] ? <FaRegStar className={classes.nofillstar1} onClick={()=>{IncludeStar(1)}}/>:<FaStar className={classes.star} onClick={()=>{NotIncludeStar(1)}} />}</span>
-              <span>{!includeStar[1] ? <FaRegStar className={classes.nofillstar2} onClick={()=>{IncludeStar(2)}}/>:<FaStar className={classes.star} onClick={()=>{NotIncludeStar(2)}} />}</span>
-              <span>{!includeStar[2] ? <FaRegStar className={classes.nofillstar3} onClick={()=>{IncludeStar(3)}}/>:<FaStar className={classes.star} onClick={()=>{NotIncludeStar(3)}} />}</span>
-              <span>{!includeStar[3] ? <FaRegStar className={classes.nofillstar4} onClick={()=>{IncludeStar(4)}}/>:<FaStar className={classes.star} onClick={()=>{NotIncludeStar(4)}} />}</span>
-              <span>{!includeStar[4] ? <FaRegStar className={classes.nofillstar5} onClick={()=>{IncludeStar(5)}}/>:<FaStar className={classes.star} onClick={()=>{NotIncludeStar(5)}} />}</span>
+              <span><FaRegStar className={classes.nofillstar1} /></span>
+              <span><FaRegStar className={classes.nofillstar2} /></span>
+              <span><FaRegStar className={classes.nofillstar3} /></span>
+              <span><FaRegStar className={classes.nofillstar4} /></span>
+              <span><FaRegStar className={classes.nofillstar5} /></span>
             </p>
             <label htmlFor='yourReview'>Your review *</label>
             <p>
             <textarea name='yourReview' cols='45' rows='8' required></textarea>
             </p>
-            <label htmlFor='userName'>Your review *</label>
+            <label htmlFor='userName'>Name *</label>
             <p>
             <input type='text' name='userName' size='30'required/>
             </p>
