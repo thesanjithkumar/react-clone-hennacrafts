@@ -14,7 +14,7 @@ import ChatModal from "../src/components/ui/ChatModal/ChatModal";
 import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyConverter";
 import PrivacyandPolicy from "./pages/PrivacyandPolicy";
 import TermsAndCondition from "./pages/TermsAndConditions";
-import FAQ from "./pages/FAQ";
+import FAQ from "./pages/fAQ";
 
 function App() {
   return (
@@ -50,6 +50,7 @@ function App() {
           </Route>
           <Route path="/FAQ">
             <FAQ />
+          </Route>
           <Route path='/product_description'>
             <ProductDescription/>
           </Route>
