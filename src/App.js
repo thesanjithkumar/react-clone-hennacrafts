@@ -11,6 +11,7 @@ import CartPage from "./pages/CartPage";
 
 import ChatModal from "../src/components/ui/ChatModal/ChatModal";
 import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyConverter";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/cart">
             <CartPage />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
           </Route>
         </Switch>
         {/* chat modal */}

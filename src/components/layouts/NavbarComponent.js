@@ -127,6 +127,11 @@ function NavbarComponent(props) {
                         Cart
                       </Link>
                     </li>
+                    <li>
+                      <Link to="/dashboard" className={classes.link}>
+                        Dashboard
+                      </Link>
+                    </li>
                   </ul>
                 )}
               </div>

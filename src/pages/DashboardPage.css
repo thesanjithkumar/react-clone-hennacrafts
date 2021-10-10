@@ -1,0 +1,181 @@
+
+.main_class{
+    display: flex;
+    margin: 1em;
+    padding-bottom: 2em;
+    justify-content: space-around;
+}
+.avatar{
+    padding: 1em;
+    margin: 0;
+    width: 20%;
+    border-radius: 100px;
+}
+
+.avatar_info_styling{
+    box-shadow: 7px 5px 10px rgb(189, 187, 187);
+    background-color: #F8F6F3;
+    border-radius: 8px;
+    margin: 0;
+    padding: 1em;
+    width: 50%;
+}
+.Membership_styling{
+    box-shadow: 7px 5px 10px rgb(189, 187, 187);
+    background-color: #F8F6F3;
+    border-radius: 8px;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-right: 2em;
+}
+
+.order_styling{
+    margin-top:2em;
+}
+
+.cart_section_styling{
+    box-shadow: 7px 5px 10px rgb(189, 187, 187);
+    background-color: #F8F6F3;
+    border-radius: 8px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.order_heading{
+background-color: #96CE49;
+padding-top: 0;
+margin: 0;
+border-radius: 8px;
+}
+
+.icon_alignment{
+    padding-top: 4em;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.icon_resizing{
+    position: relative;
+    top:7px;
+}
+
+.coupon_section_styling{
+    box-shadow: 7px 5px 10px rgb(189, 187, 187);
+    background-color: #F8F6F3;
+    border-radius: 8px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.coupon_heading{
+    background-color: #96CE49;
+    padding-top: 0;
+    border-radius: 8px;
+    }
+
+.coupon{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+    font-weight: bold;
+
+}
+
+.card_address{
+    margin-top:2em;
+}
+.saved_cards_styling{
+    box-shadow: 7px 5px 10px rgb(189, 187, 187);
+    background-color: #F8F6F3;
+    border-radius: 8px;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.Ccard_heading{
+    background-color: #96CE49;
+    padding-top: 0;
+    border-radius: 8px;
+    }
+
+.card_details{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+    font-weight: bold;
+
+}
+
+.saved_address{
+    box-shadow: 7px 5px 10px rgb(189, 187, 187);
+    background-color: #F8F6F3;
+    border-radius: 8px;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+@media(max-width: 768px){
+    .avatar{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+    .avatar_info_styling{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .cart_section_styling{
+        margin-top:2em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .coupon_section_styling{
+        margin-top:2em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .saved_cards_styling{
+        margin-top:2em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .saved_address{
+        margin-top:2em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+
+    .Membership_styling{
+        margin-top:2em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
+    .main_class{
+        display: flex;
+        flex-direction: column;
+    }
+}
