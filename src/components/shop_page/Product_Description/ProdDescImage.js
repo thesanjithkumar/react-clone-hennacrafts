@@ -7,6 +7,7 @@ import FullScreenImage from './FullScreenImage';
 
 function ProductDescriptionImage(props)
 {
+  console.log("Testing",props.item)
   const [curzoomimg,setCurZoomImg]=useState(props.item.descimg.length>0 ?props.item.descimg[0]:props.item.image)
   const [isModalOpen,setIsModalOpen]=useState(false);
 
@@ -20,7 +21,7 @@ function ProductDescriptionImage(props)
   //largeImageSrc="https://hennacrafts.com/wp-content/uploads/2020/12/indigo-3-pack-with-kit.jpg"
     />
     <img src={search} alt="search" className={classes.imgMagSearch} onClick={()=>{setIsModalOpen(true)}}/>
-    {props.item.descimg.length>0 &&
+    {props.item.descimg.length>1 &&
     <ul className={classes.prodimagelist}>
       {props.item.descimg.map((imgaddress)=>{
         return (<li><img src={imgaddress} alt={"product_img"} onClick={()=>{changeImage(imgaddress)}} className={curzoomimg==imgaddress?classes.curzoomimg:classes.notcurzoomimg}/></li>);
