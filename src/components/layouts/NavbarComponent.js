@@ -33,44 +33,131 @@ function NavbarComponent(props) {
     setBarDropdown(true);
   }
   
+  console.log(props.appwidth);
 
-  return <header className={classes.header}>
-    <div className={classes.logo}>
-      <img src={cropped_nayab_henna_logo_208x70}/>
-      {props.appwidth<=768 && <Link to="/"><FaShoppingBag size={40} className={classes.bag}/></Link>}
-      {props.appwidth<=768 && <FaBars className={classes.bar} size={40} onClick={BarDropdown}/>}
-    </div>
-    {(bar_dropdown ||props.appwidth>768) && <nav className={classes.nav}>
-      <ul className={classes.navlink}>
-        <li><Link to='/' className={classes.link}>Home</Link></li>
-        <li onClick={ShopDropdown}>
-          <Link to='/shop' className={classes.link}>Shop <span className={shop_dropdown?classes.shoparrowup:classes.shoparrowdown}></span></Link>
-          <div className={classes.shop_dropdown}>
-            {shop_dropdown && <ul>
-             <li><Link to='/' className={classes.link}>Henna</Link></li>
-             <li><Link to='/' className={classes.link}>Indigo</Link></li>
-             <li><Link to='/' className={classes.link}>Face Pack</Link></li>
-             <li><Link to='/' className={classes.link}>Essential Oil</Link></li>
-             <li><Link to='/' className={classes.link}>Combo</Link></li>
-            </ul>}
-          </div>
-        </li>
-        <li><Link to='/blog' className={classes.link}>Blog</Link></li>
-        <li><Link to='/contact' className={classes.link}>Contact</Link></li>
-        <li><Link to='/about' className={classes.link}>About</Link></li>
-        <li onClick={AccountDropdown}>
-          <Link to='/account' className={classes.link}>Account <span className={account_dropdown?classes.accountarrowup:classes.accountarrowdown}></span></Link>
-          <div className={classes.account_dropdown}>
-            {account_dropdown && <ul>
-             <li><Link to='/account' className={classes.link}>My Account</Link></li>
-             <li><Link to='/cart' className={classes.link}>Cart</Link></li>
-            </ul>}
-          </div>
-        </li>
-        {props.appwidth>768 && <li><Link to="/cart"><FaShoppingBag size={40} className={classes.bag}/></Link></li>}
-      </ul>
-    </nav>}
-  </header>
+  return (
+    <header className={classes.header}>
+      <div className={classes.logo}>
+        <img src={cropped_nayab_henna_logo_208x70} />
+        {props.appwidth <= 768 && (
+          <Link to="/">
+            <FaShoppingBag size={40} className={classes.bag} />
+          </Link>
+        )}
+        {props.appwidth <= 768 && (
+          <FaBars className={classes.bar} size={40} onClick={BarDropdown} />
+        )}
+      </div>
+      {(bar_dropdown || props.appwidth > 768) && (
+        <nav className={classes.nav}>
+          <ul className={classes.navlink}>
+            <li>
+              <Link to="/" className={classes.link}>
+                Home
+              </Link>
+            </li>
+            <li onClick={ShopDropdown}>
+              <Link to="/shop" className={classes.link}>
+                Shop{" "}
+                <span
+                  className={
+                    shop_dropdown ? classes.shoparrowup : classes.shoparrowdown
+                  }
+                ></span>
+              </Link>
+              <div className={classes.shop_dropdown}>
+                {shop_dropdown && (
+                  <ul>
+                    <li>
+                      <Link to="/" className={classes.link}>
+                        Henna
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/" className={classes.link}>
+                        Indigo
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/" className={classes.link}>
+                        Face Pack
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/" className={classes.link}>
+                        Essential Oil
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/" className={classes.link}>
+                        Combo
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </div>
+            </li>
+            <li>
+              <Link to="/blog" className={classes.link}>
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className={classes.link}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className={classes.link}>
+                About
+              </Link>
+            </li>
+            <li onClick={AccountDropdown}>
+              <Link to="/account" className={classes.link}>
+                Account
+                <span
+                  className={
+                    account_dropdown
+                      ? classes.accountarrowup
+                      : classes.accountarrowdown
+                  }
+                ></span>
+              </Link>
+              <div className={classes.account_dropdown}>
+                {account_dropdown && (
+                  <ul>
+                    <li>
+                      <Link to="/account" className={classes.link}>
+                        My Account
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/cart" className={classes.link}>
+                        Cart
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/dashboard" className={classes.link}>
+                        Dashboard
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </div>
+            </li>
+            {props.appwidth > 768 && (
+              <li>
+                <Link to="/cart">
+                  <FaShoppingBag size={40} className={classes.bag} />
+                </Link>
+              </li>
+            )}
+          </ul>
+        </nav>
+      )}
+    </header>
+  );
+
 }
 
 export default NavbarComponent;

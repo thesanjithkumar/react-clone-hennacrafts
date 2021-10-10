@@ -12,12 +12,14 @@ import ProductDescription from "./components/shop_page/Product_Description/Produ
 
 import ChatModal from "../src/components/ui/ChatModal/ChatModal";
 import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyConverter";
+import Dashboard from "./pages/Dashboard";
 import PrivacyandPolicy from "./pages/PrivacyandPolicy";
 import TermsAndCondition from "./pages/TermsAndConditions";
 import FAQ from "./pages/fAQ";
 import Blog1 from "./components/ui/blogpage/Blog1";
 import Blog2 from "./components/ui/blogpage/Blog2";
 import Blog3 from "./components/ui/blogpage/Blog3";
+
 
 function App() {
   return (
@@ -44,6 +46,9 @@ function App() {
           </Route>
           <Route path="/cart">
             <CartPage />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
           </Route>
           <Route path="/privacy_policy">
             <PrivacyandPolicy />
