@@ -1,0 +1,16 @@
+.border {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+.border p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.lastchild {
+  color: green;
+}
+.bullets {
+  margin-bottom: 0;
+  margin-left: 1em;
+}
