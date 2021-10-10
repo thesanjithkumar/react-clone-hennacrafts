@@ -51,17 +51,17 @@ function Footer() {
               <h3 class={classes.helvetica}>Site links</h3>
             </li>
             <li>
-              <Link to="/" className={classes.link}>
+              <Link to="/about" className={classes.link}>
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/" className={classes.link}>
+              <Link to="/privacy_policy" className={classes.link}>
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link to="/" className={classes.link}>
+              <Link to="/terms-and-conditions" className={classes.link}>
                 Terms & Conditions
               </Link>
             </li>
