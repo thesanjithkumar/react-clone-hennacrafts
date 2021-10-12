@@ -1,4 +1,5 @@
 import classes from "./Blogs.module.css";
+
 import { useHistory} from "react-router-dom";
 
 export default function Blog1() {
@@ -9,7 +10,12 @@ export default function Blog1() {
   const handleRoute2=()=>{
     history.push('/Blog2')
   }
+  const handleRoute4 = () => {
+    history.push("/BlogUncat1");
+  };
+
   return (
+    
     <div className={classes.container}>
       <div className={classes.whitecontainer}>
         <div className={classes.border}>
@@ -17,10 +23,10 @@ export default function Blog1() {
         <h1>
         The Best Of The Best Bridal Foot Mehendi For Your Inspiration
         </h1>
-        <p className={classes.text1}>
-      Uncategorized / By Murtaza Ali Najmi
-      </p>
-      <p className={classes.text2}>
+        <button className={classes.slip_button} onClick={handleRoute4}>
+        Uncategorized / By Murtaza Ali Najmi
+      </button>
+<p className={classes.text2}>
       The Best Of The Best Bridal Foot Mehendi For Your Inspiration
       </p>
       <img className={classes.img2} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-39.jpeg" alt=""/>
@@ -235,3 +241,7 @@ export default function Blog1() {
     </div>
   );
 }
+        
+
+
+
