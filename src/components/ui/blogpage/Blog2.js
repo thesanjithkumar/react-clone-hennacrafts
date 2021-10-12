@@ -1,4 +1,5 @@
 import classes from "./Blogs.module.css";
+
 import { useHistory} from "react-router-dom";
 
 export default function Blog2() {
@@ -9,13 +10,19 @@ export default function Blog2() {
   const handleRoute3=()=>{
     history.push('/Blog3')
   }
+  const handleRoute4 = () => {
+    history.push("/BlogUncat1");
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.whitecontainer}>
         <div className={classes.border}>
         <img className={classes.img13} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-41.jpeg" alt="" />
        <h1> WHICH HENNA IS GOOD FOR HAIR </h1>
-       <p className={classes.text1}>Uncategorized / By Murtaza Ali Najmi</p>
+       <button className={classes.slip_button} onClick={handleRoute4}>
+        Uncategorized / By Murtaza Ali Najmi
+       </button>
        <h4>WHICH HENNA IS GOOD FOR HAIR?</h4>
        <p>
           Henna is a boon to those with product sensitivities, allergies, and other medical conditions. In fact, henna is an excellent option for

@@ -9,7 +9,6 @@ import AboutPage from "./pages/AboutPage";
 import AccountPage from "./pages/AccountPage";
 import CartPage from "./pages/CartPage";
 import ProductDescription from "./components/shop_page/Product_Description/ProductDescription";
-
 import ChatModal from "../src/components/ui/ChatModal/ChatModal";
 import CurrencyConverter from "../src/components/ui/CurrencyConverter/CurrencyConverter";
 import Dashboard from "./pages/Dashboard";
@@ -19,6 +18,8 @@ import FAQ from "./pages/FaqFooter";
 import Blog1 from "./components/ui/blogpage/Blog1";
 import Blog2 from "./components/ui/blogpage/Blog2";
 import Blog3 from "./components/ui/blogpage/Blog3";
+import BlogUncat2 from "./components/ui/blogpage/BlogUncat2";
+import BlogUncat1 from "./components/ui/blogpage/BlogUncat1";
 
 function App() {
   return (
@@ -70,6 +71,12 @@ function App() {
           <Route path="/Blog3">
             <Blog3 />
           </Route>
+          <Route path="/BlogUncat1">
+            <BlogUncat1 />
+          </Route>
+          <Route path="/BlogUncat2">
+            <BlogUncat2 />
+          </Route>
         </Switch>
         {/* chat modal */}
         <ChatModal />
@@ -81,3 +88,5 @@ function App() {
 }
 
 export default App;
+
+

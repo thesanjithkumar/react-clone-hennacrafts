@@ -1,4 +1,5 @@
 import classes from "./Blogs.module.css";
+
 import { useHistory} from "react-router-dom";
 
 export default function Blog3() {
@@ -9,6 +10,9 @@ export default function Blog3() {
     const handleRoute1=()=>{
       history.push('/Blog1')
     }
+    const handleRoute4 = () => {
+      history.push("/BlogUncat1");
+    };
   return (
     <div className={classes.container}>
       <div className={classes.whitecontainer}>
@@ -17,9 +21,9 @@ export default function Blog3() {
         <h1>
         The Best Of The Best Bridal Foot Mehendi For Your Inspiration
         </h1>
-        <p className={classes.text1}>
-      Uncategorized / By Murtaza Ali Najmi
-      </p>
+        <button className={classes.slip_button} onClick={handleRoute4}>
+        Uncategorized / By Murtaza Ali Najmi
+        </button>
       <p className={classes.text2}>
       The Best Of The Best Bridal Foot Mehendi For Your Inspiration
       </p>
