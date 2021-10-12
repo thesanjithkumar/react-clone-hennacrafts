@@ -1,3 +1,4 @@
+//proper code
 import { createContext, useState, useEffect } from 'react';
 import prod_info from './ProductInfo';
 
@@ -52,16 +53,35 @@ export function ProductFilterContextProvider(props) {
 
   function filterByProductCategoryHandler(category_val) {
     setCatFilterName(category_val)
-    var arr_items = filteredProducts[filteredProducts.length - 1].filter((item) => {
-      return item.category == category_val;
-    })
-    setFilteredProducts(() => {
-      return [...filteredProducts, arr_items]
-    });
-    setAppliedFilter((prevAppliedFilter) => {
-      return { ...prevAppliedFilter, category: category_val }
-    })
-    setAppliedFilterOrder([...appliedFilterOrder, 'category'])
+    var arr_items;
+
+    if (appliedFilterOrder[appliedFilterOrder.length - 1] == 'category') {
+      arr_items = filteredProducts[filteredProducts.length - 2].filter((item) => {
+        return item.category == category_val;
+      })
+      var a = [...filteredProducts]
+      a.pop()
+      setFilteredProducts(() => {
+        return [...a, arr_items]
+      })
+      setAppliedFilter((prevAppliedFilter) => {
+        var a = { ...prevAppliedFilter }
+        a.category = category_val;
+        return a;
+      })
+    }
+    else {
+      arr_items = filteredProducts[filteredProducts.length - 1].filter((item) => {
+        return item.category == category_val;
+      })
+      setFilteredProducts(() => {
+        return [...filteredProducts, arr_items]
+      });
+      setAppliedFilter((prevAppliedFilter) => {
+        return { ...prevAppliedFilter, category: category_val }
+      })
+      setAppliedFilterOrder([...appliedFilterOrder, 'category'])
+    }
   }
 
   function filterByPriceRangeHandler(price_range) {
@@ -76,26 +96,45 @@ export function ProductFilterContextProvider(props) {
   }
 
   function filterProductByRatingHandler(rating_range) {
-    var arr_items = filteredProducts[filteredProducts.length - 1].filter((item) => {
-      return item.rating >= rating_range[0] && item.rating <= rating_range[1];
-    })
-    setFilteredProducts(() => {
+    if(appliedFilterOrder[appliedFilterOrder.length - 1] == 'rating'){
+      arr_items = filteredProducts[filteredProducts.length - 2].filter((item) => {
+        return item.rating >= rating_range[0] && item.rating <= rating_range[1];
+      })
+      var a = [...filteredProducts]
+      a.pop()
       setFilteredProducts(() => {
-        return [...filteredProducts, arr_items]
-      });
-    });
-    setAppliedFilter((prevAppliedFilter) => {
-      return { ...prevAppliedFilter, rating: `average rating between ${rating_range[0]} and ${rating_range[1]}` }
-    })
-    if (rating_range[0] == 1 && rating_range[1] == 5) {
-      resetFilterHandler('rating')
+        return [...a, arr_items]
+      })
+      setAppliedFilter((prevAppliedFilter) => {
+        var a = { ...prevAppliedFilter }
+        a.rating = `average rating between ${rating_range[0]} and ${rating_range[1]}`;
+        return a;
+      })
     }
-    setAppliedFilterOrder([...appliedFilterOrder, 'category'])
+    else
+    {
+      var arr_items = filteredProducts[filteredProducts.length - 1].filter((item) => {
+        return item.rating >= rating_range[0] && item.rating <= rating_range[1];
+      })
+      setFilteredProducts(() => {
+        setFilteredProducts(() => {
+          return [...filteredProducts, arr_items]
+        });
+      });
+      setAppliedFilter((prevAppliedFilter) => {
+        return { ...prevAppliedFilter, rating: `average rating between ${rating_range[0]} and ${rating_range[1]}` }
+      })
+    }
+      if (rating_range[0] == 1 && rating_range[1] == 5) {
+        resetFilterHandler('rating')
+      }
+      setAppliedFilterOrder([...appliedFilterOrder, 'rating'])
   }
 
   function sortProductsHandler() {
     var val = document.getElementById("sortingdropdown").value;
     var len = filteredProducts.length;
+    console.log(val);
     if (val == 6) {
       filteredProducts[len - 1].sort(function (prod1, prod2) { return prod2.price - prod1.price });
       var hl = document.getElementById('hightolowsort');
@@ -136,11 +175,16 @@ export function ProductFilterContextProvider(props) {
       })
     }
     else if (val == 1) {
+      console.log("hi")
       filteredProducts[len - 1].sort(function (prod1, prod2) {
         if (prod1.title < prod2.title) { return -1; }
         else if (prod1.title > prod2.title) { return 1; }
         else { return 0; }
       });
+      if (appliedFilter.sorting != 'none') {
+        appliedFilter.sorting = 'none';
+        resetFilterHandler('sorting');
+      }
     }
   }
 
@@ -179,12 +223,14 @@ export function ProductFilterContextProvider(props) {
   }*/
 
   function resetFilterHandler(filter_name) {
-
+    // console.log(filteredProducts,appliedFilter,filter_name,filter_name.includes('rating'))
     for (var i = 0; i < appliedFilterOrder.length; i++) {
-      if (filter_name == appliedFilterOrder[i])
+      if (appliedFilterOrder[i] == filter_name)
         break;
     }
-
+    // console.log('appliedFilter',appliedFilterOrder)
+    // var remFilter=appliedFilterOrder.slice(i+1,appliedFilterOrder.length)
+    // console.log(appliedFilterOrder)
     setFilteredProducts(() => {
       return [...filteredProducts.slice(0, i)]
     })
@@ -195,6 +241,7 @@ export function ProductFilterContextProvider(props) {
         return { ...prevAppliedFilter, category: 'none' }
       }
       else if (filter_name == 'rating') {
+        // console.log(filteredProducts)
         document.getElementById("rating_btn_val").innerText = 'Filter by rating'
         return { ...prevAppliedFilter, rating: 'none' }
       }
@@ -204,9 +251,26 @@ export function ProductFilterContextProvider(props) {
         return { ...prevAppliedFilter, sorting: 'none' }
       }
     })
+
+    // remFilter.map((ftr)=>{
+    //   if(ftr=='category')
+    //   {
+    //     filterByProductCategoryHandler(appliedFilter.category)
+    //   }
+    //   else if(ftr=='rating')
+    //   {
+    //     filterProductByRatingHandler(appliedFilter.rating)
+    //   }
+    //   else if(ftr=='sorting')
+    //   {
+    //     sortProductsHandler()
+    //   }
+
+    // })
   }
 
-  //console.log("filteredProducts ",filteredProducts)
+  console.log("AppliedFilterOrder ",appliedFilterOrder)
+  console.log(filteredProducts)
 
   const context = {
     products: filteredProducts,
