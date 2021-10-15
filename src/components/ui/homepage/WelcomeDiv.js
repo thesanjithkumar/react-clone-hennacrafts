@@ -1,12 +1,12 @@
-import classes from "./Products.module.css";
+import "./Products.module.css";
 import welcome from "../img/welcome.png";
 export default function WelcomeDiv() {
   return (
-    <div className={classes.welcomediv}>
-      <div className={classes.welcometextdiv}>
-        <h3 className={classes.welcometo}>Welcome To</h3>
-        <h2 className={classes.welcomeheading}>HENNA CRAFTS</h2>
-        <div className={classes.welcometotext}>
+    <div className="welcomediv">
+      <div className="welcometextdiv">
+        <h3 className="welcometo">Welcome To</h3>
+        <h2 className="welcomeheading">HENNA CRAFTS</h2>
+        <div className="welcometotext">
           <p>
             Welcome to little luck you may produced you’re own historical
             performance to match the surrounding splendour! All competitors have
@@ -14,12 +14,12 @@ export default function WelcomeDiv() {
             worry about our story.
           </p>
         </div>
-        <a href="" className={classes.learnmore}>
+        <a href="" className="learnmore">
           Learn More
         </a>
       </div>
-      <div className={classes.welcomeimgdiv}>
-        <img className={classes.responsive} src={welcome} />
+      <div className="welcomeimgdiv">
+        <img className="responsive" src={welcome} />
       </div>
     </div>
   );
