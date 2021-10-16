@@ -9,7 +9,7 @@
   -moz-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
-  top: 50%;
+  bottom: 40%;
   /* transform: translateY(-50%); */
   font-family: Arial;
   font-family: Arial, Helvetica, sans-serif;
