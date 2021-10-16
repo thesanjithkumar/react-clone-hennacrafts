@@ -6,25 +6,6 @@ import ProductsSectionList from "./ProductSectionList";
 
 const DUMMY_DATA1 = [
   {
-    id: "1",
-    src1: "https://hennacrafts.com/wp-content/uploads/2020/12/t1.jpg",
-    src2: "https://hennacrafts.com/wp-content/uploads/2020/12/h4-300x300.jpg",
-    products_section_name: "Face Pack",
-    product_name: "Ambba Haldi face pack",
-    price: "$119.00",
-  },
-  {
-    id: "2",
-    src1: "https://hennacrafts.com/wp-content/uploads/2020/12/h1.jpg",
-    src2: "https://hennacrafts.com/wp-content/uploads/2020/12/h4-300x300.jpg",
-    products_section_name: "Face Pack",
-    product_name: "Ambba Haldi face pack",
-    price: "$119.00",
-  },
-];
-
-const DUMMY_DATA2 = [
-  {
     id: "3",
     src1: "https://hennacrafts.com/wp-content/uploads/2020/12/indigo-3-pack-with-kit.jpg",
     src2: "https://hennacrafts.com/wp-content/uploads/2020/12/henna-back-300x300.jpg",
@@ -47,6 +28,25 @@ const DUMMY_DATA2 = [
     products_section_name: "Face Pack",
     product_name: "Ambba Haldi face pack",
     price: "$299.00",
+  },
+];
+
+const DUMMY_DATA2 = [
+  {
+    id: "1",
+    src1: "https://hennacrafts.com/wp-content/uploads/2020/12/t1.jpg",
+    src2: "https://hennacrafts.com/wp-content/uploads/2020/12/h4-300x300.jpg",
+    products_section_name: "Face Pack",
+    product_name: "Ambba Haldi face pack",
+    price: "$119.00",
+  },
+  {
+    id: "2",
+    src1: "https://hennacrafts.com/wp-content/uploads/2020/12/h1.jpg",
+    src2: "https://hennacrafts.com/wp-content/uploads/2020/12/h4-300x300.jpg",
+    products_section_name: "Face Pack",
+    product_name: "Ambba Haldi face pack",
+    price: "$119.00",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function Card() {
                   className={`product_heading ${isActive1 ? "green" : ""}`}
                   onClick={handleToggle1}
                 >
-                  ESSENTIAL OIL
+                  COMBO
                 </button>
               </h1>
             </Tab>
@@ -86,16 +86,16 @@ export default function Card() {
                   className={`product_heading ${isActive2 ? "green" : ""}`}
                   onClick={handleToggle2}
                 >
-                  COMBO
+                  ESSENTIAL OIL
                 </button>
               </h1>
             </Tab>
           </div>
         </TabList>
-        <TabPanel className="products_essentials">
+        <TabPanel className="products_section">
           <ProductsSectionList products={DUMMY_DATA1} />
         </TabPanel>
-        <TabPanel className="products_essentials">
+        <TabPanel className="products_section">
           <ProductsSectionList products={DUMMY_DATA2} />
         </TabPanel>
         <a href="/shop" className="product_button">

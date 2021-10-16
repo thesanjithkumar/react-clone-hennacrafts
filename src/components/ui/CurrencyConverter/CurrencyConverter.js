@@ -27,7 +27,7 @@ export default function CurrencyConverter() {
           <p className="heading_title">SELECT YOUR CURRENCY</p>
         </div>
         <div
-          className={`usd ${isActiveUSD ? "active" : "black_background"}`}
+          className={`currency ${isActiveUSD ? "active" : "black_background"}`}
           onClick={ToggleUSD}
         >
           <a href="#" className="title">
@@ -35,7 +35,7 @@ export default function CurrencyConverter() {
           </a>
         </div>
         <div
-          className={`cad ${isActiveCAD ? "active" : "black_background"}`}
+          className={`currency ${isActiveCAD ? "active" : "black_background"}`}
           onClick={ToggleCAD}
         >
           <a href="#" className="title">

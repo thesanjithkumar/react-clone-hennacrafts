@@ -1,20 +1,22 @@
 .currency_converter_parent_div {
   position: fixed;
   height: auto;
-  width: 30%;
-  display: block;
-  /* background-color: green; */
-  bottom: 45%;
-  /* z-index: 2; */
-  left: 92%;
-  z-index: 4;
-  transition: all 0.2s ease-in-out;
+  right: -315px;
+  position: fixed;
+  z-index: 9999999999;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  font-family: Arial;
   font-family: Arial, Helvetica, sans-serif;
-  /* transform: translate(50%, 0); */
 }
 
 .currency_converter_parent_div:hover {
-  transform: translateX(-64%);
+  transform: translateX(-255px);
 }
 
 #currency_converter_parent_div:hover #heading {
@@ -22,7 +24,7 @@
 }
 
 .heading {
-  margin-left: 15%;
+  /* margin-left: 150px; */
   text-align: center;
   display: flex;
   margin-left: 40%;
@@ -31,16 +33,18 @@
   background: #212121 !important;
   color: white;
   font-size: 16px;
-  width: 76%;
+  width: 420px;
   height: 45px;
 }
 
 .heading_title {
-  margin: 0 0 0 25px;
+  /* margin: 25px; */
   text-decoration: none;
   color: white;
+  margin-left: 45px;
   letter-spacing: 1px;
-  width: 100%;
+  text-align: left;
+  width: auto;
   font-size: 16px;
 }
 
@@ -53,7 +57,7 @@
   font-size: 12px;
 }
 
-.usd {
+.currency {
   margin-left: 15%;
   text-align: left;
   margin-top: 2px;
@@ -62,28 +66,23 @@
   /* justify-content: center; */
   align-items: center;
   color: white;
-  width: 80%;
+  width: 350px;
   height: 45px;
 }
 
-.usd:hover {
+.currency:hover {
   background-color: #719d0f;
 }
 
-.cad {
+/* .cad {
   margin-left: 15%;
   text-align: left;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   color: white;
-  width: 80%;
+  width: 300px;
   height: 45px;
-}
-
-.cad:hover {
-  background-color: #719d0f;
-}
+} */
 
 .us_span {
   margin-left: 10%;
