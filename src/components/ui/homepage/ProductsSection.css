@@ -203,7 +203,7 @@ main {
   min-width: 270px;
   max-height: 500px;
   min-height: 325px;
-  margin: 10px;
+  margin: 20px;
   height: 600px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
