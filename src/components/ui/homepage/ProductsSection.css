@@ -12,7 +12,7 @@
 
 .products {
   /* display: inline-flex; */
-  margin: 100px 0 50px 0;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -44,11 +44,11 @@
   /* padding-bottom: 50px; */
   width: 22%;
   min-width: 230px;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: 100%;
   margin: 15px;
   min-height: 260px;
-  max-height: 480px;
+  /* max-height: 480px; */
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;
   -moz-animation: fadeIn 1s;
@@ -117,7 +117,7 @@
 }
 
 .product_image {
-  height: 80%;
+  height: auto;
   width: 100%;
   transition: opacity 0.5s ease-out;
 }
@@ -150,12 +150,6 @@
   color: #719d0f;
 }
 
-.products_essentials {
-  /* display: inline-flex; */
-  margin: 10px 0 2px 10px;
-  text-align: left;
-}
-
 /* .product_heading_div {
     text-align: center;
   } */
@@ -185,83 +179,43 @@ main {
   margin-bottom: 100px;
   z-index: -1;
 }
-.card1 {
-  background-image: url("../img/top_div1.jpg");
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.card_img {
+  filter: brightness(54%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+}
+
+.topcard {
+  /* background-image: url("../img/top_div1.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   display: inline-flex;
   color: white;
-  /* float: left; */
-  width: 30%;
+  width: auto;
+  border: none;
   max-width: 500px;
   min-width: 270px;
   max-height: 500px;
   min-height: 325px;
-  margin: 10px 10px 10px;
+  margin: 10px;
   height: 600px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   z-index: -1;
-  /* backdrop-filter: brightness(54%) contrast(100%) saturate(100%) blur(0px)
-    hue-rotate(0deg); */
-}
-.card2 {
-  background-image: url("../img/top_div2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: inline-flex;
-  color: white;
-  /* float: left; */
-  width: 30%;
-  max-width: 500px;
-  min-width: 270px;
-  max-height: 500px;
-  min-height: 325px;
-  /* padding: 1px; */
-  margin: 10px 10px 10px;
-  height: 600px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-.card3 {
-  background-image: url("../img/top_div3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: inline-flex;
-  color: white;
-  /* float: left; */
-  width: 30%;
-  max-width: 500px;
-  min-width: 270px;
-  max-height: 500px;
-  min-height: 325px;
-  /* padding: 1px; */
-  margin: 10px 10px 10px;
-  height: 600px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
-.card1:hover {
+.topcard:hover {
   -webkit-transform: scale(1.08);
   transform: scale(1.08);
   /* transition-timing-function: ease-in-out; */
 }
 
-.card2:hover {
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
-  /* transition-timing-function: ease-in-out; */
-}
-
-.card3:hover {
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
-  /* transition-timing-function: ease-in-out; */
-}
 /* .responsive {
   width: 100%;
   max-width: 500px;
@@ -307,6 +261,8 @@ main {
 .cardbottom {
   margin-left: 40px;
   margin-top: 300px;
+  color: white;
+  position: absolute;
   text-align: left;
   text-decoration: none;
 }
@@ -327,7 +283,10 @@ main {
 }
 
 .cardContainer {
-  text-align: center;
+  width: 95%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
 .cardContainer::afthennaer {
   content: "";
@@ -354,11 +313,6 @@ main {
   margin-left: 10%;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.responsive {
-  width: 100%;
-  height: auto;
 }
 
 .welcometo {
@@ -791,9 +745,6 @@ main {
 
 /* Media Quereis */
 @media (max-width: 760px) {
-  .cardContainer {
-    display: block;
-  }
   .topdiv {
     margin-top: 20px;
   }
@@ -837,6 +788,17 @@ main {
 @media (max-width: 850px) {
   .topdiv {
     animation: none;
+  }
+  .cardContainer {
+    display: block;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+  }
+  .topcard {
+    margin: auto;
+    width: 100%;
+    margin: 20px auto 20px auto;
   }
 }
 

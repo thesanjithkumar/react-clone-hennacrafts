@@ -115,10 +115,10 @@ export default function FacepackPowder() {
             </Tab>
           </div>
         </TabList>
-        <TabPanel className="products_essentials">
+        <TabPanel className="products_section">
           <ProductsSectionList products={DUMMY_DATA1} />
         </TabPanel>
-        <TabPanel className="products_essentials">
+        <TabPanel className="products_section">
           <ProductsSectionList products={DUMMY_DATA2} />
         </TabPanel>
         <a href="/shop" className="product_button">
