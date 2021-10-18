@@ -6,7 +6,6 @@ function Layout(props) {
     <div > 
       <NavbarResize/>
       <main className={classes.main}>{props.children}</main>
-
       <Footer />
     </div>
   );

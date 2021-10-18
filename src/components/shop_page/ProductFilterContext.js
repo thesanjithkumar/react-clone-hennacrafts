@@ -1,87 +1,80 @@
-//proper code
 import { createContext, useState, useEffect } from 'react';
 import prod_info from './ProductInfo';
 
 const ProductFilterContext = createContext({
   products: [],
   totalProducts: 0,
-  filterProductByCategory: (category_val) => { },
-  filterProductByPriceRange: (price_range) => { },
-  filterProductByRating: (rating_range) => { },
+  // filterProductByCategory: (category_val) => { },
+  // filterProductByPriceRange: (price_range) => { },
+  // filterProductByRating: (rating_range) => { },
   resetFilter: (filter_name, cat_val) => { },
-  sortProducts: () => { },
+  // sortProducts: () => { },
   sliderRange: [],
   UStoCanadianDollar: false,
   UStoCanadianDollarHandler: () => { },
   filterApplied: {},
+  setFilterApplied:()=>{},
   //allFilters:()=>{},
-  categoryFiltername: ''
+  // categoryFiltername: ''
 });
 
 export function ProductFilterContextProvider(props) {
-  const [filteredProducts, setFilteredProducts] = useState([prod_info]);
+  const [filteredProducts, setFilteredProducts] = useState(prod_info);
   const [UStoCanadian, setUStoCanadian] = useState(false);
   const [sliderval, setSliderVal] = useState([0, 400]);
   const [appliedFilter, setAppliedFilter] = useState({ category: 'none', rating: 'none', sorting: 'none' });
-  const [catfilter_name, setCatFilterName] = useState('none');
-  const [appliedFilterOrder, setAppliedFilterOrder] = useState(['default']);
+  // const [catfilter_name, setCatFilterName] = useState('none');
+  // const [appliedFilterOrder, setAppliedFilterOrder] = useState(['default']);
+  // const [triggerFilter,setTriggerFilter]=useState({category:false,rating:false,sorting:false});
 
+var allFilters=async(products)=>{
+  if(appliedFilter.category!='none')
+  {
+    products=await filterByProductCategoryHandler(appliedFilter.category,products)
+  }
+  if(appliedFilter.rating!='none')
+  {
+    products=await filterProductByRatingHandler(appliedFilter.rating,products)
+  }
+  if(appliedFilter.sorting!='none')
+  {
+    products=sortProductsHandler(products)
+  }
+  return products
+}
+
+var filters=async()=>{
+ const prod=await allFilters(prod_info); 
+ setFilteredProducts(()=>{return prod});
+}
+  useEffect(() => {
+    // var filters={category:false,rating:false,rating:false}
+    filters()
+    setSliderVal([findMin(), findMax()]);
+  }, [appliedFilter])
 
   function findMin() {
-    var len = filteredProducts.length;
-    var min = filteredProducts[len - 1][0].price;
-    for (let i = 1; i < filteredProducts[len - 1].length; i++) {
-      if (filteredProducts[len - 1][i].price < min)
-        min = filteredProducts[len - 1][i].price;
+    var min = filteredProducts[0].price;
+    for (let i = 1; i < filteredProducts.length; i++) {
+      if (filteredProducts[i].price < min)
+        min = filteredProducts[i].price;
     }
     return min;
   }
 
   function findMax() {
-    var len = filteredProducts.length;
-    var max = filteredProducts[len - 1][0].price;
-    for (let i = 1; i < filteredProducts[len - 1].length; i++) {
-      if (filteredProducts[len - 1][i].price > max)
-        max = filteredProducts[len - 1][i].price;
+    var max = filteredProducts[0].price;
+    for (let i = 1; i < filteredProducts.length; i++) {
+      if (filteredProducts[i].price > max)
+        max = filteredProducts[i].price;
     }
     return max;
   }
 
-  useEffect(() => {
-    setSliderVal([findMin(), findMax()]);
-  }, [appliedFilter])
-
-  function filterByProductCategoryHandler(category_val) {
-    setCatFilterName(category_val)
-    var arr_items;
-
-    if (appliedFilterOrder[appliedFilterOrder.length - 1] == 'category') {
-      arr_items = filteredProducts[filteredProducts.length - 2].filter((item) => {
-        return item.category == category_val;
-      })
-      var a = [...filteredProducts]
-      a.pop()
-      setFilteredProducts(() => {
-        return [...a, arr_items]
-      })
-      setAppliedFilter((prevAppliedFilter) => {
-        var a = { ...prevAppliedFilter }
-        a.category = category_val;
-        return a;
-      })
-    }
-    else {
-      arr_items = filteredProducts[filteredProducts.length - 1].filter((item) => {
-        return item.category == category_val;
-      })
-      setFilteredProducts(() => {
-        return [...filteredProducts, arr_items]
-      });
-      setAppliedFilter((prevAppliedFilter) => {
-        return { ...prevAppliedFilter, category: category_val }
-      })
-      setAppliedFilterOrder([...appliedFilterOrder, 'category'])
-    }
+  function filterByProductCategoryHandler(category_val,products) {
+        return products.filter((item) => {
+          return item.category == category_val;
+        })
   }
 
   function filterByPriceRangeHandler(price_range) {
@@ -95,97 +88,50 @@ export function ProductFilterContextProvider(props) {
     });
   }
 
-  function filterProductByRatingHandler(rating_range) {
-    if(appliedFilterOrder[appliedFilterOrder.length - 1] == 'rating'){
-      arr_items = filteredProducts[filteredProducts.length - 2].filter((item) => {
-        return item.rating >= rating_range[0] && item.rating <= rating_range[1];
-      })
-      var a = [...filteredProducts]
-      a.pop()
-      setFilteredProducts(() => {
-        return [...a, arr_items]
-      })
-      setAppliedFilter((prevAppliedFilter) => {
-        var a = { ...prevAppliedFilter }
-        a.rating = `average rating between ${rating_range[0]} and ${rating_range[1]}`;
-        return a;
-      })
-    }
-    else
-    {
-      var arr_items = filteredProducts[filteredProducts.length - 1].filter((item) => {
-        return item.rating >= rating_range[0] && item.rating <= rating_range[1];
-      })
-      setFilteredProducts(() => {
-        setFilteredProducts(() => {
-          return [...filteredProducts, arr_items]
-        });
-      });
-      setAppliedFilter((prevAppliedFilter) => {
-        return { ...prevAppliedFilter, rating: `average rating between ${rating_range[0]} and ${rating_range[1]}` }
-      })
-    }
-      if (rating_range[0] == 1 && rating_range[1] == 5) {
-        resetFilterHandler('rating')
-      }
-      setAppliedFilterOrder([...appliedFilterOrder, 'rating'])
+  function filterProductByRatingHandler(rating_range,products) {
+        return products.filter((item) => {
+          return item.rating >= rating_range[0] && item.rating <= rating_range[1];
+        })
+
+      // if (rating_range[0] == 1 && rating_range[1] == 5) {
+      //   resetFilterHandler('rating')
+      // }
   }
 
-  function sortProductsHandler() {
+  function sortProductsHandler(products) {
     var val = document.getElementById("sortingdropdown").value;
-    var len = filteredProducts.length;
-    console.log(val);
     if (val == 6) {
-      filteredProducts[len - 1].sort(function (prod1, prod2) { return prod2.price - prod1.price });
-      var hl = document.getElementById('hightolowsort');
-      setAppliedFilter((prevAppliedFilter) => {
-        return { ...prevAppliedFilter, sorting: hl.innerText }
-      })
+      products.sort(function (prod1, prod2) { return prod2.price - prod1.price });
     }
     else if (val == 5) {
-      filteredProducts[len - 1].sort(function (prod1, prod2) { return prod1.price - prod2.price });
-      var lh = document.getElementById('lowtohighsort');
-      setAppliedFilter((prevAppliedFilter) => {
-        return { ...prevAppliedFilter, sorting: lh.innerText }
-      })
+      products.sort(function (prod1, prod2) { return prod1.price - prod2.price });
     }
     else if (val == 4) {
-      filteredProducts[len - 1].sort(function (prod1, prod2) {
+     products.sort(function (prod1, prod2) {
         if (prod1.category < prod2.category) { return -1; }
         else if (prod1.category > prod2.category) { return 1; }
         else { return 0; }
       });
-      var ls = document.getElementById('latestsort');
-      setAppliedFilter((prevAppliedFilter) => {
-        return { ...prevAppliedFilter, sorting: ls.innerText }
-      })
     }
     else if (val == 3) {
-      filteredProducts[len - 1].sort(function (prod1, prod2) { return prod2.rating - prod1.rating });
-      var rs = document.getElementById('ratingsort');
-      setAppliedFilter((prevAppliedFilter) => {
-        return { ...prevAppliedFilter, sorting: rs.innerText }
-      })
+      products.sort(function (prod1, prod2) { return prod2.rating - prod1.rating });
     }
     else if (val == 2) {
-      filteredProducts[len - 1].sort(function (prod1, prod2) { return prod2.rating - prod1.rating });
-      var ps = document.getElementById('popularitysort');
-      setAppliedFilter((prevAppliedFilter) => {
-        return { ...prevAppliedFilter, sorting: ps.innerText }
-      })
+      products.sort(function (prod1, prod2) { return prod2.rating - prod1.rating });
     }
     else if (val == 1) {
-      console.log("hi")
-      filteredProducts[len - 1].sort(function (prod1, prod2) {
+    products.sort(function (prod1, prod2) {
         if (prod1.title < prod2.title) { return -1; }
         else if (prod1.title > prod2.title) { return 1; }
         else { return 0; }
       });
-      if (appliedFilter.sorting != 'none') {
-        appliedFilter.sorting = 'none';
-        resetFilterHandler('sorting');
-      }
+    if (appliedFilter.sorting != 'none') {
+      setAppliedFilter((prevAppliedFilter)=>{
+        return {...prevAppliedFilter,sorting:"none"}
+      })
     }
+    }
+    return products;
   }
 
 
@@ -224,20 +170,25 @@ export function ProductFilterContextProvider(props) {
 
   function resetFilterHandler(filter_name) {
     // console.log(filteredProducts,appliedFilter,filter_name,filter_name.includes('rating'))
-    for (var i = 0; i < appliedFilterOrder.length; i++) {
-      if (appliedFilterOrder[i] == filter_name)
-        break;
-    }
+    // for (var i = 0; i < appliedFilterOrder.length; i++) {
+    //   if (appliedFilterOrder[i] == filter_name)
+    //     break;
+    // }
+
+    // setAppliedFilterOrder((prevorder)=>{prevorder.splice(i,1)})
     // console.log('appliedFilter',appliedFilterOrder)
     // var remFilter=appliedFilterOrder.slice(i+1,appliedFilterOrder.length)
     // console.log(appliedFilterOrder)
-    setFilteredProducts(() => {
-      return [...filteredProducts.slice(0, i)]
-    })
+    // setFilteredProducts(() => {
+    //   return [...filteredProducts.slice(0, i)]
+    // })
+
 
     setAppliedFilter((prevAppliedFilter) => {
-      if (filter_name == 'category') {
-        document.getElementById(catfilter_name).checked = false;
+      if (filter_name=="category") {
+        var cat=document.getElementsByName("category")
+        for(var i=0;i<cat.length;i++)
+            cat[i].checked = false;
         return { ...prevAppliedFilter, category: 'none' }
       }
       else if (filter_name == 'rating') {
@@ -247,8 +198,7 @@ export function ProductFilterContextProvider(props) {
       }
       else if (filter_name == 'sorting') {
         document.getElementById("sortingdropdown").value = 1;
-        sortProductsHandler();
-        return { ...prevAppliedFilter, sorting: 'none' }
+        return { ...prevAppliedFilter, sorting: 'default' }
       }
     })
 
@@ -269,22 +219,23 @@ export function ProductFilterContextProvider(props) {
     // })
   }
 
-  console.log("AppliedFilterOrder ",appliedFilterOrder)
-  console.log(filteredProducts)
+  // console.log("AppliedFilterOrder ",appliedFilterOrder)
+  // console.log(filteredProducts)
 
   const context = {
     products: filteredProducts,
-    totalProducts: filteredProducts[filteredProducts.length - 1].length,
-    filterProductByCategory: filterByProductCategoryHandler,
-    filterProductByPriceRange: filterByPriceRangeHandler,
-    filterProductByRating: filterProductByRatingHandler,
+    totalProducts: filteredProducts.length,
+    // filterProductByCategory: filterByProductCategoryHandler,
+    // filterProductByPriceRange: filterByPriceRangeHandler,
+    // filterProductByRating: filterProductByRatingHandler,
     resetFilter: resetFilterHandler,
-    sortProducts: sortProductsHandler,
+    // sortProducts: sortProductsHandler,
     UStoCanadianDollar: UStoCanadian,
     UStoCanadianDollarHandler: dollarConversion,
     sliderRange: sliderval,
     filterApplied: appliedFilter,
-    categoryFiltername: catfilter_name,
+    setFilterApplied:setAppliedFilter,
+    // categoryFiltername: catfilter_name,
   };
 
   return (

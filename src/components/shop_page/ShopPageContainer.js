@@ -8,6 +8,7 @@ import SelectCurrency from './SelectCurrency';
 import RecentlyViewedProducts from './RecentlyViewedProducts';
 import {useContext} from 'react';
 import ProductFilterContext from './ProductFilterContext';
+import prod_info from './ProductInfo';
 
 
 function ShopPageContainer() {
@@ -23,9 +24,10 @@ function ShopPageContainer() {
 
   var last_item=currentpage*9;
   var first_item=last_item-9;
-  var prod_items=filterctx.products[filterctx.products.length-1]
   //var product_info=filterctx.products[filterctx.products.length-1].slice(first_item,last_item);
-  var product_info=prod_items.slice(first_item,last_item);
+  console.log(filterctx.products)
+  var product_info=filterctx.products.slice(first_item,last_item);
+  // var product_info=prod_info
   return (
   <div className={classes.wrapper}>
     <div className={classes.product}>

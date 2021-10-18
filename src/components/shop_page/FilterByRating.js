@@ -20,7 +20,9 @@ function FilterByRating()
   {
     setFilterVal(val);
     setRatingDropdown(false);
-    filterctx.filterProductByRating(rating_range);
+    filterctx.setFilterApplied((prevVal)=>{
+      return {...prevVal,rating:rating_range}
+    });
   }
   return (
     <div className={classes.rating_dropdown}>
