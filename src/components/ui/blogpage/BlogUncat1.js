@@ -15,11 +15,11 @@ export default function BlogPage() {
   return (
     <div>
 
-        <img className={classes.slip__imgr} scr="https://secure.gravatar.com/avatar/ab839e2928d6f62db73a8755ebcbab8e?s=120&d=mm&r=g"/>
+        <img className={classes.slip__imgr} src="https://secure.gravatar.com/avatar/ab839e2928d6f62db73a8755ebcbab8e?s=120&d=mm&r=g"/>
         <caption className={classes.slip__cap}>Murtaza Ali Najmi</caption>
 
        <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/9.jpg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/9.jpg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             Foot Mehendi For Your Inspiration
@@ -38,7 +38,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-41-1024x576.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-41-1024x576.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>WHICH HENNA IS GOOD FOR HAIR</p>
           <p className={classes.slip_description}>
@@ -56,7 +56,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-38-1024x683.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-38-1024x683.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             SHOULD I GO DARKER EVERYTHING YOU NEED TO KNOW ABOUT HENNA FOR
@@ -76,7 +76,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/low-maintenance-hair-color-trends-or-teen-vogue-1024x1024.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/low-maintenance-hair-color-trends-or-teen-vogue-1024x1024.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             NATURAL HAIR COLOR 101 HENNA HAIR DYE TIPS
@@ -97,7 +97,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-36-1024x725.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-36-1024x725.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             How to Use Tea Tree Oil for Hair Growth
@@ -117,7 +117,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-32-1024x768.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-32-1024x768.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             HOW TO GET THE BEST RESULTS FROM DARK BROWN HENNA HAIR COLOR TIPS
@@ -136,7 +136,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/sally-essential-colour-skills-refresher-course-or-s.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/sally-essential-colour-skills-refresher-course-or-s.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             GET THE 6 BEST HAIR COLORS FOR WINTER 2020 FROM HENNA
@@ -155,7 +155,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/51-beautiful-designs-for-hands-or-mahndi-desgins.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/51-beautiful-designs-for-hands-or-mahndi-desgins.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             51 Beautiful Mylanchi designs for hands Kerala mehndi designs

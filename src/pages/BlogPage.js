@@ -15,7 +15,7 @@ export default function BlogPage() {
   return (
     <div>
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/9.jpg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/9.jpg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             Foot Mehendi For Your Inspiration
@@ -28,13 +28,13 @@ export default function BlogPage() {
             too, and doesn’t it then make sense …
           </p>
           <button className={classes.slip_button} onClick={handleRoute1}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-41-1024x576.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-41-1024x576.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>WHICH HENNA IS GOOD FOR HAIR</p>
           <p className={classes.slip_description}>
@@ -46,13 +46,13 @@ export default function BlogPage() {
             not …
           </p>
           <button className={classes.slip_button} onClick={handleRoute2}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-38-1024x683.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-38-1024x683.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             SHOULD I GO DARKER EVERYTHING YOU NEED TO KNOW ABOUT HENNA FOR
@@ -66,13 +66,13 @@ export default function BlogPage() {
             change you’re looking for. From caramel to espresso, there’s …
           </p>
           <button className={classes.slip_button} onClick={handleRoute3}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/low-maintenance-hair-color-trends-or-teen-vogue-1024x1024.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/low-maintenance-hair-color-trends-or-teen-vogue-1024x1024.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             NATURAL HAIR COLOR 101 HENNA HAIR DYE TIPS
@@ -87,13 +87,13 @@ export default function BlogPage() {
             enhancing techniques, these henna …
           </p>
           <button className={classes.slip_button} onClick={handleRoute1}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-36-1024x725.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-36-1024x725.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             How to Use Tea Tree Oil for Hair Growth
@@ -107,13 +107,13 @@ export default function BlogPage() {
             product …
           </p>
           <button className={classes.slip_button} onClick={handleRoute2}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-32-1024x768.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-32-1024x768.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             HOW TO GET THE BEST RESULTS FROM DARK BROWN HENNA HAIR COLOR TIPS
@@ -126,13 +126,13 @@ export default function BlogPage() {
             products you use, the softness of the water in your …
           </p>
           <button className={classes.slip_button} onClick={handleRoute3}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/sally-essential-colour-skills-refresher-course-or-s.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/sally-essential-colour-skills-refresher-course-or-s.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             GET THE 6 BEST HAIR COLORS FOR WINTER 2020 FROM HENNA
@@ -145,13 +145,13 @@ export default function BlogPage() {
             hair colors and bad haircuts …
           </p>
           <button className={classes.slip_button} onClick={handleRoute1}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/51-beautiful-designs-for-hands-or-mahndi-desgins.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/51-beautiful-designs-for-hands-or-mahndi-desgins.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             51 Beautiful Mylanchi designs for hands Kerala mehndi designs
@@ -164,13 +164,13 @@ export default function BlogPage() {
             India but now women have started applying henna mehndi …
           </p>
           <button className={classes.slip_button} onClick={handleRoute2}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-24.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-24.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             Eucalyptus Oil A Natural Wake-me-up
@@ -183,13 +183,13 @@ export default function BlogPage() {
             will just do the trick. This oil even excites the senses. Need …
           </p>
           <button className={classes.slip_button} onClick={handleRoute3}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/9-1.jpg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/9-1.jpg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             Benefits of Henna For Hair Health
@@ -202,13 +202,13 @@ export default function BlogPage() {
             will just do the trick. This oil even excites the senses. Need …
           </p>
           <button className={classes.slip_button} onClick={handleRoute1}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/image-result-for-eucalyptus.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/image-result-for-eucalyptus.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             Eucalyptus Oil for Cold and Flu Season
@@ -221,13 +221,13 @@ export default function BlogPage() {
             medicines, as a chest rub and in soaps, rash creams …
           </p>
           <button className={classes.slip_button} onClick={handleRoute2}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-2.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-2.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             17 Spine Tattoo Designs That Will Chill You To The Bone
@@ -241,13 +241,13 @@ export default function BlogPage() {
             possesses a set of energy centers call chakras, all …
           </p>
           <button className={classes.slip_button} onClick={handleRoute3}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/oral-health-systems-in-portugal-sweden-and-roman.png" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/oral-health-systems-in-portugal-sweden-and-roman.png" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             13 USES FOR TEA TREE OIL THAT WILL CHANGE YOUR LIFE
@@ -262,13 +262,13 @@ export default function BlogPage() {
             antiviral …
           </p>
           <button className={classes.slip_button} onClick={handleRoute1}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-6-1024x683.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-6-1024x683.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             20 Uses for Lavender Essential Oil
@@ -281,13 +281,13 @@ export default function BlogPage() {
             20 Ways to Use Lavender …
           </p>
           <button className={classes.slip_button} onClick={handleRoute2}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/indigo-plants-wholesale-price-and-mandi-rate-for-i-1024x576.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/indigo-plants-wholesale-price-and-mandi-rate-for-i-1024x576.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             8 Brilliant Benefits Of Using Indigo Powder For Hair
@@ -300,13 +300,13 @@ export default function BlogPage() {
             INDIGO POWDER, …
           </p>
           <button className={classes.slip_button} onClick={handleRoute3}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/how-to-use-henna-1024x683.jpeg" />
+        <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/how-to-use-henna-1024x683.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             5 Basic Steps To Apply Henna For Grey Hair
@@ -319,7 +319,7 @@ export default function BlogPage() {
             grey hair, you can easily cover them using …
           </p>
           <button className={classes.slip_button} onClick={handleRoute1}>
-            Read More ..
+            Read More »
           </button>
         </div>
       </div>
