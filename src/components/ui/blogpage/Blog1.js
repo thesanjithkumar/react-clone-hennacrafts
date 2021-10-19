@@ -1,16 +1,15 @@
 import classes from "./Blogs.module.css";
-
 import { useHistory} from "react-router-dom";
 
 export default function Blog1() {
   const history=useHistory();
-  const handleRoute3=()=>{
-    history.push('/Blog3')
+  const handleRoute16=()=>{
+    history.push('/Blog16')
   }
   const handleRoute2=()=>{
     history.push('/Blog2')
   }
-  const handleRoute4 = () => {
+  const handleRoute0 = () => {
     history.push("/BlogUncat1");
   };
 
@@ -19,17 +18,17 @@ export default function Blog1() {
     <div className={classes.container}>
       <div className={classes.whitecontainer}>
         <div className={classes.border}>
-        <img className={classes.img1} src="https://hennacrafts.com/wp-content/uploads/2021/03/9.jpg" alt=""/>
+        <img className={classes.img1} src="https://hennacrafts.com/wp-content/uploads/2021/03/9.jpg" /> 
         <h1>
         The Best Of The Best Bridal Foot Mehendi For Your Inspiration
         </h1>
-        <button className={classes.slip_button} onClick={handleRoute4}>
+        <button className={classes.slip_button} onClick={handleRoute0}>
         Uncategorized / By Murtaza Ali Najmi
       </button>
-<p className={classes.text2}>
+      <p className={classes.text2}>
       The Best Of The Best Bridal Foot Mehendi For Your Inspiration
       </p>
-      <img className={classes.img2} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-39.jpeg" alt=""/>
+      <img className={classes.img2} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-39.jpeg" /> 
       <p>
       My last post got me thinking, we all have seen amazing bridal mehendi designs for our hands, but what about our feet? Every bride who 
       applies henna for her wedding ceremony does apply henna on her feet too, and doesn’t it then make sense to have some inspiration and ideas 
@@ -39,7 +38,7 @@ export default function Blog1() {
       So, I ended up practically spending a good one full day scorching the internet for gorgeous real brides Bridal Foot Mehendi designs. Oh, and
       I found some seriously good ones, that you can totally show to your mehendi artist for inspiration.
       </p>
-      <img className={classes.img3} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-40.jpeg" alt=""/>
+      <img className={classes.img3} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-40.jpeg" /> 
       <p>
       # Quirky yet simple
       </p>
@@ -54,8 +53,8 @@ export default function Blog1() {
       and feet. I love this design. Its simple, yet stunning and the best part..you don’t have to sit through four five hours finishing your 
       mehendi.
       </p>
-      <img className={classes.img4} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-44.jpeg" alt=""/>
-      <img className={classes.img5} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-45.jpeg" alt=""/>
+      <img className={classes.img4} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-44.jpeg" /> 
+      <img className={classes.img5} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-45.jpeg" /> 
       <p>
       # Leaving some gaps is a good thing
       </p>
@@ -96,7 +95,7 @@ export default function Blog1() {
       Everyone wants something a little hatke, a little unique in their wedding and this latest trend of doing minimalist mehendi design is a hot
       trend. Focus on the design and just leave the rest of the foot. It looks great, and you get to be traditional yet stylish at the same time.
       </p>
-      <img className={classes.img6} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-46.jpeg" alt=""/>
+      <img className={classes.img6} src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-46.jpeg" /> 
       <p>
         # Bridal Foot Mehendi just above the ankles
       </p>
@@ -198,7 +197,7 @@ export default function Blog1() {
         <p>
         # Peacock be the king of all mehendi designs
         </p>
-        <img className={classes.img11} src="https://hennacrafts.com/wp-content/uploads/2021/03/super-trendy-and-unique-arabic-mehendi-designs-for-b.jpeg" alt=""/>
+        <img className={classes.img11} src="https://hennacrafts.com/wp-content/uploads/2021/03/super-trendy-and-unique-arabic-mehendi-designs-for-b.jpeg" /> 
         <p>
          Bridal Foot Mehendi
         </p>
@@ -232,11 +231,11 @@ export default function Blog1() {
         </p>
         </div>
       </div>
-      <button className={classes.slip_button1} onClick={handleRoute3}>
-        Previous Post
+      <button className={classes.slip_button1} onClick={handleRoute16}>
+        ← Previous Post
       </button>
       <button className={classes.slip_button2} onClick={handleRoute2}>
-        Next Post
+        Next Post →
       </button>
     </div>
   );
