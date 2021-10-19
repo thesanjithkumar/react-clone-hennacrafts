@@ -643,7 +643,7 @@ main {
   /* vertical-align: middle; */
 }
 
-.hr {
+.client_hr {
   display: inline-block;
   vertical-align: middle;
   width: 40px;
