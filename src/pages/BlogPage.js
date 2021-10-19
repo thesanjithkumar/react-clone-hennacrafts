@@ -12,8 +12,49 @@ export default function BlogPage() {
   const handleRoute3 = () => {
     history.push("/Blog3");
   };
+  const handleRoute4 = () => {
+    history.push("/Blog4");
+  };
+  const handleRoute5 = () => {
+    history.push("/Blog5");
+  };
+  const handleRoute6 = () => {
+    history.push("/Blog6");
+  };
+  const handleRoute7 = () => {
+    history.push("/Blog7");
+  };
+  const handleRoute8 = () => {
+    history.push("/Blog8");
+  };
+  const handleRoute9 = () => {
+    history.push("/Blog9");
+  };
+  const handleRoute10 = () => {
+    history.push("/Blog10");
+  };
+  const handleRoute11 = () => {
+    history.push("/Blog11");
+  };
+  const handleRoute12 = () => {
+    history.push("/Blog12");
+  };
+  const handleRoute13 = () => {
+    history.push("/Blog13");
+  };
+  const handleRoute14 = () => {
+    history.push("/Blog14");
+  };
+  const handleRoute15 = () => {
+    history.push("/Blog15");
+  };
+  const handleRoute16 = () => {
+    history.push("/Blog16");
+  };
+
   return (
     <div>
+      
       <div className={classes.slip}>
         <img className={classes.slip_img} src="https://hennacrafts.com/wp-content/uploads/2021/03/9.jpg" />
         <div className={classes.slip_body}>
@@ -86,7 +127,7 @@ export default function BlogPage() {
             information about the application process to color- and condition-
             enhancing techniques, these henna …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute1}>
+          <button className={classes.slip_button} onClick={handleRoute4}>
             Read More »
           </button>
         </div>
@@ -106,7 +147,7 @@ export default function BlogPage() {
             tea tree oil as antiseptic. Tea tree oil is an amazing beauty
             product …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute2}>
+          <button className={classes.slip_button} onClick={handleRoute5}>
             Read More »
           </button>
         </div>
@@ -125,7 +166,7 @@ export default function BlogPage() {
             with variations in your hair color to produce a unique shade. Other
             products you use, the softness of the water in your …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute3}>
+          <button className={classes.slip_button} onClick={handleRoute6}>
             Read More »
           </button>
         </div>
@@ -144,7 +185,7 @@ export default function BlogPage() {
             advantage of all that time at home to experiment with color. Fun
             hair colors and bad haircuts …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute1}>
+          <button className={classes.slip_button} onClick={handleRoute7}>
             Read More »
           </button>
         </div>
@@ -163,7 +204,7 @@ export default function BlogPage() {
             media era. Mehndi or mylanchi was an important part of weddings in
             India but now women have started applying henna mehndi …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute2}>
+          <button className={classes.slip_button} onClick={handleRoute8}>
             Read More »
           </button>
         </div>
@@ -182,7 +223,7 @@ export default function BlogPage() {
             this oil! Having trouble with a bad cough? Lozenges with eucalyptus
             will just do the trick. This oil even excites the senses. Need …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute3}>
+          <button className={classes.slip_button} onClick={handleRoute9}>
             Read More »
           </button>
         </div>
@@ -201,7 +242,7 @@ export default function BlogPage() {
             this oil! Having trouble with a bad cough? Lozenges with eucalyptus
             will just do the trick. This oil even excites the senses. Need …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute1}>
+          <button className={classes.slip_button} onClick={handleRoute10}>
             Read More »
           </button>
         </div>
@@ -220,7 +261,7 @@ export default function BlogPage() {
             stores. In fact, it can be found in decongestant, cough and cold
             medicines, as a chest rub and in soaps, rash creams …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute2}>
+          <button className={classes.slip_button} onClick={handleRoute11}>
             Read More »
           </button>
         </div>
@@ -240,7 +281,7 @@ export default function BlogPage() {
             part? PUBLICIDAD According to Hinduism and Buddhism, our body
             possesses a set of energy centers call chakras, all …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute3}>
+          <button className={classes.slip_button} onClick={handleRoute12}>
             Read More »
           </button>
         </div>
@@ -261,7 +302,7 @@ export default function BlogPage() {
             thanks to its antibiotic, anti- fungal, antiseptic, expectorant and
             antiviral …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute1}>
+          <button className={classes.slip_button} onClick={handleRoute13}>
             Read More »
           </button>
         </div>
@@ -280,7 +321,7 @@ export default function BlogPage() {
             save these 20 uses for Lavender Essential Oil for future reference!
             20 Ways to Use Lavender …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute2}>
+          <button className={classes.slip_button} onClick={handleRoute14}>
             Read More »
           </button>
         </div>
@@ -299,7 +340,7 @@ export default function BlogPage() {
             hair or beard, with or without henna. It is green in appearance. IS
             INDIGO POWDER, …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute3}>
+          <button className={classes.slip_button} onClick={handleRoute15}>
             Read More »
           </button>
         </div>
@@ -318,11 +359,12 @@ export default function BlogPage() {
             add shine and health to the hair. If you are feeling annoyed with
             grey hair, you can easily cover them using …
           </p>
-          <button className={classes.slip_button} onClick={handleRoute1}>
+          <button className={classes.slip_button} onClick={handleRoute16}>
             Read More »
           </button>
         </div>
-      </div>
+      </div> 
+
     </div>
   );
 }

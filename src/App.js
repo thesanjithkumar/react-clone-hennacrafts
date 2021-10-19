@@ -18,8 +18,23 @@ import FAQ from "./pages/FaqFooter";
 import Blog1 from "./components/ui/blogpage/Blog1";
 import Blog2 from "./components/ui/blogpage/Blog2";
 import Blog3 from "./components/ui/blogpage/Blog3";
-import BlogUncat2 from "./components/ui/blogpage/BlogUncat2";
+import Blog4 from "./components/ui/blogpage/Blog4";
+import Blog5 from "./components/ui/blogpage/Blog5";
+import Blog6 from "./components/ui/blogpage/Blog6";
+import Blog7 from "./components/ui/blogpage/Blog7";
+import Blog8 from "./components/ui/blogpage/Blog8";
+import Blog9 from "./components/ui/blogpage/Blog9";
+import Blog10 from "./components/ui/blogpage/Blog10";
+import Blog11 from "./components/ui/blogpage/Blog11";
+import Blog12 from "./components/ui/blogpage/Blog12";
+import Blog13 from "./components/ui/blogpage/Blog13";
+import Blog14 from "./components/ui/blogpage/Blog14";
+import Blog15 from "./components/ui/blogpage/Blog15";
+import Blog16 from "./components/ui/blogpage/Blog16";
 import BlogUncat1 from "./components/ui/blogpage/BlogUncat1";
+import BlogUncat2 from "./components/ui/blogpage/BlogUncat2";
+
+
 
 function App() {
   return (
@@ -70,7 +85,46 @@ function App() {
           </Route>
           <Route path="/Blog3">
             <Blog3 />
+            </Route>
+          <Route path="/Blog4">
+            <Blog4 />
           </Route>
+          <Route path="/Blog5">
+            <Blog5 />
+          </Route>
+          <Route path="/Blog6">
+            <Blog6 />
+          </Route>
+          <Route path="/Blog7">
+            <Blog7 />
+          </Route>
+          <Route path="/Blog8">
+            <Blog8 />
+          </Route>
+          <Route path="/Blog9">
+            <Blog9 />
+          </Route>
+          <Route path="/Blog10">
+            <Blog10 />
+          </Route>
+          <Route path="/Blog11">
+            <Blog11 />
+          </Route>
+          <Route path="/Blog12">
+            <Blog12 />
+          </Route>
+          <Route path="/Blog13">
+            <Blog13 />
+          </Route>  
+          <Route path="/Blog14">
+            <Blog14 />
+          </Route>
+          <Route path="/Blog15">
+            <Blog15 />
+          </Route>
+          <Route path="/Blog16">
+            <Blog16 />
+            </Route> 
           <Route path="/BlogUncat1">
             <BlogUncat1 />
           </Route>
