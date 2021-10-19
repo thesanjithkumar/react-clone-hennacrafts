@@ -15,11 +15,11 @@ export default function BlogPage() {
   return (
     <div>
 
-        <img className={classes.slip__imgr} scr="https://secure.gravatar.com/avatar/ab839e2928d6f62db73a8755ebcbab8e?s=120&d=mm&r=g"/>
+        <img className={classes.slip__imgr} src="https://secure.gravatar.com/avatar/ab839e2928d6f62db73a8755ebcbab8e?s=120&d=mm&r=g"/>
         <caption className={classes.slip__cap}>Murtaza Ali Najmi</caption>
      
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-24.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-24.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             Eucalyptus Oil A Natural Wake-me-up
@@ -38,7 +38,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/9-1.jpg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/9-1.jpg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             Benefits of Henna For Hair Health
@@ -57,7 +57,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/image-result-for-eucalyptus.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/image-result-for-eucalyptus.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             Eucalyptus Oil for Cold and Flu Season
@@ -76,7 +76,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-2.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-2.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             17 Spine Tattoo Designs That Will Chill You To The Bone
@@ -96,7 +96,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/oral-health-systems-in-portugal-sweden-and-roman.png" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/oral-health-systems-in-portugal-sweden-and-roman.png" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             13 USES FOR TEA TREE OIL THAT WILL CHANGE YOUR LIFE
@@ -117,7 +117,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-6-1024x683.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/word-image-6-1024x683.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             20 Uses for Lavender Essential Oil
@@ -136,7 +136,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/indigo-plants-wholesale-price-and-mandi-rate-for-i-1024x576.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/indigo-plants-wholesale-price-and-mandi-rate-for-i-1024x576.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             8 Brilliant Benefits Of Using Indigo Powder For Hair
@@ -155,7 +155,7 @@ export default function BlogPage() {
       </div>
 
       <div className={classes.slip}>
-        <img scr="https://hennacrafts.com/wp-content/uploads/2021/03/how-to-use-henna-1024x683.jpeg" />
+        <img src="https://hennacrafts.com/wp-content/uploads/2021/03/how-to-use-henna-1024x683.jpeg" />
         <div className={classes.slip_body}>
           <p className={classes.slip_title}>
             5 Basic Steps To Apply Henna For Grey Hair
