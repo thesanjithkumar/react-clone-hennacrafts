@@ -26,9 +26,9 @@ export default function Testimonials() {
     <main className="testimonials">
       <div className="testimonials_heading">
         <p className="clientsay">
-          <hr className="hr" />
+          <hr className="client_hr" />
           CLINET SAY
-          <hr className="hr" />
+          <hr className="client_hr" />
         </p>
         <p className="testimonials_h1">TESTIMONIALS</p>
       </div>
@@ -134,111 +134,6 @@ export default function Testimonials() {
           <p className="testimonial_name">Christine P</p>
         </div>
       </div>
-      {/* carousel pacakge */}
-      {/* <Carousel
-          id="slideshow"
-          swiping={true}
-          show={3.5}
-          leftArrow={false}
-          rightArrow={false}
-          slide={3}
-          infinite={true}
-          // isSliding={2}
-          transition={2}
-          responsive={true}
-        >
-          <div className="testimonial_child">
-            <img
-              className="testimonial_img"
-              src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.11.33-AM.jpeg"
-            />
-            <p className="testimonialscontent">
-              I love the results I get from the orange red henna. It covers my
-              grey well. It does not however look orange like the model, on my
-              hair. My only fault with it is, I wish I didn’t have to mix it the
-              night before I want to use it. My schedule is hectic and I don’t
-              always know when I have 3 hours to leave it on.
-            </p>
-            <hr className="br" />
-            <p className="testimonial_name">Testimonial #3</p>
-          </div>
-          <div className="testimonial_child">
-            <img
-              className="testimonial_img"
-              src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.12.20-AM.jpeg"
-            />
-            <p className="testimonialscontent">
-              I love the results I get from the orange red henna. It covers my
-              grey well. It does not however look orange like the model, on my
-              hair. My only fault with it is, I wish I didn’t have to mix it the
-              night before I want to use it. My schedule is hectic and I don’t
-              always know when I have 3 hours to leave it on.
-            </p>
-            <hr className="br" />
-            <p className="testimonial_name">Testimonial #3</p>
-          </div>
-          <div className="testimonial_child">
-            <img
-              className="testimonial_img"
-              src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.11.59-AM.jpeg"
-            />
-            <p className="testimonialscontent">
-              I love the results I get from the orange red henna. It covers my
-              grey well. It does not however look orange like the model, on my
-              hair. My only fault with it is, I wish I didn’t have to mix it the
-              night before I want to use it. My schedule is hectic and I don’t
-              always know when I have 3 hours to leave it on.
-            </p>
-            <hr className="br" />
-            <p className="testimonial_name">Testimonial #3</p>
-          </div>
-          <div className="testimonial_child">
-            <img
-              className="testimonial_img"
-              src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.12.32-AM.jpeg"
-            />
-            <p className="testimonialscontent">
-              I love the results I get from the orange red henna. It covers my
-              grey well. It does not however look orange like the model, on my
-              hair. My only fault with it is, I wish I didn’t have to mix it the
-              night before I want to use it. My schedule is hectic and I don’t
-              always know when I have 3 hours to leave it on.
-            </p>
-            <hr className="br" />
-            <p className="testimonial_name">Testimonial #3</p>
-          </div>
-          <div className="testimonial_child">
-            <img
-              className="testimonial_img"
-              src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.01.38-AM.jpeg"
-            />
-            <p className="testimonialscontent">
-              I love the results I get from the orange red henna. It covers my
-              grey well. It does not however look orange like the model, on my
-              hair. My only fault with it is, I wish I didn’t have to mix it the
-              night before I want to use it. My schedule is hectic and I don’t
-              always know when I have 3 hours to leave it on.
-            </p>
-            <hr className="br" />
-            <p className="testimonial_name">Christine P</p>
-          </div>
-          <div className="testimonial_child">
-            <img
-              className="testimonial_img"
-              src="https://hennacrafts.com/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-11.12.45-AM.jpeg"
-            />
-            <p className="testimonialscontent">
-              I love the results I get from the orange red henna. It covers my
-              grey well. It does not however look orange like the model, on my
-              hair. My only fault with it is, I wish I didn’t have to mix it the
-              night before I want to use it. My schedule is hectic and I don’t
-              always know when I have 3 hours to leave it on.
-            </p>
-            <hr className="br" />
-            <p className="testimonial_name">Christine P</p>
-          </div>
-        </Carousel> */}
-      {/* carousel pacakge */}
     </main>
   );
 }

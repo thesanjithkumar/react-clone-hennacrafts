@@ -29,7 +29,7 @@ const DUMMY_DATA = [
 
 export default function HennaBlog() {
   return (
-    <div>
+    <main>
       <div className="hennablog_main">
         {DUMMY_DATA.map((items) => (
           <HennaBlogSingle
@@ -46,6 +46,6 @@ export default function HennaBlog() {
           View the Henna Craft Blog
         </a>
       </div>
-    </div>
+    </main>
   );
 }
