@@ -7,6 +7,7 @@
   height: auto;
   position: fixed;
   transition: ease-in-out;
+  cursor: pointer;
 }
 
 .modal_parent {
@@ -70,6 +71,7 @@
 
 .horizontal_dots {
   width: 100%;
+  cursor: pointer;
   /* height: auto; */
 }
 
@@ -85,6 +87,7 @@
   width: 24pt;
   height: 24pt;
   border: none;
+  cursor: pointer;
   border-radius: 50%;
 }
 
@@ -133,6 +136,7 @@
   color: white;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   background-color: #8bc34a;
   display: flex;
 }
@@ -148,6 +152,7 @@
   color: black;
   border: none;
   align-items: center;
+  cursor: pointer;
   justify-content: center;
   background-color: #f2f2f2;
   display: flex;
@@ -285,6 +290,7 @@
   font-size: 15px;
   background-color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .dropdown_icon {
