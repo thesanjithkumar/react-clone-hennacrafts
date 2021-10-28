@@ -118,23 +118,22 @@
     margin-left: 0.8em;
   }
 }
-
-.animationborder {
+.animationborder{
   width: 100%;
-  background-color: #001524;
+  background-color: #182238;
   display: flex;
 }
-.animationcontainer {
+.animationcontainer{
   width: 100%;
 }
-.counters {
+.counters{
+  font-size: 1.8em;
   margin-left: 1em;
+  margin-top: 2em;
   color: white;
-  align-items: center;
   display: grid;
-  height: 154px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 50px;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:50px;
   text-align: center;
 }
 /* editing code */

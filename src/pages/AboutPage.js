@@ -4,9 +4,9 @@ import { FaStar } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CountUp from "react-countup";
-import Aos from "aos";
+import CountUp from 'react-countup';
 function AboutPage() {
+  
   return (
     <div className={classes.container}>
       <div className={classes.aboutusborder}>
@@ -47,38 +47,22 @@ function AboutPage() {
       </div>
       <div className={classes.animationborder}>
         <div className={classes.animationcontainer}>
-          <section className={classes.counters}>
-            <p className={classes.merri}>Numbers Speak For Themselves!</p>
-            <div className={classes.counter}>
-              <CountUp
-                className={classes.number_count}
-                start={4800}
-                end={5000}
-                suffix="+"
-                duration={3}
-              />
-              <h3 className={classes.open_sans}>Curated Products</h3>
-            </div>
-            <div className={classes.counter} data-target="800+">
-              <CountUp
-                className={classes.number_count}
-                start={0}
-                end={800}
-                suffix="+"
-                duration={3}
-              />
-              <h3 className={classes.open_sans}>Curated Products</h3>
-            </div>
-            <div className={classes.counter} data-target="40+">
-              <CountUp
-                className={classes.number_count}
-                start={0}
-                end={40}
-                suffix="+"
-                duration={3}
-              />
-              <h3 className={classes.open_sans}>Product Categories</h3>
-            </div>
+        <section className={classes.counters}>
+          <p>
+          Numbers Speak For <br/> Themselves!
+          </p>
+          <div  className={classes.counter}>
+          <CountUp  start={4800} end={5000} suffix='+' duration={3} />
+          <h3>Curated Products</h3>
+          </div>
+          <div className={classes.counter} data-target="800+"> 
+          <CountUp start={0} end={800} suffix='+' duration={3}/>
+         <h3>Curated Products</h3>
+          </div>
+          <div className={classes.counter} data-target="40+">
+          <CountUp start={0} end={40} suffix='+' duration={3}/>
+          <h3>Product Categories</h3>
+          </div>
           </section>
         </div>
       </div>
