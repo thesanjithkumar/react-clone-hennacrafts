@@ -7,7 +7,7 @@ import FullScreenImage from './FullScreenImage';
 
 function ProductDescriptionImage(props)
 {
-  console.log("Testing",props.item)
+  // console.log("Testing",props.item)
   const [curzoomimg,setCurZoomImg]=useState(props.item.descimg.length>0 ?props.item.descimg[0]:props.item.image)
   const [isModalOpen,setIsModalOpen]=useState(false);
 

@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import classes from './Layout.module.css';
 import NavbarResize from "./NavbarResize";
+
 function Layout(props) {
   return (
     <div > 

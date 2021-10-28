@@ -1,4 +1,4 @@
-import { colors, Slider } from "@material-ui/core";
+import {  Slider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 import React, { useState } from "react";
 import { useContext } from 'react';

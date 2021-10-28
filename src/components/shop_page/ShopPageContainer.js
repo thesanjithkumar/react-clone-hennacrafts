@@ -8,7 +8,6 @@ import SelectCurrency from './SelectCurrency';
 import RecentlyViewedProducts from './RecentlyViewedProducts';
 import {useContext} from 'react';
 import ProductFilterContext from './ProductFilterContext';
-import prod_info from './ProductInfo';
 
 
 function ShopPageContainer() {

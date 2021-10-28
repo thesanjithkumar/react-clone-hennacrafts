@@ -1,11 +1,11 @@
-import {ProductFilterContextProvider} from '../components/shop_page/ProductFilterContext';
+// import {ProductFilterContextProvider} from '../components/shop_page/ProductFilterContext';
 import ShopPageContainer from '../components/shop_page/ShopPageContainer';
 
 function ShopPage() {
   return (
-    <ProductFilterContextProvider>
+    // <ProductFilterContextProvider>
       <ShopPageContainer/>
-  </ProductFilterContextProvider>
+  //  </ProductFilterContextProvider> 
   );
 }
 

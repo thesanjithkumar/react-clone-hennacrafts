@@ -2,6 +2,7 @@ import React from 'react';
 import {useEffect,useState} from 'react';
 import NavbarComponent from './NavbarComponent';
 
+
 function NavbarResize() {
   const [width, setWidth] = useState(window.innerWidth)
   function handleResize() {
