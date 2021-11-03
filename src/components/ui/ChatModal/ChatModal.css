@@ -11,7 +11,9 @@
 }
 
 .modal_parent {
-  transition: 0.2s ease-in-out;
+  /* transition: 0.2s ease-in-out; */
+  animation-duration: 600ms;
+  animation-name: fb_bounce_in_v2;
   z-index: 3;
 }
 
@@ -23,9 +25,9 @@
   vertical-align: middle; */
   border-radius: 25px;
   z-index: 3;
-  top: 35%;
+  /* top: 350px; */
   left: 65%;
-  height: 54%;
+  height: 430px;
   width: 30%;
   box-shadow: 0 4px 12px 0 rgb(0 0 0 / 15%);
   background-color: #fefefe;
@@ -198,10 +200,9 @@
 }
 
 .expand {
-  height: 80%;
+  /* height: 80%; */
   transition: all 0.3s ease-in-out;
   width: 30%;
-  top: 9%;
 }
 
 .guestchat_header {
@@ -342,7 +343,7 @@
 .chat_screen {
   /* background-color: black; */
   width: auto;
-  height: 80%;
+  height: 450px;
 }
 
 .chat_input_section {
@@ -388,4 +389,14 @@
 .send_icon {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 850px) {
+  .modal {
+    top: 370px;
+  }
+  .expand {
+    top: 17%;
+    height: 650px;
+  }
 }
